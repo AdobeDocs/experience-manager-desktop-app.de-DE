@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Sie mit dem Experience Manager-Desktop
 feature-set: Experience Manager Assets,Experience Manager
 feature: Desktop App
 role: User, Admin
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 100%
+source-wordcount: '64'
+ht-degree: 95%
 
 ---
 
