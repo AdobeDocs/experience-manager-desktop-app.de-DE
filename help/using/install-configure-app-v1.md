@@ -11,13 +11,13 @@ ht-degree: 74%
 
 # Installieren und Konfigurieren des [!DNL Experience Manager]-Desktop-Programms, v1.10 {#install-and-configure-aem-desktop-app}
 
-Mithilfe des [!DNL Experience Manager]-Desktop-Programms können Sie über Ihren lokalen Desktop problemlos auf die Assets in [!DNL Experience Manager] zugreifen und sie in beliebigen Desktop-Programmen verwenden. Assets kann in Mac Finder oder Windows Explorer angezeigt, in Desktop-Applikationen bearbeitet und die Änderungen werden wieder unter [!DNL Experience Manager], eine neue Version beim Hochladen zu erstellen.
+Mithilfe des [!DNL Experience Manager]-Desktop-Programms können Sie über Ihren lokalen Desktop problemlos auf die Assets in [!DNL Experience Manager] zugreifen und sie in beliebigen Desktop-Programmen verwenden. Assets kann in Mac Finder oder Windows Explorer angezeigt, in Desktop-Applikationen bearbeitet und Änderungen werden wieder in [!DNL Experience Manager] gespeichert. Dadurch wird beim Hochladen eine neue Version erstellt.
 
 Diese Integration ermöglicht es verschiedenen Rollen, Assets zentral in der Organisation in Assets zu verwalten, auf sie in Creative Cloud und anderen Anwendungen zuzugreifen und mühelos verschiedene Standards zu erfüllen, einschließlich Branding.
 
-So verwenden Sie die [!DNL Experience Manager] Desktop-Programm,
+So verwenden Sie das [!DNL Experience Manager] -Desktop-Programm
 
-* Stellen Sie sicher, dass Ihr [!DNL Experience Manager] -Serverversion mit der [!DNL Experience Manager] Desktop-Programm. Weitere Informationen finden Sie in der [Kompatibilitätsmatrix](release-notes-of-v1.md#compatibilitymatrix).
+* Stellen Sie sicher, dass Ihre [!DNL Experience Manager] -Serverversion mit dem [!DNL Experience Manager] -Desktop-Programm kompatibel ist. Weitere Informationen finden Sie in der [Kompatibilitätsmatrix](release-notes-of-v1.md#compatibilitymatrix).
 
 * Laden Sie das Programm herunter und installieren Sie es.
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter [Installieren und Verbinden des  [!DNL Ex
 
 Beim Ändern einer Datei unter einem vom Desktop-Programm bereitgestellten Netzwerkfreigabe-Speicherort werden die Dateien in zwei Phasen in diesem Verzeichnis gespeichert. In der ersten Phase wird eine Datei lokal gespeichert. Ein Benutzer kann die Datei speichern und deren Bearbeitung fortsetzen, ohne auf den Abschluss der Übertragung warten zu müssen.
 
-In der zweiten Phase lädt das Desktop-Programm die aktualisierte Datei in die [!DNL Experience Manager] -Server nach einer vordefinierten Verzögerung (z. B. 30s). Dieser Vorgang erfolgt im Hintergrund. Verwenden Sie die Option „View Asset Status“ (Asset-Status anzeigen), um den Status des Upload-Vorgangs anzuzeigen.
+In der zweiten Phase lädt das Desktop-Programm die aktualisierte Datei nach einer festgelegten Verzögerung (z. B. 30 Sek.) auf den [!DNL Experience Manager] -Server hoch. Dieser Vorgang erfolgt im Hintergrund. Verwenden Sie die Option „View Asset Status“ (Asset-Status anzeigen), um den Status des Upload-Vorgangs anzuzeigen.
 
 1. Hochladen eines Assets in Assets.
 
@@ -53,7 +53,7 @@ In der zweiten Phase lädt das Desktop-Programm die aktualisierte Datei in die [
 >
 >Das [!DNL Experience Manager]-Desktop-Programm kann Assets mit einer Größe von bis zu 40 GB verarbeiten.
 
-## Verbindung zu einer [!DNL Experience Manager] Instanz hinter einer Dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
+## Herstellen einer Verbindung mit einer [!DNL Experience Manager]-Instanz hinter einer Dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
 
 Für die Methoden zum Kopieren und Verschieben in der Assets-API ist es erforderlich, dass die folgenden Header an [!DNL Experience Manager] weitergeleitet werden:
 
@@ -61,13 +61,13 @@ Für die Methoden zum Kopieren und Verschieben in der Assets-API ist es erforder
 * X-Tiefe
 * X-Überschreiben
 
-[!DNL Experience Manager]-Desktop stellt Verbindungen mit [!DNL Experience Manager] über eine URL her, die einen standardmäßigen Port enthält. Daher wird die `virtualhosts` -Einstellung in der Dispatcher-Konfiguration sollte die standardmäßige Port-Nummer enthalten. Weitere Informationen zur Konfiguration von `virtualhosts` finden Sie unter [Identifizieren von virtuellen Hosts](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
+[!DNL Experience Manager]-Desktop stellt Verbindungen mit [!DNL Experience Manager] über eine URL her, die einen standardmäßigen Port enthält. Daher sollte die Einstellung `virtualhosts` in der Dispatcher-Konfiguration die standardmäßige Port-Nummer enthalten. Weitere Informationen zur Konfiguration von `virtualhosts` finden Sie unter [Identifizieren von virtuellen Hosts](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
 
 Weitere Informationen zum Konfigurieren der Dispatcher für die Übergabe dieser zusätzlichen Header finden Sie unter [Festlegen der HTTP-Header](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
 
 ### Proxy-Unterstützung {#proxy-support}
 
-Die [!DNL Experience Manager] Das -Desktop-Programm verwendet den vordefinierten Proxy des Systems, um über HTTPS eine Internet-Verbindung herzustellen. Das Programm kann die Verbindung nur mit einem Netzwerk-Proxy herstellen, für den keine gesonderte Authentifizierung erforderlich ist.
+Das [!DNL Experience Manager] -Desktop-Programm verwendet den vordefinierten Proxy des Systems, um über HTTPS eine Internet-Verbindung herzustellen. Das Programm kann die Verbindung nur mit einem Netzwerk-Proxy herstellen, für den keine gesonderte Authentifizierung erforderlich ist.
 
 Wenn Sie Proxyserver-Einstellungen für Windows konfigurieren oder ändern (Internetoptionen > LAN-Einstellungen), starten Sie das [!DNL Experience Manager]-Desktop-Programm neu, damit die Änderungen wirksam werden.
 
@@ -99,7 +99,7 @@ Sie können festlegen, wie viel Festplattenspeicher für lokale Caching-Zwecke z
 
 >[!NOTE]
 >
->Wenn Sie den Cache löschen, werden nicht gespeicherte Änderungen beibehalten. Alle Assets, die nicht in der [!DNL Experience Manager] -Server beibehalten und nicht gelöscht werden.
+>Wenn Sie den Cache löschen, werden nicht gespeicherte Änderungen beibehalten. Alle Assets, die nicht auf dem [!DNL Experience Manager] -Server eingecheckt wurden, werden beibehalten und nicht gelöscht.
 
 ### Ändern des Cache-Verzeichnisses unter Windows {#change-location-of-cache-on-windows}
 
@@ -109,13 +109,13 @@ Der Standardspeicherort des Caches für das [!DNL Experience Manager]-Desktop-Pr
 
 * Unter Mac OS: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`
 
-Die `EncodedAEMEndpoint` ist die konfigurierte App [!DNL Experience Manager] Endpunkt-URL. Der Wert ist eine kodierte Version der Ziel-URL für den [!DNL Experience Manager]-Server. Wenn das Ziel des Programms beispielsweise `http://localhost:4502` ist, lautet der Verzeichnisname `http%3A%2F%2Flocalhost%3A4502`. Der Windows-Pfad zum Cache-Verzeichnis in diesem Beispiel lautet `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
+Der `EncodedAEMEndpoint` ist die konfigurierte [!DNL Experience Manager] -Endpunkt-URL der App. Der Wert ist eine kodierte Version der Ziel-URL für den [!DNL Experience Manager]-Server. Wenn das Ziel des Programms beispielsweise `http://localhost:4502` ist, lautet der Verzeichnisname `http%3A%2F%2Flocalhost%3A4502`. Der Windows-Pfad zum Cache-Verzeichnis in diesem Beispiel lautet `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Um das Programm auf einen anderen Ordner oder ein anderes Laufwerk zu verweisen, bearbeiten Sie die Konfigurationsdatei des Programms.
 
 1. Navigieren Sie zum Installationsverzeichnis des Programms. Der Standardspeicherort unter Windows ist `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop`.
 
-1. Bearbeiten Sie die `Adobe Experience Manager Desktop.exe.config` -Datei mit einem Texteditor.
+1. Bearbeiten Sie die Datei &quot;`Adobe Experience Manager Desktop.exe.config`&quot;mit einem Texteditor.
 
    Zum Speichern von an dieser Datei vorgenommenen Änderungen sind Administratorberechtigungen erforderlich.
 
@@ -127,6 +127,6 @@ Um das Programm auf einen anderen Ordner oder ein anderes Laufwerk zu verweisen,
 
 >[!MORELIKETHIS]
 >
-* Sehen Sie sich eine [Einführung in [!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) (5 Minuten, 43 Sekunden).
+* Sehen Sie sich eine [Einführung in das  [!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app) an (5 Minuten, 43 Sekunden).
 * [Verwenden des [!DNL Experience Manager] -Desktop-Programms](use-app-v1.md).
 * [Fehlerbehebung für das [!DNL Experience Manager] -Desktop-Programm](troubleshoot-app-v1.md).

@@ -70,7 +70,7 @@ Einige Dateitypen unterstützen das Platzieren von verknüpften Assets in der Bi
 
 Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL Adobe Creative Cloud] 2019 des oben genannten Programms unterstützt. Das Programm verwendet einen heuristischen Best-Match-Ansatz, um die lokalen Desktop-Pfade verknüpfter Assets URLs auf dem [!DNL Experience Manager]-Server zuzuordnen. Dieser Ansatz beruht auf den folgenden Annahmen:
 
-* Pfade zu platzierten Dateien im nativen Programm verwenden einen globalen Desktop-Pfad (platziert von der lokalen Netzwerkfreigabe, die mit der [!UICONTROL Reveal] -Option).
+* Pfade zu platzierten Dateien im nativen Programm verwenden einen globalen Desktop-Pfad (platziert von der lokalen Netzwerkfreigabe mit der Option [!UICONTROL Reveal] ).
 
 * Pfade werden von der nativen Anwendung im XMP-Datensatz der Datei gespeichert.
 
@@ -88,11 +88,11 @@ Weitere Informationen finden Sie unter [Neue Funktionen in Version 2.0](introduc
 
 **Aktualisierungen in der Programmversion 2.2.1**
 
-* Das Desktop-Programm zeigt eine Fehlermeldung zur Sitzungstimeout-Meldung an, wenn Sie auf **[!UICONTROL Sign In]**.
+* Das -Desktop-Programm zeigt eine Fehlermeldung zur Zeitüberschreitung der Sitzung an, wenn Sie auf **[!UICONTROL Sign In]** klicken.
 
 * Probleme beim Zugriff auf die Desktop-Anwendung v2.2.0 in macOS.
 
-* Das Desktop-Programm zeigt eine Fehlermeldung an, wenn Sie Assets sortieren, indem Sie auf **[!UICONTROL Edited Locally]**.
+* Das Desktop-Programm zeigt eine Fehlermeldung an, wenn Sie Assets durch Klicken auf **[!UICONTROL Edited Locally]** sortieren.
 
 **Aktualisierungen in der Programmversion 2.2.0**
 
@@ -126,15 +126,15 @@ Diese Version des Programms bietet eine Fehlerbehebung.
 
 Folgender Fehler wurde in der aktuellen Version behoben:
 
-* Die Geschwindigkeit beim Upload und Download von Assets wurde verbessert, auch bei großen Assets. In dieser Version wurde ein Problem behoben, bei dem Assets mit dem [!DNL desktop app] manchmal fehlschlug, wenn sehr große Dateien hochgeladen wurden.
+* Die Geschwindigkeit beim Upload und Download von Assets wurde verbessert, auch bei großen Assets. In dieser Version wurde ein Problem behoben, bei dem Asset-Uploads mit dem [!DNL desktop app] manchmal fehlschlugen, wenn sehr große Dateien hochgeladen wurden.
 
 **Aktualisierung in der Programmversion 2.1.2.0**
 
 * Dem Hauptmenü des Programms wurde eine neue Option [!UICONTROL Clear Cookies] hinzugefügt. Dies hilft bei potenziellen Anmeldungsproblemen, z. B. beim Wechsel einer Verbindung von einem Server zu einem anderen. Siehe [Löschen von Cookies vor dem Verbinden](/help/using/troubleshoot.md#cannot-login-cookies-issue).
 
-* Es wurde eine neue Option hinzugefügt, mit der das Programm, falls ausgewählt, Ordner und Dateien mit Knotennamen in hochladen kann [!DNL Adobe Experience Manager] Abgleichen der lokalen Datei- und Ordnernamen. Dieser Prozess stellt die Konsistenz zwischen lokalen und hochgeladenen Namen sicher.
+* Es wurde eine neue Option hinzugefügt, mit der die App, falls ausgewählt, Ordner und Dateien mit Knotennamen in [!DNL Adobe Experience Manager] hochladen kann, die mit den lokalen Datei- und Ordnernamen übereinstimmen. Dieser Prozess stellt die Konsistenz zwischen lokalen und hochgeladenen Namen sicher.
 
-  Dieses Verhalten ähnelt dem Standardverhalten in Version 1 des Desktop-Programms. Wenn in der aktuellen Version die Option nicht aktiviert ist, werden Leerzeichen und die Zeichen `% ; # , + ? ^ { } "` in Ordnernamen werden durch Bindestriche in Ordnerpfaden ersetzt. Außerdem werden die Großbuchstaben in Ordnerpfaden in Kleinbuchstaben umgewandelt. In Dateinamen werden jedoch die Zeichen `# % { } ? &` durch Bindestriche ersetzt, jedoch werden Leerzeichen und Groß-/Kleinschreibung beibehalten. Weitere Informationen finden Sie in den [Programmvoreinstellungen](/help/using/install-upgrade.md#set-preferences) und unter [Hochladen und Hinzufügen neuer Assets](/help/using/using.md#upload-and-add-new-assets-to-aem).
+  Dieses Verhalten ähnelt dem Standardverhalten in Version 1 des Desktop-Programms. Wenn die Option in der aktuellen Version nicht aktiviert ist, werden Leerzeichen und die Zeichen `% ; # , + ? ^ { } "` in Ordnernamen durch Gedankenstriche in Ordnerpfaden ersetzt. Außerdem werden die Großbuchstaben in Ordnerpfaden in Kleinbuchstaben umgewandelt. In Dateinamen werden die Zeichen `# % { } ? &` jedoch durch einen Bindestrich ersetzt, Leerzeichen und Groß-/Kleinschreibung werden jedoch beibehalten. Weitere Informationen finden Sie in den [Programmvoreinstellungen](/help/using/install-upgrade.md#set-preferences) und unter [Hochladen und Hinzufügen neuer Assets](/help/using/using.md#upload-and-add-new-assets-to-aem).
 
 **Aktualisierung in der Programmversion 2.1.1.0**
 
@@ -176,13 +176,13 @@ Die folgenden Fehlerbehebungen und Aktualisierungen sind verfügbar:
 
 Informationen zum Installieren und Konfigurieren des Programms finden Sie unter [Installieren des [!DNL Experience Manager] -Desktop-Programms](install-upgrade.md).
 
-Wenn Sie ein Upgrade von einer vorherigen [!DNL Experience Manager] -Desktop-Programm verwenden, müssen Sie die folgenden Best Practices für die Umstellung befolgen, die unter [Upgrade von der vorherigen Version](install-upgrade.md#upgrade-from-previous-version).
+Wenn Sie von einer vorherigen Version des [!DNL Experience Manager]-Desktop-Programms aktualisieren, müssen Sie die folgenden Best Practices für die Umstellung befolgen, die unter [Upgrade von der vorherigen Version](install-upgrade.md#upgrade-from-previous-version) aufgeführt sind.
 
 ## Wichtige Hinweise zur Funktionsweise des Programms {#how-app-works}
 
 Es ist wichtig, die folgenden Informationen zum Programm und dessen Funktionsweise zu verstehen.
 
-* Das Programm bietet vollständige Kontrolle über Vorgänge, bei denen Asset-Binärdateien vollständig von und nach übertragen werden müssen [!DNL Experience Manager] (**Öffnen**, **Bearbeiten**, **Upload-Änderungen**, und **Assets hochladen**).
+* Das Programm bietet vollständige Kontrolle über Vorgänge, bei denen Asset-Binärdateien vollständig von und nach [!DNL Experience Manager] übertragen werden müssen (**Öffnen**, **Bearbeiten**, **Änderungen hochladen** und **Hochladen von Assets**).
 
    * Wenn Sie mit dem Asset auf dem Desktop arbeiten möchten, müssen Sie es explizit auf Ihrem Desktop öffnen, bearbeiten oder herunterladen, entweder einzeln, in einem Ordner oder über eine Mehrfachauswahl.
 
@@ -216,7 +216,7 @@ Das folgende Diagramm zeigt den Fluss von Assets und Dateien von der Cloud zum l
 
 * Nach dem Anwenden und Entfernen des Filters, um alle lokal bearbeiteten Assets zu finden, wechselt das Programm nicht zu den Suchergebnissen oder der Ordneransicht, mit denen die Benutzer begonnen haben. Das Programm zeigt den Stammordner des DAM-Repositorys an.
 
-* Manchmal, wenn Sie eine Verbindung zu einer URL herstellen, die keine [!DNL Experience Manager] Server ausgeführt wird, reagiert der Bildschirm &quot;Verbindung&quot;nicht mehr. Beenden Sie das Programm und starten Sie es erneut.
+* Wenn Sie eine Verbindung zu einer URL herstellen, für die kein [!DNL Experience Manager] -Server ausgeführt wird, reagiert der Bildschirm &quot;Verbindung&quot;manchmal nicht mehr. Beenden Sie das Programm und starten Sie es erneut.
 
 **CRUD-Probleme (Erstellen, Lesen, Aktualisieren und Löschen):**
 
@@ -230,8 +230,8 @@ Das folgende Diagramm zeigt den Fluss von Assets und Dateien von der Cloud zum l
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/overview)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
+>* [[!DNL Experience Manager]  as a [!DNL Cloud Service] [!DNL Assets] documentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/overview)
 >* [Verwenden des [!DNL Experience Manager] -Desktop-Programms](using.md)
 >* [Installieren und Aktualisieren des Desktop-Programms](install-upgrade.md)
 >* [Best Practices und Tipps zur Fehlerbehebung](troubleshoot.md)

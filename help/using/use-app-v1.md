@@ -16,14 +16,14 @@ Mithilfe des Desktop-Programms haben Sie über Ihren lokalen Desktop problemlose
 
 Diese Integration ermöglicht eine zentralisierte Asset-Verwaltung und den Zugriff über Creative Cloud und andere Anwendungen hinweg und gewährleistet so die Einhaltung von Branding- und anderen Standards.
 
-Die wichtigsten Aufgaben, die Sie mit dem [!DNL Experience Manager] Das -Desktop-Programm v1 umfasst:
+Zu den Hauptaufgaben, die Sie mit dem [!DNL Experience Manager] -Desktop-Programm v1 ausführen, gehören:
 
 1. [Verbindung zu einem  [!DNL Experience Manager] -Server herstellen](#installandconnect)
 1. [Assets direkt im Desktop-Programm öffnen](#openondesktop)
 1. [Bearbeiten und Auschecken von Assets über das Desktop-Programm](#workonassets)
 1. [Assets und Ordner stapelweise hochladen](#bulkupload)
 
-Informationen zu den empfohlenen und nicht empfohlenen Aktionen finden Sie im Abschnitt [Best Practices für die Verwendung des Desktop-Programms](best-practices-for-v1.md). Wenn Sie bei der Verwendung der App Probleme haben, finden Sie weitere Informationen unter [Fehlerbehebung [!DNL Experience Manager] Desktop-Programm](troubleshoot-app-v1.md).
+Informationen zu den empfohlenen und nicht empfohlenen Vorgehensweisen finden Sie unter [Best Practices für die Verwendung des Desktop-Programms](best-practices-for-v1.md). Wenn Sie bei der Verwendung des Programms Probleme haben, finden Sie weitere Informationen unter [Fehlerbehebung für das  [!DNL Experience Manager] Desktop-Programm](troubleshoot-app-v1.md).
 
 >[!NOTE]
 >
@@ -37,20 +37,20 @@ Touchpoints des ![[!DNL Experience Manager]-Desktop-Programms im kreativen Workf
 
 Touchpoints des [!DNL Experience Manager]-Desktop-Programms im kreativen Workflow
 
-## Installieren und Verbinden des Programms mit dem [!DNL Experience Manager] server {#installandconnect}
+## Installieren und Verbinden des Programms mit dem [!DNL Experience Manager] -Server {#installandconnect}
 
 Bevor Sie mit der Erstellung oder Bearbeitung von Kreativ-Assets beginnen können, verbinden Sie zunächst das Desktop-Programm mit dem [!DNL Assets]-Server, damit Sie Assets in das Repository hochladen bzw. von dort herunterladen können. Führen Sie die folgenden Aufgaben durch:
 
 1. [Installieren Sie das Programm](#installapp).
 1. [Legen Sie Ihre Voreinstellungen](#inapppref) und Verbindungsdetails fest.
 1. [Stellen Sie eine Verbindung zu einem [!DNL Experience Manager] -Server her](#connect) und stellen Sie das Asset-Repository als lokales Laufwerk bereit.
-1. [Aktivieren von Desktop-Aktionen](#desktopactions) auf [!DNL Experience Manager] Server.
+1. [Aktivieren Sie Desktop-Aktionen](#desktopactions) auf dem [!DNL Experience Manager] -Server.
 
-Die [!DNL Experience Manager] Das -Desktop-Programm verwendet eine HTTPS-Verbindung, um eine Verbindung zum [!DNL Experience Manager] Server verwenden, um Ihre Assets sicher und zuverlässig zu übertragen.
+Das [!DNL Experience Manager] -Desktop-Programm verwendet eine HTTPS-Verbindung, um eine Verbindung zum [!DNL Experience Manager] -Server herzustellen, damit Ihre Assets sicher und sicher übertragen werden.
 
 >[!NOTE]
 >
->Bei allen oder einem Teil der Installations- und Konfigurationsschritte benötigen Sie möglicherweise Hilfe von Ihrem [!DNL Experience Manager] Administrator oder Systemadministrator.
+>Möglicherweise benötigen Sie für alle oder einen Teil der Installations- und Konfigurationsschritte Hilfe von Ihrem [!DNL Experience Manager] -Administrator oder Systemadministrator.
 
 ### Installieren des Programms {#installapp}
 
@@ -67,15 +67,15 @@ Je nach Netzwerk- und Systemvoreinstellungen kann eine detaillierte Konfiguratio
 
 ### Grundlegendes zu den Optionen und Voreinstellungen des Programms {#inapppref}
 
-Das Programm ermöglicht Einstellungen zum Verbinden und Trennen von [!DNL Experience Manager] -Servern den Status von Uploads anzeigen, lokalen Cache verwalten usw. Typische Benutzer des Programms können die Standardeinstellungen verwenden. Sie können die Einstellungen anpassen, um die Anwendung optimal zu nutzen. Und nutzen Sie die Integration mit dem [!DNL Experience Manager] Server. Im Folgenden finden Sie die verschiedenen Einstellungen:
+Das Programm ermöglicht Einstellungen zum Verbinden und Trennen von [!DNL Experience Manager] -Servern, zum Anzeigen des Status von Uploads, zum Verwalten des lokalen Caches usw. Typische Benutzer des Programms können die Standardeinstellungen verwenden. Sie können die Einstellungen anpassen, um die Anwendung optimal zu nutzen. Und nutzen Sie die Integration mit dem [!DNL Experience Manager] -Server optimal. Im Folgenden finden Sie die verschiedenen Einstellungen:
 
 **Assets durchsuchen** Öffnen Sie das lokale Laufwerk, auf dem das [!DNL Assets]-Repository bereitgestellt wurde. Durchsuchen Sie also die Assets, die Ihnen nun auf Ihrem lokalen Computer zur Verfügung stehen.
 
 **Asset-Status einsehen** Wenn geänderte Assets hochgeladen oder dem [!DNL Assets]-Repository neue Assets hinzugefügt werden, lädt das Programm die Assets im Hintergrund hoch. Der Upload im Hintergrund ermöglicht die reibungslose Ausführung von Vorgängen, ohne dass der Abschluss des Uploads abgewartet werden muss. Dies ist insbesondere bei umfangreichen Assets hilfreich. Sie können die Änderungen lokal speichern und müssen sich nicht mehr darum kümmern. Je nach verfügbarer Bandbreite nimmt das Senden dieser Assets an den Server durch das Programm etwas Zeit in Anspruch. Sie können den Status des Uploads sowie weitere grundlegende Informationen überprüfen.
 
-**Optionen** Klicken Sie in der Ablage des Desktop-Programms auf Optionen , um festzulegen, dass das Programm beim Start gestartet wird, und verbinden Sie es mit dem [!DNL Experience Manager] Server beim Start und ändern Sie den Buchstaben des lokalen Laufwerks für [!DNL Assets] nach der Montage.
+**Optionen** Klicken Sie auf Optionen in der Ablage des Desktop-Programms, um festzulegen, dass das Programm beim Start gestartet wird, beim Start eine Verbindung zum [!DNL Experience Manager] -Server herzustellen und den Buchstaben des lokalen Laufwerks nach der Bereitstellung für [!DNL Assets] zu ändern.
 
-**Erweitert > Verwalten des Cache** Sie können festlegen, wie viel Festplattenspeicher für lokale Caching-Zwecke zur Verfügung gestellt wird. Die Artefakte vom [!DNL Assets]-Server werden für ein reibungsloseres Erlebnis lokal zwischengespeichert. Sie können die Standardeinstellungen Ihren Anforderungen entsprechend anpassen. Außerdem können Sie den Cache löschen, um alle Assets erneut abzurufen. Wenn Sie den Cache löschen, werden nicht gespeicherte Änderungen beibehalten. Alle Assets, die nicht in der [!DNL Experience Manager] -Server beibehalten und nicht gelöscht werden.
+**Erweitert > Verwalten des Cache** Sie können festlegen, wie viel Festplattenspeicher für lokale Caching-Zwecke zur Verfügung gestellt wird. Die Artefakte vom [!DNL Assets]-Server werden für ein reibungsloseres Erlebnis lokal zwischengespeichert. Sie können die Standardeinstellungen Ihren Anforderungen entsprechend anpassen. Außerdem können Sie den Cache löschen, um alle Assets erneut abzurufen. Wenn Sie den Cache löschen, werden nicht gespeicherte Änderungen beibehalten. Alle Assets, die nicht auf dem [!DNL Experience Manager] -Server eingecheckt wurden, werden beibehalten und nicht gelöscht.
 
 ### Herstellen einer Verbindung zu einem [!DNL Experience Manager]-Server {#connect}
 
@@ -85,7 +85,7 @@ Das Programm unterstützt die Proxy-Konfiguration unter Mac und Windows. Die Kon
 >
 >Wenn Sie die Proxy-Einstellungen ändern, müssen Sie das Programm neu starten, damit die Änderungen übernommen werden. Andernfalls verwendet das Programm weiterhin den zuvor konfigurierten Proxyserver.
 
-1. Starten Sie die [!DNL Experience Manager] Desktop-Programm. Wenn Sie Ihre [!DNL Experience Manager]-Instanz dem Programm zuordnen möchten, geben Sie Ihren [!DNL Experience Manager]-Server im folgenden Format an: `https://[aem-server-url]:[port]`.
+1. Starten Sie das [!DNL Experience Manager] -Desktop-Programm. Wenn Sie Ihre [!DNL Experience Manager]-Instanz dem Programm zuordnen möchten, geben Sie Ihren [!DNL Experience Manager]-Server im folgenden Format an: `https://[aem-server-url]:[port]`.
 
    ![Auf einem Mac authentifizieren und [!DNL Experience Manager]-Server-URL angeben](assets/aem_desktop_app_server_url.png)
 
@@ -110,15 +110,15 @@ Das Programm unterstützt die Proxy-Konfiguration unter Mac und Windows. Die Kon
 
 ## Zugreifen auf und Öffnen von Assets über den Desktop {#openondesktop}
 
-Wenn Sie auf **Öffnen** Um ein Asset auf Ihrem lokalen Computer zu öffnen, lädt das Programm das Asset in seinen internen Cache herunter. Das Programm startet das native Desktop-Programm, das dem Dateityp des heruntergeladenen Assets zugeordnet ist.
+Wenn Sie auf **Öffnen** klicken, um ein Asset auf Ihrem lokalen Computer zu öffnen, lädt das Programm das Asset in den internen Cache herunter. Das Programm startet das native Desktop-Programm, das dem Dateityp des heruntergeladenen Assets zugeordnet ist.
 
-Wählen Sie in Mac **Öffnen** über das Kontextmenü, um ein Asset über das [!DNL Experience Manager] Desktop-Programm. Wählen Sie unter Windows im Kontextmenü die Option „Open on Web“ (Im Web öffnen) aus, um das Asset zu öffnen. Klicken Sie im Fenster „Asset Status“ (Asset-Status) auf das Symbol ![Auf dem Desktop öffnen](assets/do-not-localize/aemassets_icon_openondesktop.png), bzw. tippen Sie darauf, um das Asset zu öffnen.
+Wählen Sie in Mac im Kontextmenü die Option **Öffnen** aus, um ein Asset über das [!DNL Experience Manager] -Desktop-Programm zu öffnen. Wählen Sie unter Windows im Kontextmenü die Option „Open on Web“ (Im Web öffnen) aus, um das Asset zu öffnen. Klicken Sie im Fenster „Asset Status“ (Asset-Status) auf das Symbol ![Auf dem Desktop öffnen](assets/do-not-localize/aemassets_icon_openondesktop.png), bzw. tippen Sie darauf, um das Asset zu öffnen.
 
 Wählen Sie bei Adobe InDesign-Dateien (INDD) im Kontextmenü die Option **[!UICONTROL Open]** aus. Wenn Sie auf diese Option klicken, lädt das Programm die verknüpften Assets in Ihr lokales Dateisystem herunter und öffnet anschließend die INDD-Datei in Adobe InDesign. Mithilfe dieser Methode wird sichergestellt, dass die erforderlichen Assets beim Bearbeiten einer INDD-Datei lokal verfügbar sind.
 
 ![Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe des [!DNL Experience Manager]-Desktop-Programms](assets/aem_desktopapp_mac_context_menu.png)
 
-*Abbildung: Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe der [!DNL Experience Manager] Desktop-Programm.*
+*Abbildung: Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe des [!DNL Experience Manager]-Desktop-Programms.*
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Nachdem Sie Ihrem lokalen Laufwerk das [!DNL Assets]-Repository zugeordnet haben
 
    ![Schnellaktionsmenü in der Assets-Benutzeroberfläche öffnen, um Desktop-Aktionen anzuzeigen](assets/desktop_actions_in_card_view.png)
 
-   *Abbildung: Schnellaktionsmenü in der Assets-Benutzeroberfläche öffnen, um Desktop-Aktionen anzuzeigen.*
+   *Abbildung: Öffnen Sie in der Assets-Benutzeroberfläche das Schnellaktionsmenü, um Desktop-Aktionen anzuzeigen.*
 
    Sie können auch auf diese Desktop-Aktionen zugreifen, indem Sie in der Symbolleiste auf die Option **Desktop-Aktionen** klicken, nachdem Sie das Asset ausgewählt haben. Eine weitere Möglichkeit bietet die Symbolleiste auf der Asset-Seite.
 
@@ -156,7 +156,7 @@ Um das gewünschte Asset in Ihrem lokalen Dateisystem zu finden, klicken Sie auf
 
 Mit [!DNL Experience Manager Assets] können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Durch das Auschecken eines Assets wird das Asset gesperrt und andere Benutzer können derartige Vorgänge nicht durchführen. Um Assets aus-/einchecken zu können, benötigen Sie entsprechenden Schreibzugriff.
 
-Es gibt zwei Methoden zum Auschecken von Assets über die [!DNL Experience Manager]-Web-Benutzeroberfläche. Detaillierte Informationen zur ersten Methode finden Sie in der [Ein- und Auschecken von Dateien über die Assets-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Führen Sie die folgenden Schritte aus, um das Asset anhand der zweiten Methode auszuchecken und zu öffnen, wenn die [!DNL Experience Manager] Das -Desktop-Programm ist installiert.
+Es gibt zwei Methoden zum Auschecken von Assets über die [!DNL Experience Manager]-Web-Benutzeroberfläche. Ausführliche Informationen zur ersten Methode finden Sie in den [ Ein- und Auscheckdateien aus der Assets-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Führen Sie die folgenden Schritte aus, um das Asset anhand der zweiten Methode auszuchecken und zu öffnen, wenn das [!DNL Experience Manager] -Desktop-Programm installiert ist.
 
 1. Öffnen Sie die Benutzeroberfläche von [!DNL Assets] und bewegen Sie den Mauszeiger auf einen Ordner oder ein Asset, um die Desktop-Aktionen in der Kartenansicht in Form von Schnellaktionen anzuzeigen.
 
@@ -172,7 +172,7 @@ Es gibt zwei Methoden zum Auschecken von Assets über die [!DNL Experience Manag
    >
    >Wenn Sie eine geöffnete, aber nicht ausgecheckte Datei bearbeiten, wissen andere Benutzer nicht, dass Sie das Asset aktualisieren.
 
-1. Um ein Asset zur Bearbeitung in einer Adobe Creative Cloud-Anwendung zu öffnen, klicken Sie auf ![Symbol Desktop bearbeiten](assets/do-not-localize/aemassets_icon_editdesktop.png). Mit dieser Option wird auch das Asset zur Bearbeitung ausgecheckt. Checken Sie das Asset nach Abschluss der Bearbeitung ein, um die Änderungen in [!DNL Assets] zu aktualisieren.
+1. Um ein Asset zur Bearbeitung in einer Adobe Creative Cloud-Anwendung zu öffnen, klicken Sie auf das Symbol &quot;![Desktop bearbeiten&quot;](assets/do-not-localize/aemassets_icon_editdesktop.png). Mit dieser Option wird auch das Asset zur Bearbeitung ausgecheckt. Checken Sie das Asset nach Abschluss der Bearbeitung ein, um die Änderungen in [!DNL Assets] zu aktualisieren.
 
    Alternativ können Sie die Option „Bearbeiten“ über das Menü „Desktop-Aktionen“ in der Symbolleiste auswählen.
 
@@ -187,7 +187,7 @@ Mit dem Programm können Sie Asset-Dateien auschecken, um zu verhindern, dass an
 
    ![Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe des [!DNL Experience Manager]-Desktop-Programms](assets/aem_desktopapp_mac_context_menu.png)
 
-   *Abbildung: Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe der [!DNL Experience Manager] Desktop-Programm.*
+   *Abbildung: Kontextmenüoptionen zum Zugreifen auf und Öffnen von Assets mithilfe des [!DNL Experience Manager]-Desktop-Programms.*
 
 1. Navigieren Sie zu dem Asset, das Sie auschecken möchten.
 1. Klicken Sie mit der rechten Maustaste auf das Asset und wählen Sie im Kontextmenü die Option „More Assets Info“ (Weitere Asset-Informationen) aus.
@@ -212,7 +212,7 @@ Mit dem Programm können Sie Asset-Dateien auschecken, um zu verhindern, dass an
 
    >[!NOTE]
    >
-   >Das Schlosssymbol wird möglicherweise mit einiger Verzögerung angezeigt. Die [!DNL Experience Manager] Das -Desktop-Programm speichert die Assets für einen schnellen Zugriff zwischen. Daher kann es einen Moment dauern, bis der Sperrstatus aktualisiert wird.
+   >Das Schlosssymbol wird möglicherweise mit einiger Verzögerung angezeigt. Das [!DNL Experience Manager] -Desktop-Programm speichert die Assets für einen schnellen Zugriff zwischen. Daher kann es einen Moment dauern, bis der Sperrstatus aktualisiert wird.
 
 1. Wenn Sie das Asset einchecken möchten, sodass es für andere Benutzer verfügbar ist, klicken/tippen Sie im Dialogfeld **Asset Info** (Asset-Informationen) auf das Symbol „Einchecken“.
 
@@ -220,15 +220,15 @@ Mit dem Programm können Sie Asset-Dateien auschecken, um zu verhindern, dass an
 
 Wenn Sie mit dem Bearbeiten der Assets fertig sind, speichern Sie sie in Ihrem Desktop-Programm. Wählen Sie im Kontextmenü die Option **Weitere Asset-Informationen** aus und klicken/tippen Sie auf „Einchecken“.
 
-Die Assets werden in die [!DNL Experience Manager] Server. Optional können Sie den Status des Uploads überprüfen, indem Sie unter dem Ablagesymbol die Option **Asset-Status anzeigen** auswählen. Alternativ können Sie ein Asset über die [!DNL Experience Manager]-Web-Benutzeroberfläche einchecken. Klicken Sie auf die ausgecheckten Assets oder wählen Sie sie aus. Klicken Sie in der Symbolleiste auf das Symbol Einchecken ![Einchecksymbol](assets/do-not-localize/aemassets_icon_checkin.png).
+Die Assets werden auf den [!DNL Experience Manager] -Server hochgeladen. Optional können Sie den Status des Uploads überprüfen, indem Sie unter dem Ablagesymbol die Option **Asset-Status anzeigen** auswählen. Alternativ können Sie ein Asset über die [!DNL Experience Manager]-Web-Benutzeroberfläche einchecken. Klicken Sie auf die ausgecheckten Assets oder wählen Sie sie aus. Klicken Sie in der Symbolleiste auf das Einchecksymbol ![Einchecksymbol](assets/do-not-localize/aemassets_icon_checkin.png).
 
 Ein Asset wird automatisch in [!DNL Experience Manager] hochgeladen, nachdem die Änderungen lokal gespeichert wurden. Durch das Einchecken wird das Asset anderen [!DNL Experience Manager]-Benutzern zur Bearbeitung zur Verfügung gestellt.
 
 ### Massen-Upload von Assets und Ordnern auf den [!DNL Experience Manager]-Server {#bulkupload}
 
-Verwenden der [!DNL Experience Manager] -Desktop-Programm können Sie einen ganzen Ordner mit Assets aus Ihrem lokalen Dateiverzeichnis in hochladen. [!DNL Assets]. Auf diese Weise werden alle Assets innerhalb des Ordners gemeinsam hochgeladen und Sie müssen sie nicht einzeln hochladen.
+Mit dem Desktop-Programm [!DNL Experience Manager] können Sie einen ganzen Ordner mit Assets aus Ihrem lokalen Dateiverzeichnis in [!DNL Assets] hochladen. Auf diese Weise werden alle Assets innerhalb des Ordners gemeinsam hochgeladen und Sie müssen sie nicht einzeln hochladen.
 
-1. Klicken/tippen Sie in der Assets-Benutzeroberfläche auf **Erstellen** Wählen Sie in der Symbolleiste und dann im Menü die Option **Ordner hochladen**.
+1. Klicken/tippen Sie in der Assets-Benutzeroberfläche in der Symbolleiste auf **Erstellen** und wählen Sie dann im Menü **Ordner hochladen** aus.
 1. Navigieren Sie zu dem Ordner, den Sie hochladen möchten, und wählen Sie ihn aus.
 1. Klicken/tippen Sie auf „OK“. Im Dialogfeld „Asset Status“ (Asset-Status) wird der Status des Uploads angezeigt.
 
@@ -244,7 +244,7 @@ Verwenden der [!DNL Experience Manager] -Desktop-Programm können Sie einen ganz
 
 Adobe rät vom Kopieren und Einfügen oder Ziehen einer größeren Anzahl von Dateien oder verschachtelten Ordnern aus dem lokalen Dateisystem in den Freigabebereich des Netzwerks ab. Das Programm kann den Upload-Vorgang aufgrund technischer Einschränkungen nicht steuern und die Leistung ist schlecht.
 
-Alternativ können Sie Dateien/Ordner in Finder oder Explorer auswählen, sie kopieren, zum Zielordner im Freigabebereich des Netzwerks navigieren und die Option auswählen. **Assets einfügen** aus dem [!DNL Experience Manager] Kontextmenü des Desktop-Programms. Auf diese Weise wird die [!DNL Experience Manager] Das -Desktop-Programm beginnt mit dem Hochladen der eingefügten Assets, die dem **Ordner hochladen** -Option verfügbar im [!DNL Experience Manager] Web-Schnittstelle.
+Alternativ können Sie Dateien/Ordner im Finder oder Explorer auswählen, sie kopieren, zum Zielordner im Freigabebereich des Netzwerks navigieren und im Kontextmenü des Desktop-Programms [!DNL Experience Manager] die Option **Assets einfügen** wählen. Auf diese Weise beginnt das [!DNL Experience Manager] -Desktop-Programm mit dem Upload der eingefügten Assets, ähnlich wie bei der Option **Ordner hochladen** in der Web-Oberfläche von [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >

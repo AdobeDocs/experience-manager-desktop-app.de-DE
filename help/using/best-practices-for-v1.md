@@ -13,7 +13,7 @@ ht-degree: 49%
 
 ## Übersicht {#overview}
 
-[!DNL Adobe Experience Manager] Das -Desktop-Programm verknüpft Ihre DAM-Lösung (Digital Asset Management) mit Ihrem Desktop, damit Sie die in der AEM Web-Benutzeroberfläche verfügbaren Dateien direkt auf dem Desktop öffnen können. Wenn Sie ein Asset vom Desktop aus gespeichert haben, wird es an den entsprechenden Speicherort in AEM hochgeladen.
+Das Desktop-Programm [!DNL Adobe Experience Manager] verknüpft Ihre Digital Asset Management (DAM)-Lösung mit Ihrem Desktop, damit Sie die Dateien, die in der AEM Web-Benutzeroberfläche verfügbar sind, direkt auf dem Desktop öffnen können. Wenn Sie ein Asset vom Desktop aus gespeichert haben, wird es an den entsprechenden Speicherort in AEM hochgeladen.
 
 AEM Desktop-Programm eliminiert die Wahrscheinlichkeit, dass Sie falsche lokale Kopien aktualisieren oder ein falsches Asset in AEM aktualisieren. Der benutzerfreundliche Workflow des Desktop-Programms wird mithilfe der Netzwerkfreigabetechnologie aktiviert, die von Desktop-Betriebssystemen bereitgestellt wird.
 
@@ -39,7 +39,7 @@ Zu den wichtigsten Funktionen des AEM-Desktop-Programms gehören:
 
 * **Öffnen von Dateien über die AEM Assets-Web-Benutzeroberfläche auf dem Desktop**. Über die Web-Benutzeroberfläche können Sie Assets auf dem Desktop (in Finder, Explorer) anzeigen oder ein Asset mithilfe eines Desktop-Programms öffnen.
 
-* **Auschecken und Einchecken**. Assets kann zur Bearbeitung ausgecheckt werden und wird in AEM Assets als gesperrt markiert. Nach dem Bearbeiten können die Assets dann wieder eingecheckt und damit entsperrt werden.
+* **Checkout und Einchecken**. Assets kann zur Bearbeitung ausgecheckt werden und wird in AEM Assets als gesperrt markiert. Nach dem Bearbeiten können die Assets dann wieder eingecheckt und damit entsperrt werden.
 
 * **Speichern von Änderungen in Dateien**. Sämtliche Änderungen, die Sie in einer Datei in einer Netzwerkfreigabe speichern, werden automatisch in AEM hochgeladen. Außerdem wird eine neue Version erstellt.
 
@@ -47,9 +47,9 @@ Zu den wichtigsten Funktionen des AEM-Desktop-Programms gehören:
 
 * **Auflösen von Verweisen in AEM**. Wenn sowohl die platzierten Dateien als auch die Hauptdateien mit dem Link in AEM gespeichert sind, können Server-seitige Informationen zu den Asset-Verweisen automatisch bereitgestellt werden.
 
-* **Zugreifen auf das Asset über den Desktop**. In der bereitgestellten Netzwerkfreigabe bietet ein Kontextmenü eine [!UICONTROL More Info] Dialogfeld (größere Vorschau, wichtige Metadaten) und die Möglichkeit, ein Asset in der AEM-Benutzeroberfläche zu öffnen.
+* **Greifen Sie über den Desktop auf das Asset zu**. In der bereitgestellten Netzwerkfreigabe bietet ein Kontextmenü das Dialogfeld &quot;[!UICONTROL More Info]&quot;(größere Vorschau, wichtige Metadaten) und die Möglichkeit, ein Asset in der AEM Benutzeroberfläche zu öffnen.
 
-* **Massen-Upload von großen, hierarchischen Ordnern**. Wenn Sie die **Erstellen** > **Ordner-Upload** -Option in AEM Benutzeroberfläche zum Hochladen von Assets lädt das AEM Desktop-Programm die ausgewählte Ordnerhierarchie in den Hintergrund hoch, um sie zu AEM. Der Upload-Fortschritt wird über eine dedizierte Benutzeroberfläche im Desktop-Programm überwacht.
+* **Hochladen großer, hierarchischer Ordner als Stapel**. Wenn Sie in AEM Benutzeroberfläche die Option **Erstellen** > **Ordner hochladen** verwenden, um Assets hochzuladen, lädt das AEM Desktop-Programm die ausgewählte Ordnerhierarchie in den AEM im Hintergrund hoch. Der Upload-Fortschritt wird über eine dedizierte Benutzeroberfläche im Desktop-Programm überwacht.
 
 ## Unsachgemäße Verwendung des AEM-Desktop-Programms {#inappropriate-use-of-aem-desktop-app}
 
@@ -63,7 +63,7 @@ Zu den wichtigsten Funktionen des AEM-Desktop-Programms gehören:
 
 * Setzen Sie AEM-Desktop-Programm-Netzlaufwerke nicht zum regelmäßigen Speichern von Assets ein. Alle Speichervorgänge werden an AEM Assets übertragen. Daher ist es unpraktisch, intensive Bearbeitungsvorgänge direkt in dem bereitgestellten AEM Assets-Repository durchzuführen. Wird ein Asset direkt im bereitgestellten Repository bearbeitet, wird die Zeitleiste des Assets mit irrelevanten Versionen „vollgestopft“ und der Server wird durch Mehraufwand belastet.
 
-* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu ist das Desktop-Programm [unterstützt Massen-Upload](use-app-v1.md#bulkupload) eine große Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
+* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop-Programm [ erstmalig in [!DNL Adobe Experience Manager] Massen-Uploads von ](use-app-v1.md#bulkupload) zahlreichen Assets.
 
 ## Empfehlungen für ausgewählte Anwendungsfälle {#recommendations-for-selected-use-cases}
 
@@ -119,20 +119,20 @@ Ein gutes Benutzererlebnis mit dem AEM-Desktop-Programm beruht auf einer stabile
 
 ### Überlegungen zum Netzwerk {#network-considerations}
 
-Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie unter [Massen-Migration von Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide) Dokument. Zu den wichtigen Aspekten, die zur Optimierung des AEM Desktop-Programm-Erlebnisses für die Benutzer beitragen, zählen:
+Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [How to bulk migrate assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die zur Optimierung des AEM Desktop-Programm-Erlebnisses für die Benutzer beitragen, zählen:
 
-* **Verwenden eines ordnungsgemäß konfigurierten Dispatcher**. Verwenden Sie die AEM Dispatcher für zusätzliche Sicherheit und stellen Sie sicher, dass sie für [AEM Desktop-Programm-Verbindung hinter einer Dispatcher AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **Verwenden Sie einen ordnungsgemäß konfigurierten Dispatcher**. Verwenden Sie die AEM Dispatcher, um zusätzliche Sicherheit zu bieten, und stellen Sie sicher, dass sie für die [AEM Desktop-Programm-Verbindung konfiguriert ist, um hinter einer Dispatcher zu AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
-* **Brandeinsparung**. Erwägen Sie, die Symbolvorschau in Finder in Mac zu deaktivieren, wenn Sie das bereitgestellte Repository mit Finder durchsuchen. Der Finder fordert jede Datei an, um eine Vorschau zu generieren, und bewirkt, dass das Desktop-Programm das Asset herunterlädt und lokal zwischenspeichert. Durch die Einsparung von Bandbreite wird auch das Benutzererlebnis für die Benutzer auf dem Desktop verringert. Dies sollte daher bei der Arbeit an Repositorys mit großen Assets oder begrenzter Bandbreite erfolgen.
+* **Brandbreite sparen**. Erwägen Sie, die Symbolvorschau in Finder in Mac zu deaktivieren, wenn Sie das bereitgestellte Repository mit Finder durchsuchen. Der Finder fordert jede Datei an, um eine Vorschau zu generieren, und bewirkt, dass das Desktop-Programm das Asset herunterlädt und lokal zwischenspeichert. Durch die Einsparung von Bandbreite wird auch das Benutzererlebnis für die Benutzer auf dem Desktop verringert. Dies sollte daher bei der Arbeit an Repositorys mit großen Assets oder begrenzter Bandbreite erfolgen.
 
 >[!NOTE]
 >
->Um die Symbolvorschau zu deaktivieren, navigieren Sie im Finder zu [!UICONTROL View]auswählen [!UICONTROL View Options]und deaktivieren Sie dann die [!UICONTROL Show icon preview] -Option. Diese Einstellung bezieht sich nur auf den aktuellen Ordner. Um sie standardmäßig festzulegen, klicken Sie im selben Fenster auf die Option [!UICONTROL Use as default].
+>Um die Symbolvorschau zu deaktivieren, gehen Sie im Finder zu [!UICONTROL View], wählen Sie [!UICONTROL View Options] und deaktivieren Sie dann die Option [!UICONTROL Show icon preview] . Diese Einstellung bezieht sich nur auf den aktuellen Ordner. Um sie standardmäßig festzulegen, klicken Sie im selben Fenster auf die Option [!UICONTROL Use as default].
 
 ### Optimieren der Serverleistung {#optimizing-server-performance}
 
-Informationen zur Leistungsoptimierung des AEM Assets-Servers finden Sie unter [Handbuch zur Leistungsoptimierung von AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines). Einige wichtige Aspekte im Zusammenhang mit der Server-Leistung des AEM-Desktop-Programms beziehen sich auf das Optimieren der Workflow-Konfiguration für Asset-Uploads:
+Informationen zur Leistungsoptimierung des AEM Assets-Servers finden Sie im [Handbuch zur Leistungsoptimierung bei AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines). Einige wichtige Aspekte im Zusammenhang mit der Server-Leistung des AEM-Desktop-Programms beziehen sich auf das Optimieren der Workflow-Konfiguration für Asset-Uploads:
 
-* **Leistungsstärkere Asset-Uploads**. Konfigurieren Sie die [AEM Workflow-Modell für Asset-Update als vorübergehend](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
+* **Leistungsstärkere Asset-Uploads**. Konfigurieren Sie das Workflow-Modell [AEM Asset-Update als vorübergehend](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
 
-* **Beschränkung der Server-CPU für Uploads**. Stellen Sie sicher, dass der Parameter für die maximalen parallelen Workflow-Aufträge korrekt festgelegt ist, damit bei Uploads nicht die gesamte CPU ausgefüllt wird.
+* **Begrenzen Sie die Server-CPU für Uploads**. Stellen Sie sicher, dass der Parameter für die maximalen parallelen Workflow-Aufträge korrekt festgelegt ist, damit bei Uploads nicht die gesamte CPU ausgefüllt wird.

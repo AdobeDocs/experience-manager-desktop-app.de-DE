@@ -13,7 +13,7 @@ ht-degree: 68%
 
 Führen Sie eine Fehlerbehebung für das AEM-Desktop-Programm durch, um gelegentliche Probleme im Zusammenhang mit Installation, Aktualisierung, Konfiguration usw. zu beheben.
 
-Die [!DNL Adobe Experience Manager] Das -Desktop-Programm enthält Dienstprogramme, die Sie beim Zuordnen des AEM Assets-Repositorys als Netzwerkfreigabe auf dem Desktop unterstützen (SMB-Freigabe auf macOS). Bei der Netzwerkfreigabe handelt es sich um eine Betriebssystemtechnologie, mit deren Hilfe Remote-Quellen so behandelt werden können, als würden sie zum lokalen Dateisystem eines Computers gehören. Beim Desktop-Programm ist die Remote-Dateiquelle die DAM-Repository-Struktur (Digital Asset Management) einer Remote-AEM-Instanz. In der folgenden Abbildung wird die Topologie des Desktop-Programms beschrieben:
+Das [!DNL Adobe Experience Manager] -Desktop-Programm enthält Dienstprogramme, die Sie beim Zuordnen des AEM Assets-Repositorys als Netzwerkfreigabe auf dem Desktop unterstützen (SMB-Freigabe auf macOS). Bei der Netzwerkfreigabe handelt es sich um eine Betriebssystemtechnologie, mit deren Hilfe Remote-Quellen so behandelt werden können, als würden sie zum lokalen Dateisystem eines Computers gehören. Beim Desktop-Programm ist die Remote-Dateiquelle die DAM-Repository-Struktur (Digital Asset Management) einer Remote-AEM-Instanz. In der folgenden Abbildung wird die Topologie des Desktop-Programms beschrieben:
 
 ![Abbildung des Desktop-Programms](assets/aem-desktopapp-architecture.png)
 
@@ -23,7 +23,7 @@ Mit dieser Architektur fängt das Desktop-Programm Dateisystemaufrufe (Öffnen, 
 
 Das -Desktop-Programm umfasst die folgenden Komponenten:
 
-* **Die Desktop-Applikation**: Die Anwendung stellt DAM als Remote-Dateisystem bereit oder hebt die Bereitstellung auf. Es übersetzt Dateisystemaufrufe zwischen der lokal bereitgestellten Netzwerkfreigabe und der Remote-AEM, mit der die Verbindung hergestellt wird.
+* **Das Desktop-Programm**: Das Programm stellt DAM als Remote-Dateisystem bereit oder hebt die Bereitstellung auf. Es übersetzt Dateisystemaufrufe zwischen der lokal bereitgestellten Netzwerkfreigabe und der Remote-AEM, mit der die Verbindung hergestellt wird.
 * **WebDAV/SMB-Client des Betriebssystems**: Verarbeitet die Kommunikation zwischen Windows Explorer/Finder und dem Desktop-Programm. Wenn eine Datei abgerufen, erstellt, geändert, gelöscht, verschoben oder kopiert wird, kommuniziert der WebDAV/SMB-Client des Betriebssystems diesen Vorgang an das Desktop-Programm. Nach Erhalt der Kommunikation übersetzt das Desktop-Programm sie in native AEM Remote-API-Aufrufe. Wenn ein Benutzer beispielsweise in dem bereitgestellten Verzeichnis eine Datei erstellt, initiiert der WebDAV/SMB-Client eine Anfrage. Diese Anfrage wird vom Desktop-Programm in eine HTTP-Anfrage zur Erstellung der Datei in DAM übersetzt. Beim WebDAV/SMB-Client handelt es sich um eine integrierte Komponente des Betriebssystems. Er steht in keiner Weise mit dem Desktop-Programm, mit AEM oder Adobe in Verbindung.
 * **Adobe Experience Manager-Instanz**: Bietet Zugriff auf die Assets, die im DAM-Repository von AEM Assets gespeichert sind. Darüber hinaus führt es die vom Desktop-Programm angeforderten Aktionen im Namen der lokalen Desktop-Programme aus, die mit der bereitgestellten Netzwerkfreigabe interagieren. Auf der AEM-Zielinstanz sollte AEM-Version 6.1 oder höher ausgeführt werden. Für AEM-Instanzen mit vorherigen AEM-Versionen müssen möglicherweise zusätzliche Feature Packs und Hotfixes installiert werden, um die vollständige Funktionalität zu erreichen.
 
@@ -62,7 +62,7 @@ Das AEM-Desktop-Programm ist für intensive Manipulationen des Dateisystems nich
 
 Aufgrund der Beschränkungen des Betriebssystems gilt für Windows eine Dateigrößenbeschränkung von 4.294.967.295 Byte (ca. 4,29 GB). Der Grund dafür ist eine Registrierungseinstellung, die definiert, wie groß eine Datei auf einer Netzwerkfreigabe sein darf. Der Wert der Registrierungseinstellung ist ein DWORD-Ausdruck mit einer maximalen Größe, die der referenzierten Zahl entspricht.
 
-Die [!DNL Experience Manager] Das -Desktop-Programm weist keinen konfigurierbaren Timeout-Wert auf, der die Verbindung zwischen [!DNL Experience Manager] Server und das Desktop-Programm nach einem festen Zeitintervall. Wenn beim Hochladen großer Assets nach einiger Zeit ein Verbindungs-Timeout eintritt, versucht das Programm, das Asset einige Male hochzuladen, indem es den Timeout-Wert für den Upload erhöht. Es gibt keine empfohlene Vorgehensweise, um die Standardeinstellungen für den Timeout zu ändern.
+Das [!DNL Experience Manager] -Desktop-Programm weist keinen konfigurierbaren Timeout-Wert auf, um die Verbindung zwischen dem [!DNL Experience Manager] -Server und dem Desktop-Programm nach einem bestimmten Zeitintervall zu trennen. Wenn beim Hochladen großer Assets nach einiger Zeit ein Verbindungs-Timeout eintritt, versucht das Programm, das Asset einige Male hochzuladen, indem es den Timeout-Wert für den Upload erhöht. Es gibt keine empfohlene Vorgehensweise, um die Standardeinstellungen für den Timeout zu ändern.
 
 ## Caching und Kommunikation mit AEM {#caching-and-communication-with-aem}
 
@@ -88,7 +88,7 @@ Es wird nicht jeder Vorgang lokal zwischengespeichert. Folgendes wird sofort ohn
 
 ## Individuelle Vorgänge {#individual-operations}
 
-Lesen Sie bei der Fehlerbehebung der suboptimierten Leistung für einzelne Benutzer zunächst den Abschnitt [App-Einschränkungen](#limitations). Die folgenden Abschnitte umfassen Vorschläge zur Verbesserung der Performance für einzelne Benutzer.
+Lesen Sie bei der Fehlerbehebung der suboptimierten Leistung für einzelne Benutzer zunächst die [App-Einschränkungen](#limitations). Die folgenden Abschnitte umfassen Vorschläge zur Verbesserung der Performance für einzelne Benutzer.
 
 ## Bandbreitenempfehlungen {#bandwidth-recommendations}
 
@@ -130,7 +130,7 @@ Wenn sich die WebDAV/SMB-Leistung drastisch vermindert, wenn mehrere Benutzer gl
 Sie können AEM Leistung verbessern, indem Sie Übergangs-Workflows für den Workflow DAM-Update-Asset aktivieren. Durch die Aktivierung von Übergangs-Workflows wird die zum Aktualisieren von Assets erforderliche Leistung reduziert, wenn sie in AEM erstellt oder aktualisiert werden.
 
 1. Navigieren Sie in der Experience Manager-Instanz (`https://[aem_server]:[port]/miscadmin`) zu `/miscadmin`.
-1. Erweitern Sie in der Navigationsstruktur **Instrumente** > **Workflow** > **Modelle** > **Dam**.
+1. Erweitern Sie in der Navigationsstruktur **Tools** > **Workflow** > **Modelle** > **DAM**.
 1. Doppelklicken Sie auf **DAM-Update-Asset**.
 1. Wechseln Sie im unverankerten Tool-Fenster auf die Registerkarte **Seite** und klicken Sie dann auf **Seiteneigenschaften**.
 1. Aktivieren Sie das Kontrollkästchen **Verlaufs-Workflow** und klicken Sie auf **OK**.
@@ -149,7 +149,7 @@ Aufgrund der Netzwerk-Bandbreitenbeschränkungen kann sich die Leistung von WebD
 
 Durch diese Maßnahme wird insbesondere die für den Server verfügbare Netzwerkbandbreite erhöht. Im Folgenden finden Sie einige Details dazu:
 
-* Die für eine AWS-Instanz dedizierte Netzwerkbandbreite nimmt mit steigender Größe der Instanz zu. Informationen dazu, wie viel Bandbreite für die einzelnen Instanzgrößen verfügbar ist, finden Sie unter [AWS-Dokumentation](https://aws.amazon.com/ec2/instance-types/).
+* Die für eine AWS-Instanz dedizierte Netzwerkbandbreite nimmt mit steigender Größe der Instanz zu. Informationen dazu, wie viel Bandbreite für jede Instanzgröße verfügbar ist, finden Sie in der [Dokumentation zu AWS](https://aws.amazon.com/ec2/instance-types/).
 * Im Rahmen der Fehlerbehebung für einen großen Kunden hat Adobe die Größe seiner AEM-Instanz auf c4.8xlarge konfiguriert, hauptsächlich für die dedizierte Bandbreite von 4000 MBit/s, die bereitgestellt wird.
 * Wenn der AEM Instanz eine Dispatcher voraus ist, stellen Sie sicher, dass sie die entsprechende Größe aufweist. Wenn die AEM-Instanz 4000 MBit/s bereitstellt, die Dispatcher jedoch nur 500 MBit/s bereitstellt, beträgt die effektive Bandbreite nur 500 MBit/s. Dies liegt daran, dass die Dispatcher einen Engpass im Netzwerk verursacht.
 

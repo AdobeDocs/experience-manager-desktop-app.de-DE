@@ -12,7 +12,7 @@ ht-degree: 64%
 
 # Installieren des [!DNL Adobe Experience Manager]-Desktop-Programms {#install-app-v2}
 
-Mithilfe des [!DNL Adobe Experience Manager]-Desktop-Programms können Sie über Ihren lokalen Desktop problemlos auf die Assets in [!DNL Experience Manager] zugreifen und sie in beliebigen nativen Desktop-Programmen verwenden. Assets kann in Desktop-Applikationen als Vorschau angezeigt und geöffnet werden. Sie können in Finder oder Explorer zur Verwendung in Dokumenten angezeigt und lokal bearbeitet werden. Änderungen werden wieder unter [!DNL Experience Manager], eine neue Version beim Hochladen zu erstellen.
+Mithilfe des [!DNL Adobe Experience Manager]-Desktop-Programms können Sie über Ihren lokalen Desktop problemlos auf die Assets in [!DNL Experience Manager] zugreifen und sie in beliebigen nativen Desktop-Programmen verwenden. Assets kann in Desktop-Applikationen als Vorschau angezeigt und geöffnet werden. Sie können in Finder oder Explorer zur Verwendung in Dokumenten angezeigt und lokal bearbeitet werden. Die Änderungen werden wieder in [!DNL Experience Manager] gespeichert, sodass beim Hochladen eine neue Version erstellt wird.
 
 Eine solche Integration bietet verschiedenen Rollen in der Organisation folgende Möglichkeiten:
 
@@ -20,9 +20,9 @@ Eine solche Integration bietet verschiedenen Rollen in der Organisation folgende
 
 * Auf die Assets in allen nativen Desktop-Programmen zugreifen, einschließlich Programmen von Drittanbietern und in Adobe Creative Cloud. Dabei können die Benutzerverschiedene Standards – auch für Branding – problemlos einhalten.
 
-So verwenden Sie die [!DNL Experience Manager] Desktop-Programm:
+So verwenden Sie das [!DNL Experience Manager] -Desktop-Programm:
 
-* Stellen Sie sicher, dass Ihr [!DNL Experience Manager] -Version kompatibel mit der [!DNL Experience Manager] Desktop-Programm.
+* Stellen Sie sicher, dass Ihre [!DNL Experience Manager] -Version mit dem [!DNL Experience Manager] -Desktop-Programm kompatibel ist.
 
 * Laden Sie das Programm herunter und installieren Sie es. Siehe [Installieren des Desktop-Programms](#install-v2) unten.
 
@@ -34,7 +34,7 @@ Detaillierte Informationen finden Sie in den Versionshinweisen zum [[!DNL Experi
 
 ## Upgrade von einer früheren Version {#upgrade-from-previous-version}
 
-Wenn Sie Version 1.x des Desktop-Programms verwenden, sollten Sie die Unterschiede und Ähnlichkeiten zwischen der vorherigen und der neuesten Version des Programms kennen. Siehe [Neue Funktionen im Desktop-Programm](introduction.md#whats-new-v2) und [Funktionsweise der App](release-notes.md#how-app-works).
+Wenn Sie Version 1.x des Desktop-Programms verwenden, sollten Sie die Unterschiede und Ähnlichkeiten zwischen der vorherigen und der neuesten Version des Programms kennen. Siehe [Neue Funktionen im Desktop-Programm](introduction.md#whats-new-v2) und [Funktionsweise des Programms](release-notes.md#how-app-works).
 
 >[!NOTE]
 >
@@ -76,13 +76,13 @@ Gehen Sie wie folgt vor, um das Desktop-Programm zu installieren. Deinstallieren
 
    *Abbildung: Verbindungsbildschirm zur Eingabe der Server-Adresse.*
 
-   Auswählen **[!UICONTROL Remember Connection]** um zu vermeiden, bei jeder Anmeldung beim Desktop-Programm die Verbindungsdetails einzugeben.
+   Wählen Sie **[!UICONTROL Remember Connection]** aus, um zu vermeiden, dass bei jeder Anmeldung beim Desktop-Programm die Verbindungsdetails angegeben werden.
 
    >[!CAUTION]
    >
-   >Stellen Sie sicher, dass vor oder nach der Adresse der [!DNL Experience Manager] Server. Andernfalls kann die App keine Verbindung zum [!DNL Experience Manager] Server.
+   >Stellen Sie sicher, dass vor oder nach der Adresse des [!DNL Experience Manager] -Servers keine führenden oder nachfolgenden Leerzeichen vorhanden sind. Andernfalls kann das Programm keine Verbindung zum [!DNL Experience Manager]-Server herstellen.
 
-1. [Optional] Klicks **[!UICONTROL I want to connect a different way]** und klicken **[!UICONTROL Adobe login]** , um sich mit Adobe Identity Management Service (IMS) beim Experience Manager Assets-Server anzumelden. Mit der IMS-Anmeldung kann das Desktop-Programm automatisch das Zugriffstoken aktualisieren, sodass der Benutzer bis zu 14 Tage lang angemeldet bleibt. Klicks **[!UICONTROL Direct login]** , um die Standardanmeldung bei der [!DNL Experience Manager] -Server mit den Anmeldedaten des Benutzers.
+1. [Optional] Klicken Sie auf **[!UICONTROL I want to connect a different way]** und dann auf **[!UICONTROL Adobe login]** , um sich mit Adobe Identity Management Service (IMS) beim Experience Manager Assets-Server anzumelden. Mit der IMS-Anmeldung kann das Desktop-Programm automatisch das Zugriffstoken aktualisieren, sodass der Benutzer bis zu 14 Tage lang angemeldet bleibt. Klicken Sie auf &quot;**[!UICONTROL Direct login]**&quot;, um die Standardanmeldung beim [!DNL Experience Manager] -Server mit den Anmeldedaten des Benutzers durchzuführen.
 
    ![Adobe-Anmeldung](assets/adobe-login.png)
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um das Desktop-Programm zu installieren. Deinstallieren
 
    *Abbildung: Das Programm zeigt nach der Anmeldung den DAM-Inhalt an*
 
-1. ([!DNL Experience Manager] 6.5.1 oder höher) Wenn Sie das Desktop-Programm mit [!DNL Experience Manager] Aktualisieren Sie den S3- oder Azure-Connector auf Version 1.10.4 oder höher. Siehe [Azure-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) oder [S3-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 oder höher) Wenn Sie das Desktop-Programm mit [!DNL Experience Manager] 6.5.1 oder höher verwenden, aktualisieren Sie den S3- oder Azure-Connector auf Version 1.10.4 oder höher. Siehe [Azure-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) oder [S3-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
 
    Wenn Sie Adobe Managed Services (AMS)-Kunde sind, wenden Sie sich an den Adobe-Support.
 
@@ -130,7 +130,7 @@ Um die nicht verfügbaren Voreinstellungen zu aktualisieren, melden Sie sich bei
 
 ### Proxy-Unterstützung {#proxy-support}
 
-Die [!DNL Experience Manager] Das -Desktop-Programm verwendet den vordefinierten Proxy des Systems, um über HTTPS eine Internet-Verbindung herzustellen. Das Programm kann die Verbindung nur mit einem Netzwerk-Proxy herstellen, für den keine gesonderte Authentifizierung erforderlich ist.
+Das [!DNL Experience Manager] -Desktop-Programm verwendet den vordefinierten Proxy des Systems, um über HTTPS eine Internet-Verbindung herzustellen. Das Programm kann die Verbindung nur mit einem Netzwerk-Proxy herstellen, für den keine gesonderte Authentifizierung erforderlich ist.
 
 Wenn Sie Proxy-Server-Einstellungen für Windows konfigurieren oder ändern (Internetoptionen > LAN-Einstellungen), starten Sie das [!DNL Experience Manager]-Desktop-Programm neu, damit die Änderungen wirksam werden. Die Proxy-Konfiguration wird angewendet, wenn Sie das Desktop-Programm starten. Schließen Sie das Programm und starten Sie es erneut, damit Änderungen wirksam werden.
 

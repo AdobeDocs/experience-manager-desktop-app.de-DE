@@ -35,7 +35,8 @@ Das [!DNL Adobe Experience Manager]-Desktop-Programm ist mit den folgenden Betri
 
 Adobe empfiehlt die Verwendung der neuesten Version des AEM-Desktop-Programms, um sicherzustellen, dass Sie die neuesten Funktionen, Fehlerbehebungen und die bestmögliche Leistung verwenden.
 
-Für die Version AEM Desktop-Programms, die Sie auf Ihrem lokalen Computer installieren möchten, sind eine bestimmte AEM Server-Version/zusätzliche serverseitige Komponenten (Service Packs, Hotfixes oder Feature Packs) erforderlich. Stellen Sie sicher, dass der AEM-Server ordnungsgemäß konfiguriert ist, bevor Sie zum ersten Mal eine Verbindung herstellen. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren AEM-Administrator.
+Die Version AEM Desktop-Programms, die Sie auf Ihrem lokalen Computer installieren möchten, erfordert einen bestimmten AEM Server
+Version/zusätzliche Server-seitige Komponenten (Service Packs, Hotfixes oder Feature Packs). Stellen Sie sicher, dass der AEM-Server ordnungsgemäß konfiguriert ist, bevor Sie zum ersten Mal eine Verbindung herstellen. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren AEM-Administrator.
 
 Lesen Sie die Informationen in der [detaillierten Kompatibilitätsmatrix](#compatibilitymatrix) am Ende dieses Dokuments, um die Voraussetzungen für Ihr Setup zu prüfen.
 
@@ -49,7 +50,7 @@ Das AEM-Desktop-Programm 1.10 konzentriert sich auf die Verbesserung des Benutz
 
 **Lokales Bearbeiten/Auschecken**: Automatische Uploads gespeicherter Asset-Änderungen, die im Statusfenster deaktiviert werden können. So können Benutzer an Dateien arbeiten, die hierbei vorgenommenen Änderungen speichern und, wenn sie bereit sind, alle Änderungen hochladen.
 
-**Vereinfachtes Asset-Statusfenster**. Das Statusfenster wurde vereinfacht. Die [!UICONTROL Uploads] -Registerkarte zeigt jetzt sowohl einzelne Assets als auch Ordner- oder Massen-Uploads an. Die Registerkarte &quot;Frühere Massen-Uploads&quot;wurde entfernt.
+**Vereinfachtes Asset-Statusfenster**. Das Statusfenster wurde vereinfacht. Auf der Registerkarte &quot;[!UICONTROL Uploads]&quot;werden jetzt sowohl einzelne Assets als auch Ordner- oder Massen-Uploads angezeigt. Die Registerkarte &quot;Frühere Massen-Uploads&quot;wurde entfernt.
 
 **Anwendungssymbol zur Anzeige von Massen-Uploads**. Das Programmsymbol zeigt anhand der Überlagerung „Transfer“ (Übertragung) an, dass ein Massen-Upload durchgeführt wird, indem die Überlagerung angezeigt wird.
 
@@ -65,9 +66,9 @@ Detaillierte Anweisungen finden Sie unter [Installieren und Konfigurieren des AE
 
 Diese Version erweitert und ersetzt die Vorgängerversionen des [!DNL Experience Manager]-Desktop-Programms, die die folgenden wesentlichen Verbesserungen boten:
 
-* **Version 1.9 / 1.9.1**: fortsetzbare Uploads, verbessertes Statusfenster, Programmsymbole, die den Status der Anwendung/Verbindung angeben, Vorabruf verknüpfter Assets für InDesign-Dateien.
+* **Version 1.9 / 1.9.1**: fortsetzbare Uploads, verbessertes Statusfenster, Programmsymbole, die den Status der Anwendung/Verbindung angeben, Vorab-Abruf verknüpfter Assets für InDesign-Dateien.
 
-* **Version 1.8**: bessere Kontrolle der Cache-Größe für den Benutzer, verbesserte Anmeldung für SAML/SSO unter Windows, Unterstützung `.pac` Netzwerk-Proxy auf Mac und von Kunden gemeldete Probleme.
+* **Version 1.8**: bessere Steuerung der Cache-Größe für den Benutzer, verbesserte Anmeldung bei SAML/SSO unter Windows, Unterstützung von `.pac` Netzwerkproxy unter Mac und von Kunden gemeldete Probleme.
 
 * **Version 1.7**: Verbesserungen der Stabilität und Caching-Logik, bessere Unterstützung für Netzwerk-Proxys und Möglichkeit, interne Dateien nach der Deinstallation zu bereinigen
 
@@ -81,7 +82,7 @@ Diese Version erweitert und ersetzt die Vorgängerversionen des [!DNL Experience
 
 ### Seit Einführung des AEM-Desktop-Programms 1.9 verfügbare Verbesserungen {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-[!DNL Adobe Experience Manager] Das -Desktop-Programm, Version 1.9.1, war eine Patch-Version. Sie wurde entwickelt, um wichtige Kundenprobleme beim Auschecken von Assets zu beheben. Adresse, die Dateien aus einer Netzwerkfreigabe in ein lokales Verzeichnis kopiert.
+Bei der [!DNL Adobe Experience Manager] -Desktop-Programm-Version 1.9.1 handelte es sich um eine Patch-Version. Sie wurde entwickelt, um wichtige Kundenprobleme beim Auschecken von Assets zu beheben. Adresse, die Dateien aus einer Netzwerkfreigabe in ein lokales Verzeichnis kopiert.
 
 * Assets, die von einem Benutzer ausgecheckt werden, sollten nicht für Bearbeitungen durch andere Benutzer verfügbar sein (CQ-4246009).
 
@@ -92,7 +93,7 @@ Das AEM-Desktop-Programm 1.9 konzentrierte sich auf die Verbesserung des Benutz
 **Fortsetzbare Uploads**
 Bei Uploads, insbesondere bei großen Dateien, gibt es im neuen Fenster Asset Status (Asset-Status) eine Option, um sie anzuhalten/wiederaufzunehmen.
 
-**Verbessertes Fenster für den Asset-Status**
+**Verbessertes Fenster mit Asset-Status**
 Ein verbessertes Fenster zum Asset-Status bietet die folgenden Informationen zu Assets.
 
 [!UICONTROL Changes]
@@ -123,13 +124,13 @@ Ein verbessertes Fenster zum Asset-Status bietet die folgenden Informationen zu 
 
 * Die Fußzeile zeigt die Gesamtzahl der heruntergeladenen Dateien und die durchschnittliche Übertragungsrate an.
 
-* Wenn ein Benutzer mehrere Dateien über die [!DNL Experience Manager Assets] Webschnittstelle, werden sie gruppiert. Beispiel: meinasset.jpeg und 4 weitere Dateien.
+* Wenn ein Benutzer mehrere Dateien über die Web-Oberfläche von [!DNL Experience Manager Assets] öffnen oder bearbeiten möchte, werden sie gruppiert. Beispiel: meinasset.jpeg und 4 weitere Dateien.
 
 * Beim Herunterladen von InDesign-Dokumenten mit verknüpften Assets aus AEM Assets lädt das Desktop-Programm zunächst alle verknüpften Assets herunter, bevor es das Dokument öffnet und den Download-Status angibt. Beispiel: 5 von 24.
 
 [!UICONTROL Bulk Uploads]
 
-Hochladen großer Ordnerhierarchien über [!UICONTROL Create] > [!UICONTROL Upload Folder] in den Triggern der AEM Web-Benutzeroberfläche dieses Dialogfeld. Dasselbe passiert beim Kopieren und Auswählen von &quot;Assets einfügen&quot;in Finder oder Explorer im Kontextmenü des Desktop-Programms.
+Hochladen von umfangreichen Ordnerhierarchien über [!UICONTROL Create] > [!UICONTROL Upload Folder] in den Triggern der AEM Web-Benutzeroberfläche in diesem Dialogfeld. Dasselbe passiert beim Kopieren und Auswählen von &quot;Assets einfügen&quot;in Finder oder Explorer im Kontextmenü des Desktop-Programms.
 
 * Zeigt aktive Uploads an, einschließlich eines Fortschrittsbalkens und des Namens der momentan übertragenen Datei.
 
@@ -168,7 +169,7 @@ In der Folgeversion 1.8.1 des AEM-Desktop-Programms wurden Verbesserungen hinsic
 
    * Wenn eine AEM Sitzung abläuft, wird der Benutzer jetzt benachrichtigt und kann auf die Benachrichtigung klicken, um sich erneut anzumelden. (CQ-4202028)
 
-   * (Mac) Fügen Sie mithilfe der Funktion `.pac` Proxy-Konfiguration (CQ-4233430).
+   * (Mac) Fügen Sie mithilfe der Proxy-Konfiguration `.pac` Unterstützung für die Verbindung mit AEM hinzu (CQ-4233430).
 
    * (Windows) Behebung von Problemen mit dem Dialogfeld „Advanced“ > „Login URL“ (Erweitert > Anmelde-URL) (CQ-4236061).
 
@@ -256,7 +257,7 @@ In der Folgeversion 1.8.1 des AEM-Desktop-Programms wurden Verbesserungen hinsic
 
 ### Seit Einführung des AEM-Desktop-Programms 1.5 verfügbare Verbesserungen {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
-**Version 1.5.1.5 für macOS X:** Version 1.5.1.5 bietet die folgenden Vorteile:
+**Version 1.5.1.5 für macOS X:** Die Version 1.5.1.5 bietet die folgenden Vorteile:
 
 * Neue Funktionen und Verbesserungen: Fügen Sie die Funktion zum Kopieren/Einfügen zur Finder-Integration hinzu, um eine direkte Übertragung vom Desktop auf AEM zu ermöglichen (CQ-4208158).
 
@@ -286,7 +287,7 @@ Dieses Verhalten ist bei Assets auf dem lokalen Datenträger und Assets in einem
 
 Beide Fälle werden erwartet und sind Nebeneffekte der &quot;verzögerten Synchronisation&quot;-Architektur AEM Desktop.
 
-**Version 1.5.0.x für macOS X und Windows:** Diese Version AEM -Desktop-Programms bietet die folgenden Vorteile:
+**Version 1.5.0.x für macOS X und Windows:** Diese Version AEM Desktop-Programms bietet die folgenden Vorteile:
 
 * Bessere Stabilität und Ausfallsicherheit bei verschiedenen Netzwerkproblemen.
 
@@ -347,13 +348,13 @@ Seit macOS 10.12 (Sierra) hat Apple die Berechtigungen für den Ordner &quot;/Vo
 
 Der Bereitstellungspunkt des AEM-Desktop-Programms wurde in den Versionen 1.4 und 1.5 geändert. In macOS wurde es in einen DAM-Unterordner im lokalen Ordner des Benutzers geändert, der Benutzer ohne Administratorrechte unterstützt (CQ-104183).
 
-Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese Änderung in Version 1.5.1 rückgängig gemacht. Durch diese Änderung können auch InDesign-Dokumente, die Assets aus AEM platziert haben, zwischen macOS-Benutzern freigegeben werden.
+Da für den Ordner `/Volumes` keine Administratorrechte mehr erforderlich sind, wurde diese Änderung in Version 1.5.1 rückgängig gemacht. Durch diese Änderung können auch InDesign-Dokumente, die Assets aus AEM platziert haben, zwischen macOS-Benutzern freigegeben werden.
 
 ### Protokolländerung (seit Version 1.3) {#protocol-change-since}
 
 * macOS X:
    * Das Protokoll für lokale Netzwerklaufwerke für die OS X-Desktop-Integration wurde von WebDAV in SMB1 geändert.
-   * Das mit dem Desktop-Programm bereitgestellte AEM-Repository ist als `smb` Netzwerklaufwerk im Finder anstelle eines WebDAV-Laufwerks.
+   * Das mit dem Desktop-Programm bereitgestellte AEM-Repository ist als `smb` Netzwerklaufwerk im Finder und nicht als WebDAV-Laufwerk sichtbar.
 * Windows:
    * Das Protokoll für lokale Netzwerklaufwerke für Windows-Desktop-Integrationen bleibt erhalten. AEM wird als WebDAV-Freigabe bereitgestellt.
 * Für beide Plattformen (Windows und Mac):
@@ -361,7 +362,7 @@ Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese 
 
 >[!NOTE]
 >
->Unter macOS X führt die Änderung des Protokolls für lokale Netzwerklaufwerke von WebDAV in SMB1 zu einem anderen lokalen Pfad zum selben Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die über den Befehl &quot;Platzieren&quot;in Adobe Creative Cloud-Anwendungen platziert werden. Siehe [Verwenden AEM Desktop-Programms](use-app-v1.md) für weitere Informationen.
+>Unter macOS X führt die Änderung des Protokolls für lokale Netzwerklaufwerke von WebDAV in SMB1 zu einem anderen lokalen Pfad zum selben Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die über den Befehl &quot;Platzieren&quot;in Adobe Creative Cloud-Anwendungen platziert werden. Weitere Informationen finden Sie unter [Verwenden AEM Desktop-Programms](use-app-v1.md) .
 
 ### Dateiverarbeitung (seit 1.3) {#file-handling-since}
 
@@ -375,9 +376,9 @@ Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese 
 
 **Ordner-Upload:** Adobe empfiehlt die Verwendung der neuen Funktion zum Hochladen von Ordnern, um größere hierarchische Ordner in AEM hochzuladen. Dieser Ansatz wird empfohlen, anstatt eine Kopie zu verwenden/per Drag &amp; Drop in ein bereitgestelltes AEM-Repository von der Finder-/Explorer-Ebene zu ziehen. Bei Verwendung der Funktion zum Hochladen von Ordnern kommuniziert das Desktop-Programm direkt mit AEM und hat so eine viel bessere Kontrolle über den gesamten Prozess.
 
-**AEM-Sitzung aktivieren:** Das AEM-Desktop-Programm ist von einer Sitzung abhängig, die für den AEM Assets-Server geöffnet ist, um den ordnungsgemäßen Betrieb sicherzustellen. Die täglichen Benutzer sollten die Bereitstellung von AEM Assets am Tagesende aufheben, um sich abzumelden und morgens zu entfernen, um die Anmeldung und Netzwerkfreigabe sicherzustellen.
+**AEM-Sitzung aktivieren:** Das AEM-Desktop-Programm hängt von einer Sitzung ab, die für den AEM Assets-Server geöffnet ist, um den ordnungsgemäßen Betrieb sicherzustellen. Die täglichen Benutzer sollten die Bereitstellung von AEM Assets am Tagesende aufheben, um sich abzumelden und morgens zu entfernen, um die Anmeldung und Netzwerkfreigabe sicherzustellen.
 
-**Symbolvorschau im Finder deaktivieren.** Um große Ordner mit dem Finder reibungslos durchsuchen zu können, insbesondere bei schlechter Netzwerkverbindung, müssen Sie sicherstellen, dass sowohl die Symbol- als auch die Symbolvorschau-Ansicht deaktiviert sind. Andernfalls lädt Finder jedes Asset in einen Ordner herunter, um eine kleine Vorschau zu erzeugen, was zu einer schlechten Leistung und einer hohen Bandbreitenauslastung führen kann. (CQ-4219779)
+**Symbolvorschau im Finder deaktivieren.** Stellen Sie sicher, dass sowohl die Symbol- als auch die Symbolvorschau-Ansicht deaktiviert sind, um große Ordner mit dem Finder reibungslos durchsuchen zu können, insbesondere bei schlechter Netzwerkverbindung. Andernfalls lädt Finder jedes Asset in einen Ordner herunter, um eine kleine Vorschau zu erzeugen, was zu einer schlechten Leistung und einer hohen Bandbreitenauslastung führen kann. (CQ-4219779)
 
 * Navigieren Sie im Finder zum freigegebenen AEM Assets-Netzwerkordner.
 * Klicken Sie mit der rechten Maustaste auf den DAM-Bereitstellungspunkt.
@@ -395,7 +396,7 @@ Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese 
    * Es werden Server-URLs benötigt, um ohne Pfad auf den Server zu verweisen (z. B. `http://server`, `https://server`, `http://server:port` oder `https://server:port`). Außer „/content/dam“ werden keine anderen Kontextpfade und Unterordner unterstützt (CQ-89343, CQ-87272).
 * Dateinamen/Lokalisierung:
    * Datei- und Ordnernamen mit reservierten Zeichen werden nicht ordnungsgemäß verarbeitet. Stellen Sie sicher, dass Sie Datei- und Ordnernamen verwenden, die AEM Anforderungen entsprechen. (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
-   * Einige Programme wie Adobe Illustrator erstellen möglicherweise Dateien mit Namen, die in AEM nicht unterstützt werden. Fügen Sie beispielsweise `Converted` nach dem Konvertieren einer Datei, wodurch das Hochladen verhindert wird. (CQ-4216985)
+   * Einige Programme wie Adobe Illustrator erstellen möglicherweise Dateien mit Namen, die in AEM nicht unterstützt werden. Fügen Sie beispielsweise `Converted` nach dem Konvertieren einer Datei hinzu, wodurch das Hochladen verhindert wird. (CQ-4216985)
    * Assets mit internationalen Namen kann alle paar Sekunden erscheinen und verschwinden.
 * Ein- und Auschecken:
    * Ein von einem Benutzer ausgechecktes Asset kann nicht von einem anderen Benutzer geöffnet werden, weder über die Aktion „Öffnen“ in der Touch-optimierten Benutzeroberfläche noch direkt auf dem Desktop. Einige Programme melden möglicherweise, dass das Asset gesperrt oder beschädigt ist bzw. nicht reagiert, wenn versucht wird, das Asset zu öffnen (CQ-4199234).
@@ -403,7 +404,7 @@ Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese 
    * Bestimmte Anwendungen unterstützen das schreibgeschützte Flag nicht ordnungsgemäß, wodurch ein Benutzer eine Datei speichern kann, die von einem anderen Benutzer ausgecheckt wurde. Die geänderte Datei wird erst dann übertragen, wenn der andere Benutzer die Datei wieder eincheckt. Beide Änderungen sind in AEM als unterschiedliche Versionen des Assets verfügbar. (CQ-89551, CQ-87572, CQ-89615)
    * Die ausgecheckten und schreibgeschützten Status werden unabhängig voneinander im Finder gemeldet. Dieser Ansatz führt zu zwei Sperrsymbolen, wenn ein Benutzer ein Asset auscheckt. (CQ-89507)
 * Finder-Integration:
-   * Beim Ziehen und Ablegen großer Dateien kann es beim Finder zu Zeitüberschreitungen kommen, während die Dateien im Hintergrund übertragen werden. Diese Verzögerung führt zu einer `Error - 36`. Die Lösung besteht darin, das Asset per Drag-and-Drop oder durch erneutes Öffnen zu verschieben. (CQ-4219628)
+   * Beim Ziehen und Ablegen großer Dateien kann es beim Finder zu Zeitüberschreitungen kommen, während die Dateien im Hintergrund übertragen werden. Diese Verzögerung führt zu einem &quot;`Error - 36`&quot;. Die Lösung besteht darin, das Asset per Drag-and-Drop oder durch erneutes Öffnen zu verschieben. (CQ-4219628)
    * Das manuelle erneute Laden von Ordnern funktioniert nicht immer. Problemumgehung: Warten Sie dreißig Sekunden, bis der Ordner automatisch aktualisiert wird. (CQ-97389).
    * Weitere Asset-Informationen... sind auf eine Dateiauswahl beschränkt. (CQ-89542, CQ-87656)
    * In AEM Assets öffnen.. ist auf eine Datei- und Ordnerauswahl beschränkt. (CQ-83382)
@@ -412,7 +413,7 @@ Da die `/Volumes` -Ordner keine Administratorrechte mehr erfordert, wurde diese 
 * Windows:
    * Dateien mit alternativen Datenströmen (ADS) werden nur in NTFS-Dateisystemen vollständig unterstützt. Beim Kopieren von Dateien in die WebDAV-Freigabe über das Desktop-Programm wird in einem Warndialogfeld darauf hingewiesen, dass einige Dateieigenschaften nicht an den neuen Speicherort übertragen werden können. Diese Warnung ist in der Regel korrekt, da die Eigenschaften nur für eine bestimmte Anwendung auf dem Desktop des Benutzers relevant sind und nichts mit dem tatsächlichen Dateiinhalt zu tun haben. (CQ-103770) (Win)
    * Der Benutzer, der das Desktop-Programm unter Windows verwendet, muss derjenige sein, der es installiert. (CQ-4216389) (Win)
-   * Die App kann bei Auswahl der [!UICONTROL Retry] bei fehlgeschlagenem Upload. Dieser Absturz kann unter bestimmten Umständen nach dem Fortsetzen des Batch-Uploads nach der Trennung der Verbindung auftreten. (CQ-4251884) (Win)
+   * Die App kann abstürzen, wenn bei einem fehlgeschlagenen Upload die Option [!UICONTROL Retry] ausgewählt wird. Dieser Absturz kann unter bestimmten Umständen nach dem Fortsetzen des Batch-Uploads nach der Trennung der Verbindung auftreten. (CQ-4251884) (Win)
 
 ## Hilfreiche Ressourcen {#helpful-resources}
 
