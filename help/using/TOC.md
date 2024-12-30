@@ -21,7 +21,7 @@ ht-degree: 95%
 + [Übersicht](introduction.md)
 + [Versionshinweise](release-notes.md)
 + [Installieren oder Aktualisieren](install-upgrade.md)
-+ [Verwenden des Programms](using.md)
++ [Verwenden der App](using.md)
 + [Fehlerbehebung](troubleshoot.md)
 + Hilfe zur vorherigen Version {#archive}
    + [Versionshinweise v1](release-notes-of-v1.md)

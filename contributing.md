@@ -2,10 +2,10 @@
 source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-# Beiträge zur Dokumentation
+# Beitragen zur Dokumentation
 
 Vielen Dank, dass Sie zur Dokumentation beitragen möchten! Adobe begrüßt Inhaltsbeiträge der gesamten Leser-Community und von Adobe-Mitarbeitenden.
 
