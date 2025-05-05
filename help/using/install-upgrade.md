@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um das Desktop-Programm zu installieren. Deinstallieren
 
    *Abbildung: Das Programm zeigt nach der Anmeldung den DAM-Inhalt an*
 
-1. ([!DNL Experience Manager] 6.5.1 oder höher) Wenn Sie das -Desktop-Programm mit [!DNL Experience Manager] 6.5.1 oder höher verwenden, aktualisieren Sie den S3- oder Azure-Connector auf Version 1.10.4 oder höher. Siehe [Azure-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) oder [S3-Connector](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 oder höher) Wenn Sie das -Desktop-Programm mit [!DNL Experience Manager] 6.5.1 oder höher verwenden, aktualisieren Sie den S3- oder Azure-Connector auf Version 1.10.4 oder höher. Siehe [Azure-Connector](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#azure-data-store) oder [S3-Connector](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/deploying/data-store-config#amazon-s-data-store).
 
    Wenn Sie Adobe Managed Services (AMS)-Kunde sind, wenden Sie sich an den Adobe-Support.
 
