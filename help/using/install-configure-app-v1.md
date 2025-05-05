@@ -127,6 +127,6 @@ Um das Programm auf einen anderen Ordner oder ein anderes Laufwerk zu verweisen,
 
 >[!MORELIKETHIS]
 >
-* Sehen Sie sich eine [Einführung in die  [!DNL Experience Manager] -](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)-App“ an (5 Minuten, 43 Sekunden).
-* [Verwenden des [!DNL Experience Manager] -Desktop-Programms](use-app-v1.md).
-* [Fehlerbehebung für das [!DNL Experience Manager] -Desktop-Programm](troubleshoot-app-v1.md).
+>* Sehen Sie sich eine [Einführung in die  [!DNL Experience Manager] -](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)-App“ an (5 Minuten, 43 Sekunden).
+>* [Verwenden des [!DNL Experience Manager] -Desktop-Programms](use-app-v1.md).
+>* [Fehlerbehebung für das [!DNL Experience Manager] -Desktop-Programm](troubleshoot-app-v1.md).
