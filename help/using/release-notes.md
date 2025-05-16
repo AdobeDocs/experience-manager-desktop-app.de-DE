@@ -4,22 +4,27 @@ description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 19f059875a7519cf28628fd801662da7243b077b
+source-git-commit: b5dace65444ca15d09ec8648deb4c262415f40cf
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 66%
+source-wordcount: '2195'
+ht-degree: 57%
 
 ---
 
 # [!DNL Adobe Experience Manager] Versionshinweise zum Desktop-Programm {#release-notes-v2}
 
-Die Versionsinformationen zur neuesten Desktop-Anwendungsversion 2.3.1 finden Sie unten. Das Veröffentlichungssdatum ist der Freitag, 25. Juli 2024.
+Die Versionsinformationen zur neuesten Desktop-Anwendungsversion 2.3.3 finden Sie unten. Das Veröffentlichungsdatum ist der 16. Mai 2025.
 
 Die neueste Version der Desktop-Anwendung enthält die folgenden Fehlerbehebungen und Verbesserungen:
 
-* Das neue Windows Enterprise-Installationsprogramm installiert die Anwendung unter „Programme“.
-* Unterstützung für **Standardauthentifizierung** während AEM- und SSO-Anmeldungen.
-* Konfigurierbare Anzahl von Assets, die beim Hochladen zulässig ist.
+* Sie können neu erstellte Assets von Ihrem lokalen Computer in AEM hochladen, wo das zentrale Repository gespeichert wird, und sie in Ihrem Desktop-Programm anzeigen.
+* Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu zu laden und die Liste der aktualisierten Assets abzurufen.
+* Mit der Funktion „Ordner anheften“ oder „Ordner entfernen“ können Sie wichtige Ordner leicht zugänglich machen, indem Sie sie anheften oder Ihre Ansicht entschlüsseln, indem Sie sie entfernen, wenn sie nicht mehr benötigt werden.
+* Mit der Funktion „Titel umbenennen“ können Sie den Titel eines Assets einfach aktualisieren oder ändern, sodass Namen im Laufe der Inhaltsentwicklung korrekt und geordnet bleiben.
+* Sie können die Originaldatei beibehalten und Änderungen an einer ähnlichen Datei vornehmen, indem Sie Dateien über lokale und Cloud-Speicherorte mithilfe des Vorgangs Dateien duplizieren duplizieren duplizieren.
+* Die Ein- und Auscheckfunktion ermöglicht es Ihnen, den Dateizugriff zu verwalten, indem Sie eine Datei zum Bearbeiten sperren (Auschecken) und Ihre Änderungen speichern, während sie für andere verfügbar gemacht werden (Einchecken).
+* Sie können Sammlungen anzeigen, herunterladen und durchsuchen.
+* Sie können beim Erstellen eines neuen Ordners Metadaten zuweisen.
 
 Die **unterstützten [!DNL Experience Manager]-Versionen** sind:
 
@@ -37,6 +42,10 @@ Die **Download-URLs** für die unterstützten Betriebssysteme sind:
 
 | Betriebssystem | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.3.3) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.3.3.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.3.3.dmg) |
+| macOS Apple-Chip (M1) (v2.3.3) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.3.3.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.3.3.dmg) |
+| Windows 64-Bit (v2.3.3) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.3.3.exe) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.3.3.exe) |
+| Windows 64-Bit Enterprise (v2.3.3) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.3.3.msi) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.3.3.msi) |
 | macOS (v2.3.1) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faemcloud.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-desktop-app%2Faem-desktop-osx-x64-2.3.1.dmg&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081954149%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=mwSX5ilZL0he2raIx8t5ecQ%2FWuizky4MpcCXX3mEN38%3D&amp;reserved=0) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fadobe%2Faem-desktop-app%2Faem-desktop-osx-x64-2.3.1.dmg&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081981239%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=LJH3OCFq7yRykN4wU8HN9%2FBXC%2BjfXLJH4QizeFZfRHE%3D&amp;reserved=0) |
 | macOS Apple-Chip (M1) (v2.3.1) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faemcloud.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-desktop-app%2Faem-desktop-osx-arm64-2.3.1.dmg&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081965822%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=2YENn0tDduiucogClt6aBZHDOE6dbzBdigq8VQawIO0%3D&amp;reserved=0) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fadobe%2Faem-desktop-app%2Faem-desktop-osx-arm64-2.3.1.dmg&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081986151%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=jCepldg4dMej0%2BrK2mUonXwqsWL8ksE8%2BLMSgsH9qTA%3D&amp;reserved=0) |
 | Windows 64-Bit (v2.3.1) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faemcloud.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-desktop-app%2Faem-desktop-win-x64-2.3.1.exe&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081970892%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=sRn2UWW%2Bi7SMEvSO74ZGGvJ40vHh1KhLc7zAfKc37Es%3D&amp;reserved=0) | [Download-Link](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fadobe%2Faem-desktop-app%2Faem-desktop-win-x64-2.3.1.exe&amp;data=05%7C02%7Canujm%40adobe.com%7Cfcf599743bd649c5cd7308dcab9ea5cd%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638573945081991004%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aQWZtEK%2F3cWX8n8Au%2FwZ5Zd9xPVo5phvk%2FuF%2Be0HRrE%3D&amp;reserved=0) |
@@ -86,6 +95,12 @@ Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL 
 ## Neue Funktionen, Verbesserungen und Fehlerbehebungen {#what-is-new}
 
 Weitere Informationen finden Sie unter [Neue Funktionen in Version 2.0](introduction.md#whats-new-v2).
+
+**Aktualisierungen in der Programmversion 2.3.1**
+
+* Das neue Windows Enterprise-Installationsprogramm installiert die Anwendung unter „Programme“.
+* Unterstützung für **Standardauthentifizierung** während der Anmeldung bei AEM und SSO.
+* Konfigurierbare Anzahl von Assets, die während des Uploads zulässig sind
 
 **Aktualisierungen in der Programmversion 2.3.0**
 
@@ -159,7 +174,7 @@ Folgender Fehler wurde in der aktuellen Version behoben:
 
 Folgender Fehler wurde in der aktuellen Version behoben:
 
-* Das Anmeldeproblem für Programmbenutzer unter Windows, die versuchen, auf das DAM-Repository unter [!DNL Adobe Experience Manager] 6.5.5.0 zuzugreifen, wurde behoben.
+* Fehlerkorrektur - App-Benutzer unter Windows, die auf das DAM-Repository in [!DNL Adobe Experience Manager] 6.5.5.0 zugreifen möchten, können sich jetzt anmelden.
 
 **Aktualisierungen in der Programmversion 2.0.2**
 

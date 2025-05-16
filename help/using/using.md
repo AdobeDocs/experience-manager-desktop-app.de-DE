@@ -4,10 +4,10 @@ description: Verwenden Sie das  [!DNL Adobe Experience Manager] -Desktop-Program
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: ba980c1a1bad4a9627fc28ac7f6619b644fb1f04
+source-git-commit: fb11b41020a4c2b2c40e8adcde822c65a7fe8985
 workflow-type: tm+mt
-source-wordcount: '4060'
-ht-degree: 68%
+source-wordcount: '4734'
+ht-degree: 58%
 
 ---
 
@@ -23,7 +23,7 @@ Die wichtigsten Aufgaben, die Sie mit dem [!DNL Adobe Experience Manager]-Deskto
 
 ![Workflows und Aufgaben, die Sie mit der Desktop-App von [!DNL Experience Manager] erledigen können](assets/aem_desktop_app_usecases_v2.png "Workflows und Aufgaben, die Sie mit der Desktop-App von [!DNL Adobe Experience Manager]  erledigen können")
 
-Laden Sie [diese](assets/aem_desktop_app_usecases_print.pdf) druckfertige PDF-Datei herunter.
+<!--Download [this](assets/aem_desktop_app_usecases_print.pdf) print-ready PDF file.-->
 
 ## Funktionsweise des Desktop-Programms {#how-app-works2}
 
@@ -45,15 +45,17 @@ Bevor Sie mit der Verwendung der Anwendung beginnen, verstehen [, wie die App fu
 
 * **[!UICONTROL Check-in]**: Markieren Sie das Asset als sicher, damit andere Benutzer es bearbeiten können, ohne dass ein Bearbeitungskonflikt entsteht. Wenn Sie Ihre Änderungen hochladen, wird das Sperrsymbol automatisch entfernt. Durch Umschalten des Eincheckstatus wird auch das Sperrsymbol entfernt. Adobe empfiehlt jedoch, das manuelle Einchecken zu vermeiden, ohne die Änderungen hochzuladen. Wenn Sie Ihre Änderungen verwerfen, können Sie den Status „Einchecken“ manuell deaktivieren.
 
-* Aktion **[!UICONTROL Open]**: Öffnen Sie einfach das Asset zur Vorschau im nativen Programm. Adobe empfiehlt, das Asset nicht mit dieser Aktion zu bearbeiten. Der Grund dafür ist, dass das Asset nicht ausgecheckt wird. In der Zwischenzeit können andere Benutzer Änderungen vornehmen, die zu Bearbeitungskonflikten führen.
+* Aktion **[!UICONTROL Open]**: Öffnen Sie einfach das Asset zur Vorschau im nativen Programm. Adobe empfiehlt, das Bearbeiten des Assets mithilfe dieser Aktion zu vermeiden. Der Grund dafür ist, dass das Asset nicht ausgecheckt wird. In der Zwischenzeit können andere Benutzer Änderungen vornehmen, die zu Bearbeitungskonflikten führen.
+
+* **[!UICONTROL Open with]**: Die Funktion „Öffnen mit“ ermöglicht das Öffnen einer Datei mit einer anderen Anwendung als der Standardanwendung. Dies ist nützlich, um ein bevorzugtes Programm auszuwählen, auf Dateien in verschiedenen Formaten zuzugreifen, Probleme mit der Standard-App zu beheben oder mit mehreren Programmen zu arbeiten. Dies bietet Flexibilität, da Sie die Standardanwendung vorübergehend überschreiben können, ohne die Einstellungen dauerhaft zu ändern.
+
+* **[!UICONTROL Open In Web]**: Um das Asset in der [!DNL Experience Manager] Web-Oberfläche anzuzeigen, öffnen Sie es im Web. Sie können über die [!DNL Experience Manager] weitere Workflows initiieren, z. B. die Aktualisierung von Metadaten oder die Asset-Erkennung.
 
 * Aktion **[!UICONTROL Edit]**: Verwenden Sie die Aktion, um das Bild zu ändern. Durch Klicken auf [!UICONTROL Edit] wird das Asset ausgecheckt und dem Asset wird ein Sperrsymbol hinzugefügt. Wenn Sie nach dem Klicken auf „Edit“ (Bearbeiten) das Asset nicht bearbeiten möchten, klicken Sie auf [!UICONTROL Toggle check-in]. Verwenden Sie zum Löschen, Umbenennen oder Verschieben von Assets in der [!DNL Experience Manager] DAM-Ordnerhierarchie die Aktionen der [!DNL Experience Manager]-Web-Oberfläche und nicht die Aktion „Bearbeiten“.
 
 * Aktion **[!UICONTROL Download]**: Laden Sie das Asset auf Ihren lokalen Computer herunter. Sie können die Assets jetzt herunterladen und später bearbeiten. Arbeiten Sie offline und laden Sie die Änderungen später hoch. Assets werden in einen Cache-Ordner auf Ihrem Dateisystem heruntergeladen.
 
 * **[!UICONTROL Reveal File]** oder **[!UICONTROL Reveal Folder]** Aktion: Während die Assets in einen lokalen Cache-Ordner heruntergeladen werden, ahmt die App ein lokales Netzlaufwerk nach. Es wird ein lokaler Pfad für jedes Asset bereitgestellt. Um diesen Pfad zu ermitteln, verwenden Sie die entsprechende Einblendeoption im Programm. Zum Platzieren von Assets im Creative Cloud-Programm ist die Aktion „Reveal“ (Anzeigen) erforderlich. Siehe [Platzieren von Assets](using.md#place-assets-in-native-documents).
-
-* **[!UICONTROL Open In Web]**: Um das Asset in der [!DNL Experience Manager] Web-Oberfläche anzuzeigen, öffnen Sie es im Web. Sie können über die [!DNL Experience Manager] weitere Workflows initiieren, z. B. die Aktualisierung von Metadaten oder die Asset-Erkennung.
 
 * Aktion **[!UICONTROL Delete]**: Löschen Sie das Asset aus dem [!DNL Experience Manager]-DAM-Repository. Durch die Aktion wird die Originalkopie des Assets auf dem Experience Manager-Server gelöscht. Wenn Sie nur Änderungen am lokalen Asset verwerfen möchten, finden Sie weitere Informationen unter [Änderungen verwerfen](using.md#edit-assets-upload-updated-assets).
 
@@ -71,6 +73,28 @@ Bevor Sie mit der Verwendung der Anwendung beginnen, verstehen [, wie die App fu
    ![Aktivieren der Option „Desktop-Aktionen für Assets anzeigen“, um Desktop-Aktionen zu ermöglichen](assets/enable_desktop_actions.png)
 
    *Abbildung: Wählen Sie [!UICONTROL Show Desktop Actions For Assets] aus, um Desktop-Aktionen zu aktivieren.*
+
+## Anzeigen von Assets {#view-assets}
+
+Mit dem AEM-Desktop-Programm können Sie Assets in vier verschiedenen Ansichten anzeigen:
+
+* **[!UICONTROL Show Assets]:** Ermöglicht die Anzeige aller Assets.
+* **[!UICONTROL Show Collections]:** Ermöglicht die Anzeige aller in der nativen AEM-Anwendung erstellten Sammlungen. Weitere Informationen [Sammlungen](#collections-desktop-app).
+* **[!UICONTROL Edited Locally]:** Zeigt alle lokal geänderten Assets an. In dieser Ansicht können Sie mehrere Assets hinzufügen und hochladen.
+* **[!UICONTROL Asset transfers]:** Ermöglicht die Anzeige aller Assets, die von der nativen Mobile App an die lokale App übertragen werden oder umgekehrt.
+* **[!UICONTROL Pinned items]:** Ermöglicht die Anzeige aller angehefteten Elemente.
+
+Führen Sie die folgenden Schritte aus, um zwischen verschiedenen Ansichten von Assets in der AEM Desktop-Anwendung zu wählen:
+
+1. Öffnen Sie das AEM-Desktop-Programm.
+
+1. Gehen Sie zur Ansicht Dropdown-Liste oben rechts. Eine der verfügbaren Ansichten auswählen.
+
+   ![Ordner anheften oder entfernen](assets/view-pinned-assets.png)
+
+### Anzeigen neu hinzugefügter Ordner und Dateien {#view-newly-added-files-folders}
+
+Sie können neu erstellte Assets von Ihrem lokalen Computer in AEM hochladen, wo das zentrale Repository gespeichert wird. Um diese neu erstellten Assets lokal anzuzeigen, gehen Sie zum Dropdown-Menü **[!UICONTROL View]** und wählen Sie **[!UICONTROL Show Assets]** aus, um alle Aktualisierungen mit ihrer Zeitleiste und ihrem Titel anzuzeigen, oder wählen Sie **[!UICONTROL Edited Locally]** aus. Beide Optionen zeigen die lokal bearbeiteten Assets explizit an.
 
 ## Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets {#browse-search-preview-assets}
 
@@ -95,11 +119,59 @@ Sie können die im [!DNL Experience Manager]-Repository verfügbaren Assets vom 
 >
 >Die App zeigt die Assets an, indem sie die Suchkriterien über mehrere Metadatenfelder hinweg und nicht nur den Titel oder Dateinamen des Assets abgleicht.
 
+## Assets-Verwaltung {#assets-management}
+
+Asset-Management umfasst das Organisieren, Verwalten und Optimieren digitaler Assets, um Workflows zu optimieren. Dazu gehören Aufgaben wie das Duplizieren und Umbenennen von Dateien, das Anheften oder Aufheben der Anheftung von Ordnern für den schnellen Zugriff und das Anzeigen von Assets in verschiedenen Layouts. Dies verbessert die Effizienz, vereinfacht die Asset-Verfolgung und stellt sicher, dass digitale Assets plattformübergreifend einfach abgerufen und organisiert werden können.
+
+### Dateien duplizieren {#duplicate-files}
+
+Wenn Sie eine Originaldatei beibehalten und Änderungen an der ähnlichen Datei vornehmen möchten, können Sie Dateien an verschiedenen Speicherorten (lokal und Cloud) gleichzeitig duplizieren. Dies kann durch den Vorgang „Dateien duplizieren“ über Assets hinweg erreicht werden.
+
+Gehen Sie wie folgt vor, um Dateien im AEM-Desktop-Programm zu duplizieren:
+
+1. Navigieren Sie zu einem Ordner und wählen Sie das Asset aus, das Sie duplizieren möchten.
+
+   ![Dateien duplizieren](assets/more-options.png)
+
+1. Klicken Sie auf **[!UICONTROL More actions]** ![Symbol Mehr Aktionen](assets/do-not-localize/more2_da2.png) und wählen Sie ![Symbol duplizieren](assets/do-not-localize/duplicate.svg) **[!UICONTROL Duplicate File]** Aktion aus.
+
+1. Die doppelte Datei wird mit einem identischen Dateinamen und Inhalt erstellt.
+
+### Titel eines Assets umbenennen {#rename-asset-title}
+
+Gehen Sie wie folgt vor, um den Titel eines Assets umzubenennen:
+
+1. Durchsuchen Sie das Asset, das Sie umbenennen möchten.
+
+1. Klicken Sie auf **[!UICONTROL More actions]** ![Symbol Mehr Aktionen](assets/do-not-localize/more2_da2.png) und wählen Sie **[!UICONTROL Rename]** aus, um den gewünschten Titel eines Assets hinzuzufügen.
+
+<!--1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more2_da2.png) and select **[!UICONTROL open in web]** to open the asset in its native application.
+
+1. Go to asset details. Under [!UICONTROL Basic] tab, go to title and enter the text.-->
+
+### Ordner anheften oder entfernen {#pin-unpin-folder}
+
+Für den Schnellzugriff können Sie einen Ordner anheften oder entfernen, indem Sie die folgenden Schritte ausführen:
+
+1. Durchsuchen Sie das Asset, das Sie anheften oder entfernen möchten.
+
+1. Klicken Sie auf **[!UICONTROL More actions]** ![Symbol Mehr Aktionen](assets/do-not-localize/more2_da2.png) und wählen Sie [!UICONTROL pin] aus, um das Asset oder den Ordner anzuheften. Klicken Sie alternativ auf [!UICONTROL unpin] , um die Anheftung aufzuheben.
+
+   ![Ordner anheften oder entfernen](assets/pin-unpin.png)
+
+### Auto refresh {#auto-refresh}
+
+Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu laden zu müssen. Führen Sie die folgenden Schritte aus, um Assets automatisch zu aktualisieren und die Liste der aktualisierten Assets zu erhalten:
+
+1. Öffnen Sie das AEM-Desktop-Programm.
+
+1. Klicken Sie ![Aktualisierungssymbol](assets/do-not-localize/refresh.png) in der Menüleiste, um die Aktualisierungen abzurufen.
+
 ## Herunterladen von Assets {#download-assets}
 
 Sie können die Assets auf Ihr lokales Dateisystem herunterladen. Die App ruft die Assets vom [!DNL Experience Manager] ab und speichert dieselbe Kopie auf Ihrem lokalen Dateisystem.
 
-Klicken Sie für Optionen auf das Symbol ![Schaltfläche „Mehr Optionen“](assets/do-not-localize/more2_da2.png) und dann zum Herunterladen auf das Symbol ![Herunterladen](assets/do-not-localize/download_cloud_da2.png).
+Klicken Sie auf **[!UICONTROL More actions]** ![Symbol „Weitere Optionen](assets/do-not-localize/more2_da2.png) für Optionen und klicken Sie auf ![Symbol &quot;](assets/do-not-localize/download_cloud_da2.png)&quot; zum Herunterladen.
 
 ![Download-Option für ein Asset](assets/download_option_da2.png "Download-Option für ein Asset")
 
@@ -127,6 +199,42 @@ Klicken Sie im Asset-Menü auf **[!UICONTROL Open]**. Das Asset wird lokal herun
 >Wenn die erwarteten Änderungen nicht im Programm übernommen werden, klicken Sie auf das Symbol „Aktualisieren“ ![Aktualisieren](assets/do-not-localize/refresh.png) oder klicken Sie mit der rechten Maustaste auf **[!UICONTROL Refresh]**. Die Aktionen sind nicht verfügbar, während größere Downloads oder Uploads ausgeführt werden.
 
 Um den lokalen Download-Ordner eines Assets zu öffnen, klicken Sie auf das Symbol ![Mehr Aktionen](assets/do-not-localize/more2_da2.png) und dann auf ![Anzeigen](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]**.
+
+## Sammlungen {#collections-desktop-app}
+
+Mit dem AEM-Desktop[Programm können Sie Sammlungen anzeigen](#view-collections-desktop-app) [ herunterladen ](#download-collections-desktop-app) durchsuchen, die in [!DNL Adobe Experience Manager Assets] Programm erstellt wurden.
+
+### Anzeigen von Sammlungen {#view-collections-desktop-app}
+
+Führen Sie die folgenden Schritte aus, um Sammlungen in der Desktop-Anwendung anzuzeigen:
+
+1. Öffnen Sie das AEM-Desktop-Programm und navigieren Sie zu [Assets anzeigen](#view-assets).
+
+1. Wählen Sie **[!UICONTROL Show Collections]** aus. Die im nativen Programm verfügbaren Sammlungen werden angezeigt.
+
+   ![Sammlungen - Desktop-Programm](assets/collections-desktop-app.png)
+
+### Herunterladen von Sammlungen {#download-collections-desktop-app}
+
+Führen Sie die folgenden Schritte aus, um Sammlungen in der Desktop-Anwendung herunterzuladen:
+
+1. Führen Sie die Schritte 1 und 2 aus, wie in [Sammlungen anzeigen](#view-collections-desktop-app).
+
+1. Navigieren Sie zu Mehr Aktionen ![Symbol Mehr Aktionen](assets/do-not-localize/more2_da2.png) in der Sammlung, die Sie herunterladen möchten.
+
+1. Klicken Sie auf **[!UICONTROL Download]** , um die jeweilige Sammlung herunterzuladen.
+
+## Erstellen eines Ordners mit einem Metadatenschema {#create-folder-with-metadata-schema}
+
+Mit dem AEM-Desktop-Programm können Sie beim Erstellen eines neuen Ordners Metadaten zuweisen. Führen Sie dazu die folgenden Schritte aus:
+
+1. Wechseln Sie zum Symbol Verzeichnis erstellen ![Symbol Ordner hinzufügen](assets/do-not-localize/add-folder.svg). **[!UICONTROL Create Directory]** Bildschirm wird angezeigt.
+
+1. Fügen Sie die folgenden Details hinzu:
+   * **[!UICONTROL Name]** des Ordners.
+   * Wählen Sie **[!UICONTROL Folder Metadata Schema]** die Metadatenhierarchie des Ordners aus oder wählen Sie **[!UICONTROL none]** aus, wenn Sie keine Metadaten mit dem Ordner verknüpfen möchten.
+
+1. Klicken Sie auf **[!UICONTROL OK]** , um fortzufahren.
 
 ## Verwenden oder Platzieren von Assets in nativen Dokumenten {#place-assets-in-native-documents}
 
@@ -157,7 +265,7 @@ Verwenden Sie **[!UICONTROL Toggle Check-out]** zum Sperren des Assets, um Konfl
 * Sie haben begonnen, ein Asset zu bearbeiten, ohne es vorher auszuchecken (indem Sie es einfach öffnen).
 * Sie möchten demnächst mit der Bearbeitung eines Assets beginnen und möchten nicht, dass andere Benutzer es bearbeiten.
 
-Nachdem Sie die Bearbeitungen vorgenommen haben, zeigt die App den Status **[!UICONTROL Edited Locally]** für geänderte Assets an. Alle in den Assets gespeicherten Änderungen sind nur lokal verfügbar, bis Sie die Änderungen in [!DNL Experience Manager] hochladen. Um einzelne Assets oder einige Assets einzeln hochzuladen, klicken Sie in den Optionen für ein Asset auf **[!UICONTROL Upload Changes]**. Dadurch wird eine Version des Assets in [!DNL Experience Manager] erstellt. Über die Web-Oberfläche von [!DNL Assets] können Sie den Asset-Verlauf in der [Zeitleisten-Ansicht“ ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/using/activity-stream).
+Nachdem Sie die Bearbeitungen vorgenommen haben, zeigt die App den Status **[!UICONTROL Edited Locally]** für geänderte Assets an. Alle in den Assets gespeicherten Änderungen sind nur lokal verfügbar, bis Sie die Änderungen in [!DNL Experience Manager] hochladen. Um einzelne Assets oder einige Assets einzeln hochzuladen, klicken Sie in den Optionen für ein Asset auf **[!UICONTROL Upload Changes]**. Dadurch wird eine Version des Assets in [!DNL Experience Manager] erstellt. Über die Web-Oberfläche von [!DNL Assets] können Sie den Asset-Verlauf in der [Zeitleisten-Ansicht“ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/activity-stream).
 
 ![Option zum Hochladen von Änderungen im Programm](assets/upload_changes_single1_da2.png "Option zum Hochladen von Änderungen im Programm")
 
@@ -191,6 +299,9 @@ Sie können die gleichzeitigen Uploads (Beschleunigung) mit der Einstellung **[!
 >[!NOTE]
 >
 >Die Übertragungsliste ist nicht dauerhaft und steht nicht mehr zur Verfügung, wenn Sie das Programm verlassen und erneut öffnen.
+
+<!--### Upload local file to AEM {#upload-local-file-to-aem}-->
+
 
 ### Verwalten von Sonderzeichen in Asset-Namen {#special-characters-in-filename}
 
@@ -297,7 +408,7 @@ Wenn die erwarteten Änderungen nach dem Upload nicht im Programm übernommen we
 
 >[!NOTE]
 >
->Verwenden Sie nicht die Upload-Funktion, um Assets über zwei [!DNL Experience Manager]-Bereitstellungen zu migrieren. Siehe stattdessen auch [Migrationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
+>Verwenden Sie nicht die Upload-Funktion, um Assets über zwei [!DNL Experience Manager]-Bereitstellungen zu migrieren. Siehe stattdessen auch [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
 
 ### Liste der übertragenen Assets {#list-of-transferred-assets}
 
@@ -356,7 +467,7 @@ Wenn ein lokal bearbeitetes Asset auch ohne Ihr Wissen auf dem Server aktualisie
 
 Wenn Sie das [!DNL Experience Manager]-Desktop-Programm verwenden, um Dateien mit verknüpften Assets zu öffnen, werden die Assets vorab heruntergeladen und in den nativen Programmen angezeigt. Damit dieser Workflow funktioniert, muss Ihr natives Programm das Platzieren von Links zu lokalen Assets unterstützen und [!DNL Experience Manager] muss die Auflösung dieser Links in den Binärdateien zu Server-seitigen Verweisen unterstützen.
 
-Das [!DNL Experience Manager]-Desktop-Programm unterstützt diesen Workflow mit einigen ausgewählten Adobe Creative Cloud-Desktop-Programmen und -Dateiformaten - Adobe InDesign, Adobe Illustrator und Adobe Photoshop. Mit dem Workflow können Sie effizient mit den unterstützten Creative Cloud-Dateien arbeiten. Wenn Benutzer A Assets zu einer InDesign-Datei hinzufügt und in [!DNL Experience Manager] eincheckt, kann Benutzer B die Assets in der Datei sehen, auch wenn sie nicht Teil davon sind. Die Assets werden lokal auf den Computer von Benutzer B heruntergeladen.
+Das [!DNL Experience Manager]-Desktop-Programm unterstützt diesen Workflow mit einigen ausgewählten Adobe Creative Cloud-Desktop-Programmen und -Dateiformaten - Adobe InDesign, Adobe Illustrator und Adobe Photoshop. Mit dem Workflow können Sie effizient mit den unterstützten Creative Cloud-Dateien arbeiten. Wenn Benutzer A Assets zu einer InDesign-Datei hinzufügt und in [!DNL Experience Manager] eincheckt, kann Benutzer B die Assets in der Datei sehen, obwohl sie nicht Teil der Datei sind. Die Assets werden lokal auf den Computer von Benutzer B heruntergeladen.
 
 >[!NOTE]
 >
