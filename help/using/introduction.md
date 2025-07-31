@@ -3,7 +3,7 @@ title: Einführung in das [!DNL Experience Manager] -Desktop-Programm
 description: Erfahren Sie, wie Sie mit der  [!DNL Adobe Experience Manager] -Desktop-App die Asset-Management-Workflows für kreative Benutzerinnen und Benutzer optimieren können, wenn Sie [!DNL Adobe Experience Manager Assets] direkt von ihrem Desktop aus verwenden.
 role: User, Admin, Leader
 exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
-source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
+source-git-commit: f519cb355affea9249d5f5d92c789e993f3ff67d
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 68%
@@ -16,7 +16,7 @@ Adobe bietet lösungsübergreifende Workflows an, sodass Branchennutzer und Krea
 
 Mithilfe des Desktop-Programms können Sie über Ihren lokalen Desktop problemlos auf die Assets in [!DNL Experience Manager Assets] zugreifen und sie in beliebigen Desktop-Programmen verwenden. Sie können die Assets in den Desktop-Programmen Ihrer Wahl öffnen und bearbeiten. Lokale Bearbeitungen werden nur dann als neue Version in [!DNL Experience Manager] gespeichert, wenn Sie die Änderungen hochladen, was eine effiziente laufende Bearbeitung auf dem Desktop ermöglicht. Das Programm unterstützt das Hochladen von Assets und verschachtelten Ordnern in [!DNL Experience Manager], wodurch neue Inhalte einfacher zum Repository hinzugefügt werden können.
 
-Eine solche Integration ermöglicht es verschiedenen Rollen in der Organisation, die Assets zentral in [!DNL Experience Manager Assets] zu verwalten. Marketing-Experten und Business-Anwender können die Einhaltung der verschiedenen Standards sicherstellen, einschließlich Branding und Lizenzierung. Kreativprofis mit einem dedizierten Tool [Adobe Asset Link](https://business.adobe.com/products/experience-manager/assets/adobe-asset-link.html) können auf Assets in Adobe Photoshop, Illustrator und InDesign zugreifen und auch auf Assets auf dem Desktop in der Creative Cloud und anderen nativen Programmen zugreifen.
+Eine solche Integration ermöglicht es verschiedenen Rollen in der Organisation, die Assets zentral in [!DNL Experience Manager Assets] zu verwalten. Marketing-Experten und Business-Anwender können die Einhaltung der verschiedenen Standards sicherstellen, einschließlich Branding und Lizenzierung. Creative-Benutzer mit einem dedizierten [Adobe Asset Link](https://business.adobe.com/products/experience-manager/assets/adobe-asset-link.html)-Tool können auf Assets in Adobe Photoshop, Illustrator und InDesign zugreifen und auch auf Assets auf dem Desktop in Creative Cloud und anderen nativen Programmen zugreifen.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Die Dokumentation zum Desktop-Programm enthält Informationen zu den folgenden R
 | Möchten Sie die Voraussetzungen und technischen Spezifikationen kennenlernen? Benötigen Sie Links zum Herunterladen? | [Versionshinweise](release-notes.md) |
 | Sie kennen das Desktop-Programm bereits? Sie wollen eine Aktualisierung durchführen und einen reibungslosen Übergang sicherstellen? | [Upgrade von früherer Version](install-upgrade.md#upgrade-from-previous-version) |
 | Starten Sie voll durch. Möchten Sie die Standardeinstellungen anpassen? | [Installieren und Konfigurieren des Programms](install-upgrade.md) |
-| Erfahren Sie, wie Sie das Programm zum Durchsuchen, Erkennen, Bearbeiten, Hochladen, Auflösen von Konflikten, Durchführen von Massenvorgängen usw. verwenden können. | [Verwenden des [!DNL Experience Manager] -Desktop-Programms](using.md) |
+| Erfahren Sie, wie Sie das Programm zum Durchsuchen, Erkennen, Bearbeiten, Hochladen, Auflösen von Konflikten, Durchführen von Massenvorgängen usw. verwenden können. | [Verwenden des [!DNL Experience Manager] -Desktop-Programms](using-desktop-app.md) |
 | Stößt ihr auf ein Problem? | [Fehlerbehebung beim [!DNL Experience Manager] -Desktop-Programm](troubleshoot.md) |
 
 ## Neue Funktionen im Programm {#whats-new-v2}

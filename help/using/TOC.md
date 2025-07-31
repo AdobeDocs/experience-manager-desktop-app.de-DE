@@ -8,20 +8,27 @@ user-guide-description: Erfahren Sie, wie Sie mit dem Experience Manager-Desktop
 feature-set: Experience Manager Assets,Experience Manager
 feature: Desktop App
 role: User, Admin
-source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
+source-git-commit: 3f9f5da87647b552e31fae9d19226ac6d20e336f
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 95%
+source-wordcount: '85'
+ht-degree: 70%
 
 ---
 
 
-# Benutzerhandbuch zum Adobe-Desktop-Programm {#using}
+# Handbuch zum Adobe Experience Manager-Desktop-Programm {#get-started}
 
 + [Übersicht](introduction.md)
 + [Versionshinweise](release-notes.md)
 + [Installieren oder Aktualisieren](install-upgrade.md)
-+ [Verwenden der App](using.md)
++ [Erste Schritte mit dem AEM-Desktop-Programm](get-started.md)
++ [Benutzeroberfläche](user-interface.md)
++ [Suchen](search.md)
++ [Verwenden des -Desktop-Programms](using-desktop-app.md)
++ [Verwaltung von Assets](assets-management-tasks.md)
++ [Herunterladen von Assets](download-assets.md)
++ [Hochladen von Assets](upload-assets.md)
++ [Arbeiten mit mehreren Assets](working-with-multiple-assets.md)
 + [Fehlerbehebung](troubleshoot.md)
 + Hilfe zur vorherigen Version {#archive}
    + [Versionshinweise v1](release-notes-of-v1.md)
