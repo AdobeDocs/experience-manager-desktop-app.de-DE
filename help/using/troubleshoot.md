@@ -21,7 +21,7 @@ Befolgen Sie die folgenden Best Practices, um einige häufige Probleme zu vermei
 
 * **So funktioniert das Desktop-Programm**: Bevor Sie mit der Verwendung des Programms beginnen, sollten Sie sich kurz mit ihrer Funktionsweise vertraut machen. Erfahren Sie mehr über die Verknüpfung zwischen der [!DNL Experience Manager]-Web-Oberfläche und dem Desktop, die Repository-Zuordnung, das Zwischenspeichern von Assets, das lokale Speichern und das Hochladen im Hintergrund. Machen Sie sich mit der [Funktionsweise](release-notes.md#how-app-works) vertraut.
 
-* **Vermeiden Sie nicht unterstützte Zeichen in Ordnernamen**: Verwenden Sie beim Erstellen oder Hochladen von Ordnern keine Leerzeichen und ungültige Zeichen. Eine Liste der Zeichen finden Sie unter [Erstellen von Ordnern in  [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Nicht unterstützte Zeichen im Ordnernamen können sich auf einige [!DNL Experience Manager] Anwendungsfälle auswirken.
+* **Vermeiden Sie nicht unterstützte Zeichen in Ordnernamen**: Verwenden Sie beim Erstellen oder Hochladen von Ordnern keine Leerzeichen und ungültige Zeichen. Eine Liste der Zeichen finden Sie unter [Erstellen von Ordnern in  [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Nicht unterstützte Zeichen im Ordnernamen können sich auf einige [!DNL Experience Manager] Anwendungsfälle auswirken.
 
 * **Best Practices zur Vermeidung von**: Um potenzielle Konflikte bei der Zusammenarbeit an mehreren Assets zu vermeiden, gehen Sie zu [Bearbeitungskonflikte vermeiden](assets-management-tasks.md#adv-workflow-collaborate-avoid-conflicts).
 
@@ -301,8 +301,8 @@ Bei beiden Methoden startet das Programm im Stammordner des DAM.
 
 Beim Durchsuchen von Assets über die [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Admins können Einstellungen konfigurieren, um das Anzeigen, Suchen und Abrufen abgelaufener Assets beim Durchsuchen über das Desktop-Programm und Asset Link zu verhindern. Dadurch wird sichergestellt, dass bei diesen Vorgängen nicht auf abgelaufene Assets zugegriffen werden kann. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
 
-* [Konfiguration in Experience Manager 6.5 zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
-* [Konfiguration in Experience Manager as a Cloud Service zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration in Experience Manager 6.5 zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration in Experience Manager as a Cloud Service zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
