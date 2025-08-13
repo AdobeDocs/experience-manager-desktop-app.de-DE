@@ -4,10 +4,10 @@ description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: b1fad118e1ffbd0809afe9a33bcb848648cd8bdd
+source-git-commit: 3ee1e39553b81e335e07c278537a826df3ad9482
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 52%
+source-wordcount: '2502'
+ht-degree: 51%
 
 ---
 
@@ -15,25 +15,55 @@ ht-degree: 52%
 
 Die Versionsinformationen zur neuesten Desktop-Anwendungsversion 3.0.0 finden Sie unten. Das Veröffentlichungssdatum ist der Freitag, 31. Juli 2025.
 
-Die neueste Version der Desktop-Anwendung enthält die folgenden Fehlerbehebungen und Verbesserungen:
+Diese Version bietet mehrere Verbesserungen für Sammlungen, Uploads, Ein-/Auschecken, Metadatenverwaltung und allgemeine Benutzerfreundlichkeit. Diese Aktualisierungen verbessern die Effizienz, optimieren die Asset-Verarbeitung und bieten ein intuitiveres Echtzeit-Erlebnis im AEM Desktop-Programm.
+
+![Benutzeroberfläche des -Desktop-Programms](assets/dekktop-app-user-interface.png)
+
+**Sammlungen**
+
+* Sie können jetzt Sammlungen anzeigen, herunterladen und durchsuchen.
+
+* Es wurde Unterstützung zum Herunterladen von Ordnern hinzugefügt, die in Sammlungen verfügbar sind.
+
+* Die Funktion zur automatischen Synchronisierung ermöglicht jetzt die regelmäßige Synchronisierung von heruntergeladenen Assets in Sammlungen mit der AEM Asset-Verwaltung mit dem lokalen Dateisystem.
+
+* Wenn Sie ein Asset aktualisieren, das Teil einer Sammlung ist, wird es automatisch im temporären Cache-Ordner und in der Benutzeroberfläche des Desktop-Programms aktualisiert.
+
+**Uploads**
 
 * Sie können neu erstellte Assets von Ihrem lokalen Computer in AEM hochladen, wo das zentrale Repository gespeichert wird, und sie in Ihrem Desktop-Programm anzeigen.
-* Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu zu laden und die Liste der aktualisierten Assets abzurufen.
-* Mit der Funktion „Ordner anheften“ oder „Ordner entfernen“ können Sie wichtige Ordner leicht zugänglich machen, indem Sie sie anheften oder Ihre Ansicht entschlüsseln, indem Sie sie entfernen, wenn sie nicht mehr benötigt werden.
-* Mit der Funktion „Titel umbenennen“ können Sie den Titel eines Assets einfach aktualisieren oder ändern, sodass Namen im Laufe der Inhaltsentwicklung korrekt und geordnet bleiben.
-* Sie können die Originaldatei beibehalten und Änderungen an einer ähnlichen Datei vornehmen, indem Sie Dateien über lokale und Cloud-Speicherorte mithilfe des Vorgangs Dateien duplizieren duplizieren duplizieren.
-* Die Ein- und Auscheckfunktion ermöglicht es Ihnen, den Dateizugriff zu verwalten, indem Sie eine Datei zum Bearbeiten sperren (Auschecken) und Ihre Änderungen speichern, während sie für andere verfügbar gemacht werden (Einchecken).
-* Sie können Sammlungen anzeigen, herunterladen und durchsuchen.
-* Sie können beim Erstellen eines neuen Ordners Metadaten zuweisen.
-* Mit dem Experience Manager-Desktop-Programm können Sie jetzt Assets oder Ordner an einen neuen Speicherort verschieben und dabei ihre Metadaten beibehalten. Dies hilft Ihnen, Ihr Dateisystem zu organisieren und zu optimieren.
-* Es wurde Unterstützung zum Herunterladen von Ordnern hinzugefügt, die in Sammlungen verfügbar sind.
-* Die Exportoption ermöglicht jetzt das Herunterladen ausgewählter Dateien und Ordner aus dem Desktop-Programm an ihren spezifischen Zielspeicherort in einer flachen Struktur.
+
 * Das -Desktop-Programm erkennt jetzt automatisch neue Dateien, die unter einem bereits heruntergeladenen Ordner in Ihrem lokalen Dateisystem erstellt wurden, und lädt sie in AEM hoch. Das -Desktop-Programm muss offen bleiben, um die neuen Dateien auf Ihrem lokalen Dateisystem zu identifizieren.
-* Die Funktion zur automatischen Synchronisierung ermöglicht jetzt die regelmäßige Synchronisierung von heruntergeladenen Assets in Sammlungen mit der AEM Asset-Verwaltung mit dem lokalen Dateisystem.
-* Mit dem AEM-Desktop-Programm können Sie jetzt Ordnereigenschaften anzeigen, z. B. Ordnerminiaturansicht, Größe, Pfad, Erstellungsdatum, Tags, Metadaten usw.
-* Sie können jetzt auf Assets in der Kartenansicht, Rasteransicht oder Baumstrukturansicht zugreifen, um ein sauberes, organisiertes und visuell ansprechendes Layout von Assets zu erhalten.
+
+**Ein- und Auschecken**
+
+* Die Ein- und Auscheckfunktion ermöglicht es Ihnen, den Dateizugriff zu verwalten, indem Sie eine Datei zum Bearbeiten sperren (Auschecken) und Ihre Änderungen speichern, während sie für andere verfügbar gemacht werden (Einchecken).
+
 * Möglichkeit, ein Asset aus dem Desktop-Programm in das Creative Cloud-Zielprogramm zu ziehen. Das -Desktop-Programm checkt die Assets automatisch aus und lädt sie in das lokale Dateisystem herunter.
-* Wenn Sie ein Asset aktualisieren, das Teil einer Sammlung ist, wird es automatisch im temporären Cache-Ordner und in der Benutzeroberfläche des Desktop-Programms aktualisiert.
+
+**Metadaten**
+
+* Sie können beim Erstellen eines neuen Ordners Metadaten zuweisen.
+
+* Mit dem Experience Manager-Desktop-Programm können Sie jetzt Assets oder Ordner an einen neuen Speicherort verschieben und dabei ihre Metadaten beibehalten. Dies hilft Ihnen, Ihr Dateisystem zu organisieren und zu optimieren.
+
+* Mit dem AEM-Desktop-Programm können Sie jetzt Ordnereigenschaften anzeigen, z. B. Ordnerminiaturansicht, Größe, Pfad, Erstellungsdatum, Tags, Metadaten usw.
+
+**Verbesserungen der Benutzerfreundlichkeit**
+
+
+* Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu zu laden und die Liste der aktualisierten Assets abzurufen.
+
+* Mit der Funktion „Ordner anheften“ oder „Ordner entfernen“ können Sie wichtige Ordner leicht zugänglich machen, indem Sie sie anheften oder Ihre Ansicht entschlüsseln, indem Sie sie entfernen, wenn sie nicht mehr benötigt werden.
+
+* Mit der Funktion „Titel umbenennen“ können Sie den Titel eines Assets einfach aktualisieren oder ändern, sodass Namen im Laufe der Inhaltsentwicklung korrekt und geordnet bleiben.
+
+* Sie können die Originaldatei beibehalten und Änderungen an einer ähnlichen Datei vornehmen, indem Sie Dateien über lokale und Cloud-Speicherorte mithilfe des Vorgangs Dateien duplizieren duplizieren duplizieren.
+
+* Die Exportoption ermöglicht jetzt das Herunterladen ausgewählter Dateien und Ordner aus dem Desktop-Programm an ihren spezifischen Zielspeicherort in einer flachen Struktur.
+
+* Sie können jetzt auf Assets in der Kartenansicht, Rasteransicht oder Baumstrukturansicht zugreifen, um ein sauberes, organisiertes und visuell ansprechendes Layout von Assets zu erhalten.
+
 * Verschiedene Beschriftungen für verschiedene Optionen werden auf der Benutzeroberfläche aktualisiert, um die Anwendung intuitiver zu gestalten.
 
 Die **unterstützten [!DNL Experience Manager]-Versionen** sind:
