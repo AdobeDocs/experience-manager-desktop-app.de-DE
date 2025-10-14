@@ -63,7 +63,7 @@ Für die Methoden zum Kopieren und Verschieben in der Assets-API ist es erforder
 
 [!DNL Experience Manager]-Desktop stellt Verbindungen mit [!DNL Experience Manager] über eine URL her, die einen standardmäßigen Port enthält. Daher sollte die `virtualhosts` in der Dispatcher-Konfiguration die standardmäßige Port-Nummer enthalten. Weitere Informationen zur Konfiguration von `virtualhosts` finden Sie unter [Identifizieren von virtuellen Hosts](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
 
-Weitere Informationen zum Konfigurieren der Dispatcher für die Übergabe dieser zusätzlichen Header finden Sie unter [ der HTTP-Header](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
+Weitere Informationen zum Konfigurieren der Dispatcher für die Übergabe dieser zusätzlichen Header finden Sie unter [&#x200B; der HTTP-Header](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
 
 ### Proxy-Unterstützung {#proxy-support}
 

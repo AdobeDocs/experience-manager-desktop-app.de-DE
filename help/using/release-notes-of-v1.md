@@ -362,7 +362,7 @@ Da für den `/Volumes` keine Administratorrechte mehr erforderlich sind, wurde d
 
 >[!NOTE]
 >
->Auf macOS X führt die Änderung des Protokolls für das lokale Netzlaufwerk von WebDAV zu SMB1 zu einem anderen lokalen Pfad zum gleichen Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die in Adobe Creative Cloud-Anwendungen über den Befehl „Place“ platziert werden. Weitere Informationen finden [ unter „Verwenden ](use-app-v1.md) AEM-Desktop-Programms“.
+>Auf macOS X führt die Änderung des Protokolls für das lokale Netzlaufwerk von WebDAV zu SMB1 zu einem anderen lokalen Pfad zum gleichen Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die in Adobe Creative Cloud-Anwendungen über den Befehl „Place“ platziert werden. Weitere Informationen finden [&#x200B; unter „Verwenden &#x200B;](use-app-v1.md) AEM-Desktop-Programms“.
 
 ### Dateiverarbeitung (seit 1.3) {#file-handling-since}
 

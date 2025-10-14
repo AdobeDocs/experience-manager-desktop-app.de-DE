@@ -79,7 +79,7 @@ Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch i
 
 ## Sammlungen {#collections-desktop-app}
 
-Mit dem AEM-Desktop[Programm können Sie Sammlungen anzeigen](#view-collections-desktop-app) [ herunterladen ](#download-collections-desktop-app) durchsuchen, die in [!DNL Adobe Experience Manager Assets] Programm erstellt wurden.
+Mit dem AEM-Desktop[Programm können Sie Sammlungen anzeigen](#view-collections-desktop-app) [&#x200B; herunterladen &#x200B;](#download-collections-desktop-app) durchsuchen, die in [!DNL Adobe Experience Manager Assets] Programm erstellt wurden.
 
 ### Anzeigen von Sammlungen {#view-collections-desktop-app}
 
@@ -162,7 +162,7 @@ Gehen Sie wie folgt vor, um diesen Workflow mit einem Bild-Asset und InDesign au
 
 * [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
-* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der ](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
