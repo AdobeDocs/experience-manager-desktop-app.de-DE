@@ -4,7 +4,7 @@ description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 64c918a17efd082aee2d63f1379023b1da05a13b
+source-git-commit: ad234d05e7a011b148b74e92adcbf86de476f78d
 workflow-type: tm+mt
 source-wordcount: '2662'
 ht-degree: 43%
@@ -13,7 +13,7 @@ ht-degree: 43%
 
 # Versionshinweise zum [!DNL Adobe Experience Manager]-Desktop-Programm {#release-notes-v2}
 
-Die Desktop-Programm-Version 3.0.1 wurde am 18. Dezember 2025 veröffentlicht.  Die Version umfasst die folgenden Verbesserungen:
+Die Desktop-Programm-Version 3.0.1 wurde am 20. Dezember 2025 veröffentlicht.  Die Version umfasst die folgenden Verbesserungen:
 
 **Reibungslosere und zuverlässigere Workflows**
 
@@ -107,7 +107,7 @@ Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL 
 
 ## Neue Funktionen, Verbesserungen und Fehlerbehebungen {#what-is-new}
 
-Weitere Informationen finden Sie unter [&#x200B; in Version 3.0.1 &#x200B;](introduction.md#whats-new-v2).
+Weitere Informationen finden Sie unter [ in Version 3.0.1 ](introduction.md#whats-new-v2).
 
 ### Aktualisierungen in der Programmversion 3.0.0 {#app-version-3.0.0}
 
