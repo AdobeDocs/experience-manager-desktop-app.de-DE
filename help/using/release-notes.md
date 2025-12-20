@@ -107,7 +107,7 @@ Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL 
 
 ## Neue Funktionen, Verbesserungen und Fehlerbehebungen {#what-is-new}
 
-Weitere Informationen finden Sie unter [ in Version 3.0.1 ](introduction.md#whats-new-v2).
+Weitere Informationen finden Sie unter [&#x200B; in Version 3.0.1 &#x200B;](introduction.md#whats-new-v2).
 
 ### Aktualisierungen in der Programmversion 3.0.0 {#app-version-3.0.0}
 
