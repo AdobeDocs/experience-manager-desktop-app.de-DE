@@ -1,70 +1,35 @@
 ---
 title: '[!DNL Adobe Experience Manager] Versionshinweise zum Desktop-Programm'
-description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität und Download-Links für das  [!DNL Adobe Experience Manager] -Desktop-Programm.
+description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität und Download-Links für das -Desktop [!DNL Adobe Experience Manager] Programm.
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 3ee1e39553b81e335e07c278537a826df3ad9482
+source-git-commit: 64c918a17efd082aee2d63f1379023b1da05a13b
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 51%
+source-wordcount: '2662'
+ht-degree: 43%
 
 ---
 
-# [!DNL Adobe Experience Manager] Versionshinweise zum Desktop-Programm {#release-notes-v2}
+# Versionshinweise zum [!DNL Adobe Experience Manager]-Desktop-Programm {#release-notes-v2}
 
-Die Versionsinformationen zur neuesten Desktop-Anwendungsversion 3.0.0 finden Sie unten. Das Veröffentlichungssdatum ist der Freitag, 31. Juli 2025.
+Die Desktop-Programm-Version 3.0.1 wurde am 18. Dezember 2025 veröffentlicht.  Die Version umfasst die folgenden Verbesserungen:
 
-Diese Version bietet mehrere Verbesserungen für Sammlungen, Uploads, Ein-/Auschecken, Metadatenverwaltung und allgemeine Benutzerfreundlichkeit. Diese Aktualisierungen verbessern die Effizienz, optimieren die Asset-Verarbeitung und bieten ein intuitiveres Echtzeit-Erlebnis im AEM Desktop-Programm.
+**Reibungslosere und zuverlässigere Workflows**
 
-![Benutzeroberfläche des -Desktop-Programms](assets/dekktop-app-user-interface.png)
+* Sicherstellung einer konsistenten Ordnernamen durch Beheben von Synchronisationsproblemen zwischen der AEM Desktop-App und der AEM-Autoreninstanz.
+* Unterbrechungsfreie Workflows durch volle Anwendungsfunktionalität während aktiver Übertragungen ermöglicht.
+* Die Zuverlässigkeit der Seite mit den Ordnereigenschaften wurde verbessert, sodass ein konsistenter Zugriff auf Ordnermetadaten und -einstellungen möglich ist.
 
-**Sammlungen**
+**Schnelleres und reaktionsschnelleres Benutzererlebnis**
 
-* Sie können jetzt Sammlungen anzeigen, herunterladen und durchsuchen.
+* Verbesserte Reaktionsfähigkeit der Benutzeroberfläche durch Ersetzen der Blockierung von I/O durch asynchrone Verarbeitung, wodurch ein reibungsloseres Erlebnis bei Operationen mit hoher Last gewährleistet ist.
+* Verbesserte Übertragung großer Dateien durch Einführung von Paginierung in Upload- und Download-Flüssen, was eine effiziente Handhabung großer Datensätze ermöglicht.
 
-* Es wurde Unterstützung zum Herunterladen von Ordnern hinzugefügt, die in Sammlungen verfügbar sind.
+**Höhere Stabilität und Zuverlässigkeit**
 
-* Die Funktion zur automatischen Synchronisierung ermöglicht jetzt die regelmäßige Synchronisierung von heruntergeladenen Assets in Sammlungen mit der AEM Asset-Verwaltung mit dem lokalen Dateisystem.
-
-* Wenn Sie ein Asset aktualisieren, das Teil einer Sammlung ist, wird es automatisch im temporären Cache-Ordner und in der Benutzeroberfläche des Desktop-Programms aktualisiert.
-
-**Uploads**
-
-* Sie können neu erstellte Assets von Ihrem lokalen Computer in AEM hochladen, wo das zentrale Repository gespeichert wird, und sie in Ihrem Desktop-Programm anzeigen.
-
-* Das -Desktop-Programm erkennt jetzt automatisch neue Dateien, die unter einem bereits heruntergeladenen Ordner in Ihrem lokalen Dateisystem erstellt wurden, und lädt sie in AEM hoch. Das -Desktop-Programm muss offen bleiben, um die neuen Dateien auf Ihrem lokalen Dateisystem zu identifizieren.
-
-**Ein- und Auschecken**
-
-* Die Ein- und Auscheckfunktion ermöglicht es Ihnen, den Dateizugriff zu verwalten, indem Sie eine Datei zum Bearbeiten sperren (Auschecken) und Ihre Änderungen speichern, während sie für andere verfügbar gemacht werden (Einchecken).
-
-* Möglichkeit, ein Asset aus dem Desktop-Programm in das Creative Cloud-Zielprogramm zu ziehen. Das -Desktop-Programm checkt die Assets automatisch aus und lädt sie in das lokale Dateisystem herunter.
-
-**Metadaten**
-
-* Sie können beim Erstellen eines neuen Ordners Metadaten zuweisen.
-
-* Mit dem Experience Manager-Desktop-Programm können Sie jetzt Assets oder Ordner an einen neuen Speicherort verschieben und dabei ihre Metadaten beibehalten. Dies hilft Ihnen, Ihr Dateisystem zu organisieren und zu optimieren.
-
-* Mit dem AEM-Desktop-Programm können Sie jetzt Ordnereigenschaften anzeigen, z. B. Ordnerminiaturansicht, Größe, Pfad, Erstellungsdatum, Tags, Metadaten usw.
-
-**Verbesserungen der Benutzerfreundlichkeit**
-
-
-* Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu zu laden und die Liste der aktualisierten Assets abzurufen.
-
-* Mit der Funktion „Ordner anheften“ oder „Ordner entfernen“ können Sie wichtige Ordner leicht zugänglich machen, indem Sie sie anheften oder Ihre Ansicht entschlüsseln, indem Sie sie entfernen, wenn sie nicht mehr benötigt werden.
-
-* Mit der Funktion „Titel umbenennen“ können Sie den Titel eines Assets einfach aktualisieren oder ändern, sodass Namen im Laufe der Inhaltsentwicklung korrekt und geordnet bleiben.
-
-* Sie können die Originaldatei beibehalten und Änderungen an einer ähnlichen Datei vornehmen, indem Sie Dateien über lokale und Cloud-Speicherorte mithilfe des Vorgangs Dateien duplizieren duplizieren duplizieren.
-
-* Die Exportoption ermöglicht jetzt das Herunterladen ausgewählter Dateien und Ordner aus dem Desktop-Programm an ihren spezifischen Zielspeicherort in einer flachen Struktur.
-
-* Sie können jetzt auf Assets in der Kartenansicht, Rasteransicht oder Baumstrukturansicht zugreifen, um ein sauberes, organisiertes und visuell ansprechendes Layout von Assets zu erhalten.
-
-* Verschiedene Beschriftungen für verschiedene Optionen werden auf der Benutzeroberfläche aktualisiert, um die Anwendung intuitiver zu gestalten.
+* Fehlerkorrektur - Autoren-Server-Neustarts, die durch Desktop-App-Interaktionen ausgelöst werden, verbessern die Systemstabilität erheblich.
+* Behobene Anwendungsabstürze beim Herunterladen oder Hochladen großer Ordner (Tausende von Dateien).
 
 Die **unterstützten [!DNL Experience Manager]-Versionen** sind:
 
@@ -82,6 +47,10 @@ Die **Download-URLs** für die unterstützten Betriebssysteme sind:
 
 | Betriebssystem | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) |
+| macOS Apple-Chip (M1) (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) |
+| Windows 64-Bit (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) |
+| Windows 64-Bit Enterprise (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-ent-3.0.1.msi) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-ent-3.0.1.msi) |
 | macOS (v3.0.0) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.0.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.0.dmg) |
 | macOS Apple-Chip (M1) (v3.0.0) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.0.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.0.dmg) |
 | Windows 64-Bit (v3.0.0) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.0.exe) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.0.exe) |
@@ -130,33 +99,85 @@ Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL 
 
 * Pfade zu in der nativen Anwendung platzierten Dateien verwenden einen globalen Desktop-Pfad (platziert von der lokalen Netzwerkfreigabe, die mit der Option [!UICONTROL Reveal] angezeigt wird).
 
-* Pfade werden von der nativen Anwendung im XMP-Datensatz der Datei gespeichert.
+* Pfade werden von der nativen Anwendung im XMP-Eintrag der Datei gespeichert.
 
-* [!DNL Experience Manager] hat den XMP-Datensatz mit den Pfaden zum Metadaten-Datensatz des Assets extrahiert.
+* [!DNL Experience Manager] hat den XMP-Eintrag mit den Pfaden zum Metadaten-Eintrag des Assets extrahiert.
 
 * Die Pfade können Assets in [!DNL Experience Manager] zugeordnet werden, das heißt, die platzierten Dateien befinden sich auch in [!DNL Experience Manager] unter einem zugeordneten Pfad.
 
 ## Neue Funktionen, Verbesserungen und Fehlerbehebungen {#what-is-new}
 
-Weitere Informationen finden Sie unter [Neue Funktionen in Version 2.0](introduction.md#whats-new-v2).
+Weitere Informationen finden Sie unter [ in Version 3.0.1 ](introduction.md#whats-new-v2).
 
-**Aktualisierungen in der Programmversion 2.3.1**
+### Aktualisierungen in der Programmversion 3.0.0 {#app-version-3.0.0}
+
+Diese Version bietet mehrere Verbesserungen bei Sammlungen, Uploads, Ein-/Auschecken, Metadatenverwaltung und allgemeiner Benutzerfreundlichkeit. Diese Aktualisierungen verbessern die Effizienz, optimieren die Asset-Verarbeitung und bieten ein intuitiveres Echtzeit-Erlebnis im AEM Desktop-Programm.
+
+![Benutzeroberfläche des -Desktop-Programms](assets/dekktop-app-user-interface.png)
+
+**Sammlungen**
+
+* Sie können jetzt Sammlungen anzeigen, herunterladen und durchsuchen.
+
+* Es wurde Unterstützung zum Herunterladen von Ordnern hinzugefügt, die in Sammlungen verfügbar sind.
+
+* Die Funktion zur automatischen Synchronisierung ermöglicht jetzt die regelmäßige Synchronisierung von heruntergeladenen Assets in Sammlungen mit der AEM Asset-Verwaltung mit dem lokalen Dateisystem.
+
+* Wenn Sie ein Asset aktualisieren, das Teil einer Sammlung ist, wird es automatisch im temporären Cache-Ordner und in der Benutzeroberfläche des Desktop-Programms aktualisiert.
+
+**Uploads**
+
+* Sie können neu erstellte Assets von Ihrem lokalen Computer in AEM hochladen, wo das zentrale Repository gespeichert wird, und sie in Ihrem Desktop-Programm anzeigen.
+
+* Das -Desktop-Programm erkennt jetzt automatisch neue Dateien, die unter einem bereits heruntergeladenen Ordner in Ihrem lokalen Dateisystem erstellt wurden, und lädt sie in AEM hoch. Das -Desktop-Programm muss offen bleiben, um die neuen Dateien auf Ihrem lokalen Dateisystem zu identifizieren.
+
+**Ein- und Auschecken**
+
+* Die Ein- und Auscheckfunktion ermöglicht es Ihnen, den Dateizugriff zu verwalten, indem Sie eine Datei zum Bearbeiten sperren (Auschecken) und Ihre Änderungen speichern, während sie für andere verfügbar gemacht werden (Einchecken).
+
+* Möglichkeit, ein Asset aus dem Desktop-Programm in das Creative Cloud-Zielprogramm zu ziehen. Das -Desktop-Programm checkt die Assets automatisch aus und lädt sie in das lokale Dateisystem herunter.
+
+**Metadaten**
+
+* Sie können beim Erstellen eines neuen Ordners Metadaten zuweisen.
+
+* Mit dem Experience Manager-Desktop-Programm können Sie jetzt Assets oder Ordner an einen neuen Speicherort verschieben und dabei ihre Metadaten beibehalten. Dies hilft Ihnen, Ihr Dateisystem zu organisieren und zu optimieren.
+
+* Mit dem AEM-Desktop-Programm können Sie jetzt Ordnereigenschaften anzeigen, z. B. Ordnerminiaturansicht, Größe, Pfad, Erstellungsdatum, Tags, Metadaten usw.
+
+**Verbesserungen der Benutzerfreundlichkeit**
+
+* Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch in Echtzeit, sodass Sie immer die neuesten Informationen sehen, ohne die Seite manuell neu zu laden und die Liste der aktualisierten Assets abzurufen.
+
+* Mit der Funktion „Ordner anheften“ oder „Ordner entfernen“ können Sie wichtige Ordner leicht zugänglich machen, indem Sie sie anheften oder Ihre Ansicht entschlüsseln, indem Sie sie entfernen, wenn sie nicht mehr benötigt werden.
+
+* Mit der Funktion „Titel umbenennen“ können Sie den Titel eines Assets einfach aktualisieren oder ändern, sodass Namen im Laufe der Inhaltsentwicklung korrekt und geordnet bleiben.
+
+* Sie können die Originaldatei beibehalten und Änderungen an einer ähnlichen Datei vornehmen, indem Sie Dateien über lokale und Cloud-Speicherorte mithilfe des Vorgangs Dateien duplizieren duplizieren duplizieren.
+
+* Die Exportoption ermöglicht jetzt das Herunterladen ausgewählter Dateien und Ordner aus dem Desktop-Programm an ihren spezifischen Zielspeicherort in einer flachen Struktur.
+
+* Sie können jetzt auf Assets in der Kartenansicht, Rasteransicht oder Baumstrukturansicht zugreifen, um ein sauberes, organisiertes und visuell ansprechendes Layout von Assets zu erhalten.
+
+* Verschiedene Beschriftungen für verschiedene Optionen werden auf der Benutzeroberfläche aktualisiert, um die Anwendung intuitiver zu gestalten.
+
+### Aktualisierungen in der Programmversion 2.3.1 {#app-version-2.3.1}
 
 * Das neue Windows Enterprise-Installationsprogramm installiert die Anwendung unter „Programme“.
 * Unterstützung für **Standardauthentifizierung** während der Anmeldung bei AEM und SSO.
 * Konfigurierbare Anzahl von Assets, die während des Uploads zulässig sind
 
-**Aktualisierungen in der Programmversion 2.3.0**
+### Aktualisierungen in der Programmversion 2.3.0 {#app-version-2.3.0}
 
 * Unterstützung für IMS-Anmeldung wurde hinzugefügt. Durch die IMS-Integration kann die Desktop-App die Aktualisierung des Zugriffstokens automatisch durchführen, sodass Benutzende bis zu 14 Tage angemeldet bleiben können.
 
 * Verbesserte Unterstützung für Unternehmens-Proxys und Web-Filterung.
 
-**Aktualisierungen in der Programmversion 2.2.2**
+### Aktualisierungen in der Programmversion 2.2.2 {#app-version-2.2.2}
 
 * (Nur Windows) Das Desktop-Programm zeigt nach der Installation der Versionen 2.2.0 und 2.2.1 einen leeren Bildschirm an.
 
-**Aktualisierungen in der Programmversion 2.2.1**
+### Aktualisierungen in der Programmversion 2.2.1 {#app-version-2.2.1}
 
 * Das Desktop-Programm zeigt beim Klicken auf **[!UICONTROL Sign In]** die Fehlermeldung Sitzungs-Timeout an.
 
@@ -164,41 +185,41 @@ Weitere Informationen finden Sie unter [Neue Funktionen in Version 2.0](introduc
 
 * Die Desktop-Anwendung zeigt eine Fehlermeldung beim Sortieren von Assets durch Klicken auf **[!UICONTROL Edited Locally]** an.
 
-**Aktualisierungen in der Programmversion 2.2.0**
+### Aktualisierungen in der Programmversion 2.2.0 {#app-version-2.2.0}
 
 * Unterstützung für Apple-Chip (M1).
 
 * Möglichkeit, die Verbindungszeichenfolge beim Anmelden bei der Desktop-Anwendung zu speichern.
 
-**Aktualisierungen in der Programmversion 2.1.5.0**
+### Aktualisierungen in der Programmversion 2.1.5.0 {#app-version-2.1.5.0}
 
 * Das Desktop-Programm reagiert nicht mehr, wenn Sie Dateien in einen Ordner hochladen, der chinesische Zeichen enthält (ASSETS-9237).
 
-* Das Desktop-Programm ersetzt Punkte in Dateinamen durch Gedankenstriche (ASSETS-10955).
+* Das -Desktop-Programm ersetzt Punkte in Dateinamen durch Gedankenstriche (ASSETS-10955).
 
-**Aktualisierungen in der Programmversion 2.1.4.0**
+### Aktualisierungen in der Programmversion 2.1.4.0 {#app-version-2.1.4.0}
 
 Die neue Version der Anwendung enthält Fehlerkorrekturen.
 
-**Aktualisierungen in der Programmversion 2.1.3.4**
+### Aktualisierungen in der Programmversion 2.1.3.4 {#app-version-2.1.3.4}
 
 Die neue Version des Programms bietet eine Fehlerbehebung.
 
-**Aktualisierungen in der Programmversion 2.1.3.3**
+### Aktualisierungen in der Programmversion 2.1.3.3 {#app-version-2.1.3.3}
 
 Die neue Version des Programms bietet eine Fehlerbehebung.
 
-**Aktualisierungen in der Programmversion 2.1.3.2**
+### Aktualisierungen in der Programmversion 2.1.3.2 {#app-version-2.1.3.2}
 
 Diese Version des Programms bietet eine Fehlerbehebung.
 
-**Aktualisierungen in der Programmversion 2.1.3.1**
+### Aktualisierungen in der Programmversion 2.1.3.1 {#app-version-2.1.3.1}
 
 Folgender Fehler wurde in der aktuellen Version behoben:
 
 * Die Geschwindigkeit beim Upload und Download von Assets wurde verbessert, auch bei großen Assets. In dieser Version wurde ein Problem behoben, bei dem Asset-Uploads mit dem [!DNL desktop app] manchmal fehlschlugen, wenn sehr große Dateien hochgeladen wurden.
 
-**Aktualisierung in der Programmversion 2.1.2.0**
+### Aktualisierungen in der Programmversion 2.1.2.0 {#app-version-2.1.2.0}
 
 * Dem Hauptmenü des Programms wurde eine neue Option [!UICONTROL Clear Cookies] hinzugefügt. Dies hilft bei potenziellen Anmeldeproblemen, z. B. beim Wechsel einer Verbindung von einem Server zu einem anderen. Siehe [Löschen von Cookies vor dem Verbinden](/help/using/troubleshoot.md#cannot-login-cookies-issue).
 
@@ -206,21 +227,21 @@ Folgender Fehler wurde in der aktuellen Version behoben:
 
   Dieses Verhalten ähnelt dem Standardverhalten in Version 1 des Desktop-Programms. In der aktuellen Version hingegen werden, wenn die Option nicht aktiviert ist, Leerzeichen und die in Ordnernamen `% ; # , + ? ^ { } "` Zeichen in Ordnerpfaden durch Bindestriche ersetzt. Außerdem werden die Großbuchstaben in Ordnerpfaden in Kleinbuchstaben umgewandelt. In Dateinamen werden die Zeichen `# % { } ? &` durch Bindestriche ersetzt. Jedoch bleiben Leerzeichen und Groß-/Kleinschreibung erhalten. Weitere Informationen finden Sie in den [Programmvoreinstellungen](/help/using/install-upgrade.md#set-preferences) und unter [Hochladen und Hinzufügen neuer Assets](/help/using/upload-assets.md#upload-and-add-new-assets-to-aem).
 
-**Aktualisierung in der Programmversion 2.1.1.0**
+### Aktualisierungen in der Programmversion 2.1.1.0 {#app-version-2.1.1.0}
 
 * Mit einer erweiterten Einstellung kann das Programm das Programmverhalten der Version 1.10 beim Hochladen von Ordnern emulieren. In Version 1.10 berücksichtigen die im Repository erstellten Knotennamen die Leerzeichen und Groß-/Kleinschreibung der vom Benutzer angegebenen Ordnernamen. In Version 2.1 ist das Standardverhalten unverändert: Mehrere Leerzeichen in Ordnernamen werden im Repository-Knotennamen durch Bindestriche ersetzt, und Knotennamen werden in Kleinbuchstaben konvertiert. Weitere Informationen finden Sie in den [Programmvoreinstellungen](/help/using/install-upgrade.md#set-preferences).
 
-**Aktualisierung in der Programmversion 2.1.0.0**
+### Aktualisierungen in der Programmversion 2.1.0.0 {#app-version-2.1.0.0}
 
 * Um Assets hochzuladen, können Benutzer die Dateien oder Ordner jetzt direkt aus dem Windows Explorer oder Mac Finder in die Benutzeroberfläche des Programms ziehen. Dieser Prozess funktioniert zusätzlich zu der in der Anwendung verfügbaren Upload-Option. Siehe [Upload von Assets](/help/using/upload-assets.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
-**Aktualisierung in der Programmversion 2.0.3**
+### Aktualisierungen in der Programmversion 2.0.3 {#app-version-2.0.3}
 
 Folgender Fehler wurde in der aktuellen Version behoben:
 
 * Fehlerkorrektur - App-Benutzer unter Windows, die auf das DAM-Repository in [!DNL Adobe Experience Manager] 6.5.5.0 zugreifen möchten, können sich jetzt anmelden.
 
-**Aktualisierungen in der Programmversion 2.0.2**
+### Aktualisierungen in der Programmversion 2.0.2 {#app-version-2.0.2}
 
 Die folgenden Fehlerbehebungen und Aktualisierungen sind verfügbar:
 
@@ -234,7 +255,7 @@ Die folgenden Fehlerbehebungen und Aktualisierungen sind verfügbar:
 
 * (Windows) Ein seltener Fehler mit einer nicht verwendbaren Programm-Oberfläche auf einigen Windows-Computern wurde behoben. Benutzer können nicht auf die App-Oberfläche klicken, da sie durch den Klickbereich der Elemente der Benutzeroberfläche „verschoben“ seitlich verzerrt erscheint. <!-- CQ-4280785 -->
 
-**Aktualisierungen in der Programmversion 2.0.1**
+### Aktualisierungen in der Programmversion 2.0.1 {#app-version-2.0.1}
 
 Die folgenden Fehlerbehebungen und Aktualisierungen sind verfügbar:
 
