@@ -2,13 +2,13 @@
 title: Erste Schritte [!DNL Experience Manager] Desktop-Programm
 description: Erfahren Sie, wie  [!DNL Experience Manager]  Desktop-Programm die Inhaltserstellung und -veröffentlichung mit optimierten Workflows und Produktivitätsfunktionen verbessert.
 feature: Desktop App,Asset Management
-source-git-commit: 2947fbd3bfeb15b37a8f1b0118e969b5d70499d0
+exl-id: 6cf29b6a-74e6-4860-a25b-d3e91abbaa9d
+source-git-commit: a579ab861aa0af8c8415a0f38126de7f33c7a7b3
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 42%
 
 ---
-
 
 # Erste Schritte mit [!DNL Adobe Experience Manager] Desktop-Programm {#getting-started-desktop-app}
 
@@ -17,6 +17,8 @@ Verwenden Sie das [!DNL Adobe Experience Manager]-Desktop-Programm, um auf digit
 Die Integration ermöglicht es verschiedenen Rollen im Unternehmen, die Assets zentral in [!DNL Experience Manager Assets] zu verwalten und auf die Assets auf dem lokalen Desktop in den nativen Programmen unter Windows oder macOS zuzugreifen.
 
 Wenn Sie das Programm nach dem Abmelden oder zum ersten Mal öffnen, müssen Sie die URL des [!DNL Experience Manager]-Servers im Format `https://[aem-server-url]:[port]/` angeben. Wählen Sie dann die Option [!UICONTROL Connect] aus. Geben Sie Ihre Anmeldeinformationen ein, um das Programm mit dem Server zu verbinden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 Die wichtigsten Aufgaben, die Sie mit dem [!DNL Adobe Experience Manager]-Desktop-Programm durchführen, sind:
 
@@ -98,9 +100,9 @@ Im Gegenteil, Sie können das Asset über die Web-Oberfläche öffnen, indem Sie
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
-* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der ](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
