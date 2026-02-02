@@ -18,7 +18,7 @@ Die Integration ermöglicht es verschiedenen Rollen im Unternehmen, die Assets z
 
 Wenn Sie das Programm nach dem Abmelden oder zum ersten Mal öffnen, müssen Sie die URL des [!DNL Experience Manager]-Servers im Format `https://[aem-server-url]:[port]/` angeben. Wählen Sie dann die Option [!UICONTROL Connect] aus. Geben Sie Ihre Anmeldeinformationen ein, um das Programm mit dem Server zu verbinden.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32777?captions=ger&quality=12&learn=on)
 
 Die wichtigsten Aufgaben, die Sie mit dem [!DNL Adobe Experience Manager]-Desktop-Programm durchführen, sind:
 
