@@ -4,32 +4,16 @@ description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität 
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ad234d05e7a011b148b74e92adcbf86de476f78d
+source-git-commit: 826e667f11792797629e0edad5db62aea6f61774
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 43%
+source-wordcount: '5259'
+ht-degree: 34%
 
 ---
 
 # Versionshinweise zum [!DNL Adobe Experience Manager]-Desktop-Programm {#release-notes-v2}
 
-Die Desktop-Programm-Version 3.0.1 wurde am 20. Dezember 2025 veröffentlicht.  Die Version umfasst die folgenden Verbesserungen:
-
-**Reibungslosere und zuverlässigere Workflows**
-
-* Sicherstellung einer konsistenten Ordnernamen durch Beheben von Synchronisationsproblemen zwischen der AEM Desktop-App und der AEM-Autoreninstanz.
-* Unterbrechungsfreie Workflows durch volle Anwendungsfunktionalität während aktiver Übertragungen ermöglicht.
-* Die Zuverlässigkeit der Seite mit den Ordnereigenschaften wurde verbessert, sodass ein konsistenter Zugriff auf Ordnermetadaten und -einstellungen möglich ist.
-
-**Schnelleres und reaktionsschnelleres Benutzererlebnis**
-
-* Verbesserte Reaktionsfähigkeit der Benutzeroberfläche durch Ersetzen der Blockierung von I/O durch asynchrone Verarbeitung, wodurch ein reibungsloseres Erlebnis bei Operationen mit hoher Last gewährleistet ist.
-* Verbesserte Übertragung großer Dateien durch Einführung von Paginierung in Upload- und Download-Flüssen, was eine effiziente Handhabung großer Datensätze ermöglicht.
-
-**Höhere Stabilität und Zuverlässigkeit**
-
-* Fehlerkorrektur - Autoren-Server-Neustarts, die durch Desktop-App-Interaktionen ausgelöst werden, verbessern die Systemstabilität erheblich.
-* Behobene Anwendungsabstürze beim Herunterladen oder Hochladen großer Ordner (Tausende von Dateien).
+Diese Version der Desktop-Programm-Version 3.0.2 enthält Fehlerbehebungen, um die allgemeine Stabilität und Leistung der Anwendung zu verbessern.
 
 Die **unterstützten [!DNL Experience Manager]-Versionen** sind:
 
@@ -47,6 +31,10 @@ Die **Download-URLs** für die unterstützten Betriebssysteme sind:
 
 | Betriebssystem | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v3.0.2) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.2.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.2.dmg) |
+| macOS Apple-Chip (M1) (v3.0.2) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.2.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.2.dmg) |
+| Windows 64-Bit (v3.0.2) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.2.exe) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.2.exe) |
+| Windows 64-Bit Enterprise (v3.0.2) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-ent-3.0.2.msi) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-ent-3.0.2.msi) |
 | macOS (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-3.0.1.dmg) |
 | macOS Apple-Chip (M1) (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-3.0.1.dmg) |
 | Windows 64-Bit (v3.0.1) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) | [Download-Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-3.0.1.exe) |
@@ -107,7 +95,27 @@ Diese Funktion wird in den Versionen [!DNL Adobe Creative Cloud] 2018 und [!DNL 
 
 ## Neue Funktionen, Verbesserungen und Fehlerbehebungen {#what-is-new}
 
-Weitere Informationen finden Sie unter [&#x200B; in Version 3.0.1 &#x200B;](introduction.md#whats-new-v2).
+Weitere Informationen finden Sie unter [ in Version 3.0.2 ](introduction.md#whats-new-v2).
+
+### Aktualisierungen in der Programmversion 3.0.1 {#app-version-3.0.1}
+
+Die Version 3.0.1 des -Desktop-Programms enthält die folgenden Verbesserungen:
+
+**Reibungslosere und zuverlässigere Workflows**
+
+* Sicherstellung einer konsistenten Ordnernamen durch Beheben von Synchronisationsproblemen zwischen der AEM Desktop-App und der AEM-Autoreninstanz.
+* Unterbrechungsfreie Workflows durch volle Anwendungsfunktionalität während aktiver Übertragungen ermöglicht.
+* Die Zuverlässigkeit der Seite mit den Ordnereigenschaften wurde verbessert, sodass ein konsistenter Zugriff auf Ordnermetadaten und -einstellungen möglich ist.
+
+**Schnelleres und reaktionsschnelleres Benutzererlebnis**
+
+* Verbesserte Reaktionsfähigkeit der Benutzeroberfläche durch Ersetzen der Blockierung von I/O durch asynchrone Verarbeitung, wodurch ein reibungsloseres Erlebnis bei Operationen mit hoher Last gewährleistet ist.
+* Verbesserte Übertragung großer Dateien durch Einführung von Paginierung in Upload- und Download-Flüssen, was eine effiziente Handhabung großer Datensätze ermöglicht.
+
+**Höhere Stabilität und Zuverlässigkeit**
+
+* Fehlerkorrektur - Autoren-Server-Neustarts, die durch Desktop-App-Interaktionen ausgelöst werden, verbessern die Systemstabilität erheblich.
+* Behobene Anwendungsabstürze beim Herunterladen oder Hochladen großer Ordner (Tausende von Dateien).
 
 ### Aktualisierungen in der Programmversion 3.0.0 {#app-version-3.0.0}
 
@@ -287,7 +295,7 @@ Es ist wichtig, die folgenden Informationen zum Programm und dessen Funktionswei
 
 * Wenn die App nicht die erwarteten Ergebnisse anzeigt, klicken Sie auf das Aktualisierungssymbol in der oberen Leiste.
 
-* Die lokale Netzwerkfreigabe, bei Verwendung der Aktion [!UICONTROL Reveal File]. Sie zeigt nur Dateien (und Ordner) an, die lokal verfügbar sind. [!UICONTROL Reveal File] und [!UICONTROL Reveal Folder] lädt Assets vorab herunter, damit die richtigen Assets in der lokalen Netzwerkfreigabe angezeigt werden.
+* Die lokale Netzwerkfreigabe, die angezeigt wird, wenn Sie [!UICONTROL Reveal File] Aktion verwenden, zeigt nur Dateien (und Ordner) an, die lokal verfügbar sind. [!UICONTROL Reveal File] und lädt [!UICONTROL Reveal Folder] Assets vorab herunter, um sicherzustellen, dass die richtigen Assets in der lokalen Netzwerkfreigabe angezeigt werden.
 
 * Die lokale Netzwerkfreigabe von SMB (Mac)/WebDAV (Win) wird verwendet, wenn eine Adobe Creative Cloud-App die Asset-Dateien liest, die verknüpft/in einer nativen Datei der Creative Cloud-App platziert sind.
 
@@ -311,7 +319,7 @@ Das folgende Diagramm zeigt den Fluss von Assets und Dateien von der Cloud zum l
 
 **CRUD-Probleme (Erstellen, Lesen, Aktualisieren und Löschen):**
 
-* Beim Hochladen von Änderungen an einem Asset mit Kommentaren werden die Kommentare mit dem Asset in [!DNL Experience Manager] gespeichert, sind jedoch nicht als Versionskommentare sichtbar. Dieses Problem wurde in [!DNL Experience Manager] 6.4.5. und [!DNL Experience Manager] 6.5.1. behoben. Adobe empfiehlt dringend, die neuesten Service Packs zu installieren. <!-- CQ-4268990 -->
+* Beim Hochladen von Änderungen an einem Asset mit Kommentaren werden die Kommentare mit dem Asset in [!DNL Experience Manager] gespeichert, sind jedoch nicht als Versionskommentare sichtbar. Dieses Problem wurde in [!DNL Experience Manager] 6.4.5 und [!DNL Experience Manager] 6.5.1 behoben. Adobe empfiehlt, die neuesten Service Packs zu installieren. <!-- CQ-4268990 -->
 
 * Ein Benutzer kann Asset-Übertragungen nicht abbrechen. Wenn Sie eine unbeabsichtigte große Übertragung ausgelöst haben, beenden Sie das Programm und starten Sie es erneut. <!-- CQ-4278940 -->
 
