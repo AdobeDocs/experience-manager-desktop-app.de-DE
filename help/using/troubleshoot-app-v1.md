@@ -2,9 +2,9 @@
 title: Fehlerbehebung für das Desktop-Programm, Version 1.10.
 description: Führen Sie eine Fehlerbehebung für das [!DNL Adobe Experience Manager] -Desktop-Programm, Version 1.10. durch, um Probleme zu lösen, die eventuell bei der Installation, bei Upgrades, bei der Konfiguration usw. auftreten können.
 exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
-source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3358'
 ht-degree: 68%
 
 ---
@@ -17,7 +17,7 @@ Die [!DNL Adobe Experience Manager]-Desktop-App enthält Dienstprogramme, mit de
 
 ![Abbildung des Desktop-Programms](assets/aem-desktopapp-architecture.png)
 
-Mit dieser Architektur fängt die Desktop-App Dateisystemaufrufe (Öffnen, Schließen, Lesen, Schreiben usw.) an die gemountete Netzwerkfreigabe ab und übersetzt sie in native AEM-HTTP-Aufrufe an den AEM-Server. Dateien werden lokal zwischengespeichert. Weitere Informationen finden Sie unter [Verwenden des AEM Desktop-Programms, Version 1.x](use-app-v1.md).
+Mit dieser Architektur fängt die Desktop-Anwendung Dateisystemaufrufe (Öffnen, Schließen, Lesen, Schreiben usw.) an die gemountete Netzwerkfreigabe ab und übersetzt sie in native AEM-HTTP-Aufrufe an den AEM-Server. Dateien werden lokal zwischengespeichert. Weitere Informationen finden Sie unter [Verwenden des AEM Desktop-Programms, Version 1.x](use-app-v1.md).
 
 ## Übersicht über die Komponenten des AEM-Desktop-Programms {#desktop-app-component-overview}
 
@@ -68,7 +68,7 @@ Das [!DNL Experience Manager]-Desktop-Programm verfügt über keinen konfigurier
 
 Das AEM-Desktop-Programm bietet interne Caching- und Hintergrund-Upload-Funktionen zur Verbesserung des Endbenutzererlebnisses. Wenn Sie eine große Datei speichern, wird sie zuerst lokal gespeichert, sodass Sie Ihre Arbeit fortsetzen können. Nach einer gewissen Zeit (momentan 30 Sekunden) wird die Datei dann im Hintergrund an den AEM-Server gesendet.
 
-Im Gegensatz zum Creative Cloud-Desktop oder anderen Dateisynchronisierungslösungen wie Microsoft One Drive ist das AEM-Desktop-Programm kein vollständiger Desktop-Synchronisierungs-Client. Der Grund dafür liegt darin, dass sie Zugriff auf das gesamte AEM Assets-Repository bietet, das für eine vollständige Synchronisierung extrem umfangreich sein kann (mehrere hunderte Gigabyte oder Terabyte).
+Im Gegensatz zu Creative Cloud Desktop oder anderen Dateisynchronisierungslösungen wie Microsoft One Drive ist das AEM-Desktop-Programm kein vollständiger Desktop-Synchronisierungs-Client. Der Grund dafür liegt darin, dass sie Zugriff auf das gesamte AEM Assets-Repository bietet, das für eine vollständige Synchronisierung extrem umfangreich sein kann (mehrere hunderte Gigabyte oder Terabyte).
 
 Das Caching bietet die Möglichkeit, den Mehraufwand bezüglich des Netzwerks/Speichers auf eine Teilmenge von Assets zu beschränken, die für den Benutzer relevant sind.
 
@@ -94,9 +94,10 @@ Wenn Sie eine Fehlerbehebung bei für einzelne Benutzer suboptimierten Leistungs
 
 Die für einen einzelnen Benutzer verfügbare Bandbreite spielt eine entscheidende Rolle bei der Performance des WebDAV/SMB-Clients.
 
-Adobe empfiehlt, dass die Upload-Geschwindigkeit eines einzelnen Benutzers bei fast 10 Mbit/s liegt. Bei drahtlosen Verbindungen wird die Bandbreite oftmals zwischen mehreren Benutzern aufgeteilt. Wenn mehrere Benutzer gleichzeitig Aufgaben durchführen, die Netzwerkbandbreite verbrauchen, kann sich die Performance weiter verschlechtern. Verwenden Sie eine kabelgebundene Verbindung, um derartige Probleme zu vermeiden.
+Adobe empfiehlt, dass die Upload-Geschwindigkeit einer einzelnen Benutzerin bzw. eines einzelnen Benutzers bei fast 10 Mbit/s liegt. Bei drahtlosen Verbindungen wird die Bandbreite oftmals zwischen mehreren Benutzern aufgeteilt. Wenn mehrere Benutzer gleichzeitig Aufgaben durchführen, die Netzwerkbandbreite verbrauchen, kann sich die Performance weiter verschlechtern. Verwenden Sie eine kabelgebundene Verbindung, um derartige Probleme zu vermeiden.
 
-<!-- AG, 8/18: The Windows KB article is removed by MS now. Giving 404. Also, Win 7 support is gone and the desktop app is also not supported on Win 7. Hiding this content for now.
+<!-- 
+AG, 8/18: The Windows KB article is removed by MS now. Giving 404. Also, Win 7 support is gone and the desktop app is also not supported on Win 7. Hiding this content for now.
 
 ## Windows-specific configurations {#windows-specific-configurations}
 
@@ -109,16 +110,16 @@ On Windows 7, modifying IE settings can improve the performance of WebDAV. For d
 
 Wenn Sie lokal mit einer Datei interagieren, überprüft AEM Desktop, ob in AEM eine neuere Version der Datei verfügbar ist. Wenn eine neue Version verfügbar ist, lädt das Programm eine neue Kopie der Datei in den lokalen Cache herunter. AEM Desktop überschreibt jedoch eine lokal zwischengespeicherte Datei nicht, wenn sie geändert wurde. Diese Funktion verhindert, dass Ihre Arbeit unbeabsichtigt überschrieben wird.
 
-Wenn dieselbe Datei sowohl lokal als auch in AEM geändert wird, überschreibt die lokal geänderte Version die Version in AEM. In diesem Fall ist die vorherige Version in der Zeitleiste des Assets verfügbar. Sie können beide Versionen überprüfen und Konflikte lösen.
+Wenn dieselbe Datei sowohl lokal als auch in AEM geändert wird, überschreibt die lokal geänderte Version die Version in AEM. In diesem Fall ist die vorherige Version in der Timeline des Assets verfügbar. Sie können beide Versionen überprüfen und Konflikte lösen.
 
-Wenn eine lokale Datei mit der auf dem Server verfügbaren Version inkompatibel ist, werden Sie über das Dialogfeld mit dem Status für den Upload im Hintergrund über den Konflikt benachrichtigt. Öffnen Sie zum Beheben des Problems die in Konflikt stehende Datei und speichern Sie sie. Das Speichern der Datei zwingt AEM Desktop zur Synchronisierung Ihrer letzten Änderungen in AEM. Sie können die vorherigen Versionen des Assets in der Zeitachse anzeigen und jegliche Konflikte auflösen.
+Wenn eine lokale Datei mit der auf dem Server verfügbaren Version inkompatibel ist, werden Sie über das Dialogfeld mit dem Status für den Upload im Hintergrund über den Konflikt benachrichtigt. Öffnen Sie zum Beheben des Problems die in Konflikt stehende Datei und speichern Sie sie. Das Speichern der Datei zwingt AEM Desktop zur Synchronisierung Ihrer letzten Änderungen in AEM. Sie können die vorherigen Versionen des Assets in der Timeline anzeigen und jegliche Konflikte auflösen.
 
 Berücksichtigen Sie zusätzliche Faktoren, wenn mehrere Benutzende versuchen, in separaten bereitgestellten Verzeichnissen zu arbeiten, die auf dieselbe AEM-Instanz abzielen. Insbesondere sind die folgenden Faktoren wichtig:
 
 * Die verfügbare Bandbreite im ursprünglichen Netzwerk des Benutzers
 * Netzwerkkonfiguration wie Firewalls oder Proxys des ursprünglichen Netzwerks
 * Verfügbare Bandbreite im Netzwerk der AEM-Zielinstanz
-* Ob eine Dispatcher vor der Ziel-AEM-Instanz vorhanden ist
+* Ob eine Dispatcher vor der AEM-Zielinstanz vorhanden ist
 * Aktuelle Auslastung der AEM-Zielinstanz
 
 ## Zusätzliche AEM-Konfigurationen {#additional-aem-configurations}
@@ -127,7 +128,7 @@ Wenn sich die WebDAV/SMB-Leistung drastisch vermindert, wenn mehrere Benutzer gl
 
 ## Aktualisieren des Übergangs-Workflows für Assets {#update-asset-transient-workflows}
 
-Sie können die AEM-Leistung verbessern, indem Sie Übergangs-Workflows für den Workflow DAM-Update-Asset aktivieren. Durch die Aktivierung von Übergangs-Workflows wird die zum Aktualisieren von Assets erforderliche Leistung reduziert, wenn sie in AEM erstellt oder aktualisiert werden.
+Sie können die Leistung von AEM verbessern, indem Sie Übergangs-Workflows für den Workflow DAM-Update-Asset aktivieren. Durch die Aktivierung von Übergangs-Workflows wird die zum Aktualisieren von Assets erforderliche Leistung reduziert, wenn sie in AEM erstellt oder aktualisiert werden.
 
 1. Navigieren Sie in der Experience Manager-Instanz (`https://[aem_server]:[port]/miscadmin`) zu `/miscadmin`.
 1. Erweitern Sie in der Navigationsstruktur **Tools** > **Workflow** > **Modelle** > **DAM**.
@@ -151,7 +152,7 @@ Durch diese Maßnahme wird insbesondere die für den Server verfügbare Netzwerk
 
 * Die für eine AWS-Instanz dedizierte Netzwerkbandbreite nimmt mit steigender Größe der Instanz zu. Informationen zur verfügbaren Bandbreite für jede Instanzgröße finden Sie in der [AWS-Dokumentation](https://aws.amazon.com/ec2/instance-types/).
 * Im Rahmen der Fehlerbehebung für einen großen Kunden hat Adobe die Größe seiner AEM-Instanz auf c4.8xlarge konfiguriert, hauptsächlich für die dedizierte Bandbreite von 4000 MBit/s, die bereitgestellt wird.
-* Wenn vor der AEM-Instanz ein Dispatcher vorhanden ist, stellen Sie sicher, dass er eine geeignete Größe aufweist. Wenn die AEM-Instanz 4.000 MBit/s, die Dispatcher-Instanz jedoch nur 500 MBit/s bereitstellt, beträgt die effektive Bandbreite nur 500 MBit/s. Dies liegt daran, dass der Dispatcher einen Engpass im Netzwerk verursacht.
+* Wenn vor der AEM-Instanz eine Dispatcher vorhanden ist, stellen Sie sicher, dass sie eine geeignete Größe aufweist. Wenn die AEM-Instanz 4.000 MBit/s, die Dispatcher-Instanz jedoch nur 500 MBit/s bereitstellt, beträgt die effektive Bandbreite nur 500 MBit/s. Dies liegt daran, dass der Dispatcher einen Engpass im Netzwerk verursacht.
 
 ## Beschränkungen für ausgecheckte Dateien {#checked-out-file-limitations}
 
@@ -159,7 +160,7 @@ Es gibt einige bekannte Einschränkungen bei der Interaktion mit ausgecheckten D
 
 ### Allgemein {#general}
 
-Beim Schreiben in eine ausgecheckte Datei wird die Sperre nur innerhalb der AEM-WebDAV-Implementierung erzwungen. Daher erzwingen Clients, die WebDAV verwenden, z. B. das Desktop-Programm, nur die Sperre. Die Sperre wird nicht über die AEM-Web-Oberfläche erzwungen. In der AEM-Oberfläche wird lediglich für ausgecheckte Assets ein Schloss-Symbol in der Kartenansicht angezeigt. Das Symbol hat nur kosmetischen Charakter und keine Auswirkung auf das AEM-Verhalten.
+Beim Schreiben in eine ausgecheckte Datei wird die Sperre nur innerhalb der AEM WebDAV-Implementierung erzwungen. Daher erzwingen Clients, die WebDAV verwenden, z. B. das Desktop-Programm, nur die Sperre. Die Sperre wird nicht über die AEM-Web-Oberfläche erzwungen. In der AEM-Oberfläche wird lediglich für ausgecheckte Assets ein Schloss-Symbol in der Kartenansicht angezeigt. Das Symbol hat nur kosmetischen Charakter und keine Auswirkung auf das AEM-Verhalten.
 
 Die WebDAV-Clients verhalten sich nicht immer erwartungsgemäß. Es können weitere Probleme auftreten. Eine Aktualisierung oder Überprüfung des Assets in AEM ist jedoch eine geeignete Methode, um sicherzustellen, dass ein Asset nicht im Moment bearbeitet wird. Dieses Verhalten ist typisch für WebDAV-Clients des Betriebssystems. Adobe hat keinen Einfluss darauf.
 
@@ -208,7 +209,7 @@ Nach der Installation des -Desktop-Programms wird das Menüsymbol des -Desktop-P
 
 1. Starten Sie das System neu.
 
-AEM-Desktop unternimmt für beliebige Dateien drei Synchronisierungsversuche. Wenn die Synchronisierung der Datei nach dem dritten Mal fehlschlägt, geht das AEM-Desktop-Programm davon aus, dass für die Datei ein Konflikt vorliegt, und Sie werden über das Statusfenster für den Upload im Hintergrund darüber benachrichtigt. Ein Konfliktzustand gibt an, dass Ihre letzten Änderungen weiterhin lokal verfügbar sind, sie jedoch nicht wieder mit AEM synchronisiert werden. Die AEM-Desktop-App versucht nicht mehr, zu synchronisieren.
+AEM-Desktop unternimmt für beliebige Dateien drei Synchronisierungsversuche. Wenn die Synchronisierung der Datei nach dem dritten Mal fehlschlägt, geht das AEM-Desktop-Programm davon aus, dass für die Datei ein Konflikt vorliegt, und Sie werden über das Statusfenster für den Upload im Hintergrund darüber benachrichtigt. Ein Konfliktzustand gibt an, dass Ihre letzten Änderungen weiterhin lokal verfügbar sind, sie jedoch nicht wieder mit AEM synchronisiert werden. Das AEM-Desktop-Programm versucht nicht mehr, zu synchronisieren.
 
 Die einfachste Methode zum Beheben dieser Situation besteht darin, die in Konflikt stehende Datei zu öffnen und erneut zu speichern. Dadurch wird AEM gezwungen, drei weitere Synchronisierungsversuche zu unternehmen. Wenn das Synchronisieren der Datei weiterhin fehlschlägt, lesen Sie für weitere Hilfe die Abschnitte unten.
 
@@ -235,13 +236,13 @@ Wenn Sie den Cache löschen möchten, löschen Sie das Verzeichnis &lt;Encoded A
 
 ## Ermitteln der AEM-Desktop-Version {#finding-the-aem-desktop-version}
 
-Die Vorgehensweise zum Ermitteln der AEM-Desktopversion ist sowohl für Windows als auch für macOS identisch.
+Das Verfahren zum Überprüfen der AEM Desktop-Version ist für Windows und macOS identisch.
 
 Klicken Sie auf das AEM Desktop-Symbol und wählen Sie dann **About** (Info) aus. Daraufhin wird die Versionsnummer auf dem Bildschirm angezeigt.
 
 ## Aktualisieren des AEM-Desktop-Programms auf macOS {#upgrading-aem-desktop-app-on-macos}
 
-Beim Aktualisieren des AEM-Desktop-Programms auf macOS können gelegentlich Probleme auftreten. Diese Probleme werden durch ältere Systemordner für das AEM-Desktop-Programm verursacht. Dadurch wird verhindert, dass neue Versionen von AEM Desktop korrekt geladen werden. Zur Behebung dieses Problems können die folgenden Ordner und Dateien manuell entfernt werden.
+Gelegentlich können beim Aktualisieren des AEM-Desktop-Programms auf macOS Probleme auftreten. Diese Probleme werden durch ältere Systemordner für das AEM-Desktop-Programm verursacht. Dadurch wird verhindert, dass neue Versionen von AEM Desktop korrekt geladen werden. Zur Behebung dieses Problems können die folgenden Ordner und Dateien manuell entfernt werden.
 
 Bevor Sie die unten aufgeführten Schritte durchführen, ziehen Sie das Programm „Adobe Experience Manager Desktop“ vom Ordner „macOS-Applikationen“ in den Papierkorb. Öffnen Sie dann das Terminal und führen Sie den folgenden Befehl aus, wobei Sie bei Aufforderung Ihr Kennwort angeben.
 
@@ -281,11 +282,11 @@ Die häufigste Ursache für Probleme beim Herstellen einer Verbindung zwischen A
 
 ### Problem bei der SSL-Konfiguration {#ssl-configuration-issue}
 
-Die Bibliotheken, die die AEM-Desktop-App für die HTTP-Kommunikation verwendet, verwenden eine strikte SSL-Durchsetzung. Manchmal kann eine Verbindung über einen Browser erfolgreich sein, aber die AEM-Desktop-App kann nicht verwendet werden. Installieren Sie für eine ordnungsgemäße SSL-Konfiguration das fehlende Zwischenzertifikat in Apache. Siehe [How to install an Intermediate CA cert in Apache](https://access.redhat.com/solutions/43575) (nur auf Englisch verfügbar).
+Die Bibliotheken, die die AEM-Desktop-App für die HTTP-Kommunikation verwendet, verwenden eine strikte SSL-Durchsetzung. Manchmal kann eine Verbindung über einen Browser erfolgreich hergestellt werden, aber die AEM-Desktop-App kann nicht verwendet werden. Installieren Sie für eine ordnungsgemäße SSL-Konfiguration das fehlende Zwischenzertifikat in Apache. Siehe [How to install an Intermediate CA cert in Apache](https://access.redhat.com/solutions/43575) (nur auf Englisch verfügbar).
 
 ## Verwenden von AEM Desktop mit Dispatcher {#using-aem-desktop-with-dispatcher}
 
-AEM Desktop funktioniert mit AEM-Bereitstellungen hinter einem Dispatcher. Dies ist eine standardmäßige und empfohlene Konfiguration für AEM-Server. AEM-Dispatcher vor AEM-Autorenumgebungen werden normalerweise so konfiguriert, dass das Caching von DAM-Assets übersprungen wird. Deshalb stellen Dispatcher aus Sicht von AEM Desktop kein zusätzliches Caching bereit. Stellen Sie sicher, dass die Dispatcher-Konfiguration so angepasst ist, dass sie für AEM Desktop funktioniert. Weitere Informationen finden Sie unter [Herstellen einer Verbindung zu AEM mit einer Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+AEM Desktop kann mit AEM-Bereitstellungen hinter einer Dispatcher verwendet werden. Dies ist eine standardmäßige und empfohlene Konfiguration für AEM-Server. AEM-Dispatcher vor AEM-Autorenumgebungen werden normalerweise so konfiguriert, dass das Caching von DAM-Assets übersprungen wird. Deshalb stellen Dispatcher aus Sicht von AEM Desktop kein zusätzliches Caching bereit. Stellen Sie sicher, dass die Dispatcher-Konfiguration so angepasst ist, dass sie für AEM Desktop funktioniert. Weitere Informationen finden Sie unter [Herstellen einer Verbindung zu AEM mit einer Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
 ## Überprüfen auf Protokolldateien {#checking-for-log-files}
 

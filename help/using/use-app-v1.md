@@ -3,10 +3,10 @@ title: Verwenden des [!DNL Experience Manager] -Desktop-Programms, Version 1.10.
 description: Erfahren Sie, wie Sie das Adobe Experience Manager-Desktop-Programm, Version 1.10, verwenden und Ihre Arbeit mit Assets auf dem Desktop optimieren können.
 feature: Desktop App,Asset Management
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-source-git-commit: 5676e7ece8bb43f051dae72d17e15ab1c34caefc
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 70%
+source-wordcount: '2358'
+ht-degree: 69%
 
 ---
 
@@ -145,7 +145,7 @@ Um das gewünschte Asset in Ihrem lokalen Dateisystem zu finden, klicken Sie auf
 ## Grundlegendes zu den Asset-Status {#understand-the-asset-statuses}
 
 | ![Windows-Standardprogrammsymbol](assets/do-not-localize/win_default.png) | Die App ist mit dem Server verbunden und alle Assets werden synchronisiert. |
---- |--- |
+| --- |--- |
 | ![Symbol für Windows deaktiviert](assets/do-not-localize/win_disabled.png) | Die App wird gestartet, ist jedoch nicht mit dem Server verbunden. Bei einigen Assets steht möglicherweise die Synchronisierung aus. |
 | ![Symbol für die Windows-Dateisynchronisierung](assets/do-not-localize/win_sync.png) | Assets werden synchronisiert. Dateien werden hoch- oder herunterladen. Im Fenster „Asset Status“ (Asset-Status) können Sie den exakten Status anzeigen und die Übertragungen pausieren. |
 | ![Symbol für Windows-Neuverbindung](assets/do-not-localize/win_refresh.png) | Das Programm versucht, eine erneute Verbindung herzustellen. Möglicherweise führen die Netzwerkprobleme dazu, dass die Verbindung getrennt wird. |
@@ -156,7 +156,7 @@ Um das gewünschte Asset in Ihrem lokalen Dateisystem zu finden, klicken Sie auf
 
 Mit [!DNL Experience Manager Assets] können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Durch das Auschecken eines Assets wird das Asset gesperrt und andere Benutzer können derartige Vorgänge nicht durchführen. Um Assets aus-/einchecken zu können, benötigen Sie entsprechenden Schreibzugriff.
 
-Es gibt zwei Methoden zum Auschecken von Assets über die [!DNL Experience Manager]-Web-Benutzeroberfläche. Ausführliche Informationen zur ersten Methode finden Sie unter [Ein- und Auschecken von Dateien über die Assets-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Führen Sie diese Schritte aus, um das Asset nach der Installation des [!DNL Experience Manager]-Desktop-Programms erneut auszuchecken und zu öffnen.
+Es gibt zwei Methoden zum Auschecken von Assets über die [!DNL Experience Manager]-Web-Benutzeroberfläche. Ausführliche Informationen zur ersten Methode finden Sie unter [Ein- und Auschecken von Dateien über die Assets-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/check-out-and-submit-assets). Führen Sie diese Schritte aus, um das Asset nach der Installation des [!DNL Experience Manager]-Desktop-Programms erneut auszuchecken und zu öffnen.
 
 1. Öffnen Sie die Benutzeroberfläche von [!DNL Assets] und bewegen Sie den Mauszeiger auf einen Ordner oder ein Asset, um die Desktop-Aktionen in der Kartenansicht in Form von Schnellaktionen anzuzeigen.
 
@@ -242,7 +242,7 @@ Mit dem [!DNL Experience Manager]-Desktop-Programm können Sie einen gesamten Or
 
 1. Wenn der Upload abgeschlossen ist, schließen Sie das Dialogfeld und navigieren Sie zur Assets-Benutzeroberfläche. Der hochgeladene Ordner wird in der Web-Benutzeroberfläche angezeigt.
 
-Beim Adobe wird nicht empfohlen, eine größere Anzahl von Dateien oder verschachtelten Ordnern aus dem lokalen Dateisystem in den Netzwerkfreigabebereich zu kopieren oder zu ziehen. Das Programm kann den Upload-Vorgang aufgrund technischer Einschränkungen nicht steuern und die Leistung ist schlecht.
+Adobe empfiehlt nicht, eine größere Anzahl von Dateien oder verschachtelten Ordnern aus dem lokalen Dateisystem in den Netzwerkfreigabebereich zu kopieren oder dort hineinzuziehen. Das Programm kann den Upload-Vorgang aufgrund technischer Einschränkungen nicht steuern und die Leistung ist schlecht.
 
 Alternativ können Sie Dateien/Ordner im Finder oder Explorer auswählen, sie kopieren, zum Zielordner im Netzwerkfreigabebereich navigieren und **Assets einfügen** aus dem Kontextmenü des [!DNL Experience Manager]-Desktop-Programms auswählen. Auf diese Weise lädt das [!DNL Experience Manager]-Desktop-Programm die eingefügten Assets ähnlich wie die Option **Ordner hochladen** in der [!DNL Experience Manager]-Web-Oberfläche hoch.
 

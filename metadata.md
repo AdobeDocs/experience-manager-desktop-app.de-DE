@@ -3,34 +3,34 @@ cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 type: Documentation
 mini-toc-levels: 1
-git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.de-DE
-index: y
+git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
+index: true
 recommendations: noDisplay
-source-git-commit: ba980c1a1bad4a9627fc28ac7f6619b644fb1f04
+source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 100%
+source-wordcount: '156'
+ht-degree: 4%
 
 ---
 
 
 # Metadaten für die interne Verwendung
 
-Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Dateien des Benutzerhandbuchs zu Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein beliebiges Benutzerhandbuch ändern möchten, tun Sie dies in einer TOC.md-Datei.
+Die Datei „metadata.md“ enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Inhaltsverzeichnisdatei (.md).
 
-| metadata | Funktion |
+| Metadaten | Funktion |
 |--- |--- |
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet. |
-| solution-hub-url | Öffnet die Hub-Seite „Lernen und Support“. |
-| solution-icon | Zeigt das Lösungssymbol neben dem Lösungstitel an. Noch nicht implementiert. |
+| solution-hub-url | Öffnet die Hub-Seite Lernen und Support . |
+| solution-icon | Zeigt ein Lösungssymbol neben dem Lösungstitel an. Noch nicht implementiert. |
 | getting-started-url | Link zur Seite „Erste Schritte“. |
-| tutorials-url | Link zu den Video-Tutorials. |
-| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Der Standardwert ist 2. |
-| git-repo | Gibt den Speicherort des primären Repositorys für die interne Verwendung an. |
+| tutorials-url | Link zu den Video-Tutorials |
+| Mini-Inhaltsverzeichnisebenen | Bestimmt die Anzahl der Überschriftenebenen, die in der rechten Leiste angezeigt werden. Der Standardwert lautet 2. |
+| git-repo | Gibt den Speicherort des Hauptrepos für die interne Verwendung an. |
 
 In der Datei TOC.md
 
-| metadata | Funktion |
+| Metadaten | Funktion |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet. |
-| user-guide-url | Öffnet die Hub-Seite „Lernen und Support“. |
+| user-guide-url | Öffnet die Hub-Seite Lernen und Support . |
