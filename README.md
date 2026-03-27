@@ -13,7 +13,7 @@ Eine solche Integration ermöglicht es verschiedenen Rollen in der Organisation,
 
 ## Zur Dokumentation beitragen
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex ](https://dotnetfoundation.org/about/policies/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex &#x200B;](https://dotnetfoundation.org/about/policies/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 **Geringfügige Änderungen**: Klicken Sie am rechten Rand eines Artikels auf „Bearbeiten“, um kleinere Korrekturen oder Klarstellungen vorzunehmen und einzureichen. Alternativ können Sie in diesem Repository ein Problem erstellen, das die Änderungen beschreibt. Solche geringfügigen Beiträge werden von den Nutzungsbedingungen von Adobe abgedeckt.
 
