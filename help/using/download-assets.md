@@ -2,13 +2,16 @@
 title: Herunterladen von Assets mit dem  [!DNL Experience Manager] -Desktop-Programm
 description: Herunterladen von Assets mit dem  [!DNL Adobe Experience Manager] -Desktop-Programm
 feature: Desktop App,Asset Management
-source-git-commit: 2947fbd3bfeb15b37a8f1b0118e969b5d70499d0
+exl-id: 7004f759-ce8a-497d-9647-3a120fa3ba1d
+TQID: https://experienceleague.adobe.com/EXan0driSkmXsYYTxPe73VaDhQP5RQt1c-L2US-cSUY
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 57%
+source-wordcount: 436
+ht-degree: 56%
 
 ---
-
 
 # Lokales Herunterladen von Assets {#download-assets-locally}
 
@@ -40,9 +43,9 @@ Wenn Ordner ausgewählt und heruntergeladen werden, lädt die Anwendung nur Asse
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
-* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der ](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
@@ -51,4 +54,3 @@ Wenn Ordner ausgewählt und heruntergeladen werden, lädt die Anwendung nur Asse
 >* [Hochladen von Assets](/help/using/upload-assets.md)
 >* [Grundlegendes zur Benutzeroberfläche](/help/using/user-interface.md)
 >* [Suchen](/help/using/search.md)
-

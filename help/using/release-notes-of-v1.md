@@ -2,10 +2,16 @@
 title: Versionshinweise für das Desktop-Programm, v1.10
 description: Versionshinweise, Verbesserungen, neue Funktionen, Kompatibilität und Downloadlinks für das AEM-Desktop-Programm, Version 1.10.
 exl-id: 886864e0-016a-4a17-b3ba-4b18a514214a
-source-git-commit: 23719d2f5d92f6031687df18036acdbc04722402
+TQID: https://experienceleague.adobe.com/U-YEyQVpGmYW1R-uHmLuBeZDW6acHujDAt0BilDlEvo
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: ae478996-b206-4712-9b0c-dc78a2644453id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085id: e17747bc-9b7b-44e6-a443-f54229a02620
+subfeature_v2: id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '3989'
-ht-degree: 44%
+source-wordcount: 4121
+ht-degree: 41%
 
 ---
 
@@ -35,7 +41,7 @@ Das [!DNL Adobe Experience Manager]-Desktop-Programm ist mit den folgenden Betri
 
 Adobe empfiehlt die Verwendung der neuesten Version des AEM-Desktop-Programms, um sicherzustellen, dass Sie die neuesten Funktionen, die neuesten Fehlerbehebungen und die bestmögliche Leistung verwenden.
 
-Die AEM-Desktop-App-Version, die Sie auf Ihrem lokalen Computer installieren möchten, erfordert einen bestimmten AEM-Server
+Die Version des AEM-Desktop-Programms, die Sie auf Ihrem lokalen Computer installieren möchten, erfordert einen bestimmten AEM-Server
 Version/Zusätzliche Server-seitige Komponenten (Service Packs, Hotfixes oder Feature Packs). Stellen Sie sicher, dass der AEM-Server ordnungsgemäß konfiguriert ist, bevor Sie zum ersten Mal eine Verbindung herstellen. Wenn Sie Hilfe benötigen, wenden Sie sich an Ihren AEM-Administrator.
 
 Lesen Sie die Informationen in der [detaillierten Kompatibilitätsmatrix](#compatibilitymatrix) am Ende dieses Dokuments, um die Voraussetzungen für Ihr Setup zu prüfen.
@@ -46,7 +52,7 @@ Das AEM-Desktop-Programm 1.10 konzentriert sich auf die Verbesserung des Benutz
 
 >[!NOTE]
 >
->Wenn Sie macOS 10.15.4 oder höher verwenden, verwenden Sie mindestens Version 1.10.0.6 des Programms. Diese Patch-Version erfüllt die [Apple-Benachrichtigungsanforderungen](https://developer.apple.com/news/?id=04102019a).
+>Wenn Sie macOS 10.15.4 oder höher verwenden, verwenden Sie mindestens Version 1.10.0.6 der App. Diese Patch-Version erfüllt die [Apple-Benachrichtigungsanforderungen](https://developer.apple.com/news/?id=04102019a).
 
 **Lokales Bearbeiten/Auschecken**: Automatische Uploads gespeicherter Asset-Änderungen, die im Statusfenster deaktiviert werden können. So können Benutzer an Dateien arbeiten, die hierbei vorgenommenen Änderungen speichern und, wenn sie bereit sind, alle Änderungen hochladen.
 
@@ -66,7 +72,7 @@ Detaillierte Anweisungen finden Sie unter [Installieren und Konfigurieren des AE
 
 Diese Version erweitert und ersetzt die Vorgängerversionen des [!DNL Experience Manager]-Desktop-Programms, die die folgenden wesentlichen Verbesserungen boten:
 
-* **Version 1.9 / 1.9.1**: Wiederverwendbare Uploads, verbessertes Statusfenster, Anwendungssymbole, die den Status der Anwendung/Verbindung anzeigen, Vorabrufen verknüpfter Assets zum InDesign von Dateien.
+* **Version 1.9/1.9.1**: Wiederverwendbare Uploads, verbessertes Statusfenster, Anwendungssymbole zur Anzeige des Status der Anwendung/Verbindung, Vorabruf verknüpfter Assets für InDesign-Dateien.
 
 * **Version 1.8**: Bessere Kontrolle der Cachegröße für den Benutzer, verbessertes Anmeldeerlebnis für SAML/SSO unter Windows, Unterstützung `.pac` Netzwerk-Proxys auf Mac und kundengemeldete Probleme.
 
@@ -130,7 +136,7 @@ Ein verbessertes Fenster Asset-Status enthält die folgenden Informationen zu As
 
 [!UICONTROL Bulk Uploads]
 
-Hochladen großer Ordnerhierarchien über [!UICONTROL Create] > [!UICONTROL Upload Folder] in den Triggern der AEM-Web-Benutzeroberfläche in diesem Dialogfeld. Dasselbe tritt auf, wenn Sie im Finder oder Explorer im Kontextmenü des Desktop-Programms &quot;Assets einfügen“ kopieren und auswählen.
+Hochladen großer Ordnerhierarchien über [!UICONTROL Create] > [!UICONTROL Upload Folder] in den Trigger der AEM-Web-Benutzeroberfläche Dieses Dialogfeld wird angezeigt. Dasselbe tritt auf, wenn Sie im Finder oder Explorer im Kontextmenü des Desktop-Programms &quot;Assets einfügen“ kopieren und auswählen.
 
 * Zeigt aktive Uploads an, einschließlich eines Fortschrittsbalkens und des Namens der momentan übertragenen Datei.
 
@@ -146,8 +152,8 @@ Das Anwendungssymbol gibt den Status von Hintergrundvorgängen an, um den Benutz
 
 **Vorab-Abruf verknüpfter Assets**
 
-Um das Benutzererlebnis mit dem InDesign von Dokumenten mit verknüpften Assets in AEM zu verbessern, ruft das Desktop-Programm diese verknüpften Dateien vorab in den lokalen Cache ab. Dieser Fluss erfolgt vor dem Herunterladen und Öffnen des InDesign-Dokuments. Auf diese Weise sind die verknüpften Dateien lokal verfügbar und müssen beim Zugriff auf Assets auf InDesign (im Bedienfeld „Links„) nicht länger warten.
-Der Vorabruf funktioniert nur, wenn AEM die Links auf der Serverseite erkennt. Ein Asset mit erkannten Links verfügt über eine Liste von „Verweisen“, die in der Eigenschaftenansicht des InDesign-Assets aufgeführt ist.
+Um das Benutzererlebnis mit InDesign-Dokumenten zu verbessern, die verknüpfte Assets enthalten, die in AEM gespeichert sind, ruft das Desktop-Programm diese verknüpften Dateien vorab in den lokalen Cache ab. Dieser Fluss erfolgt, bevor das InDesign-Dokument heruntergeladen und geöffnet wird. Auf diese Weise sind die verknüpften Dateien für den Benutzer lokal verfügbar und er muss nicht länger warten, wenn auf Assets in InDesign (im Bedienfeld „Links„) zugegriffen wird.
+Der Vorababruf funktioniert nur, wenn AEM die Links auf der Serverseite erkennt. Ein Asset mit erkannten Links verfügt über eine Liste von „Verweisen“, die in der Eigenschaftenansicht des InDesign-Assets aufgeführt ist.
 
 ### Seit Einführung des AEM-Desktop-Programms 1.8 verfügbare Verbesserungen {#enhancements-available-since-aem-desktop-app-18x}
 
@@ -167,9 +173,9 @@ In der Folgeversion 1.8.1 des AEM-Desktop-Programms wurden Verbesserungen hinsic
 
 * Netzwerk:
 
-   * Wenn eine AEM-Sitzung abläuft, wird der Benutzer jetzt benachrichtigt und kann auf die Benachrichtigung klicken, um sich erneut anzumelden (CQ-4202028).
+   * Wenn eine AEM-Sitzung abläuft, wird der/die Benutzende jetzt benachrichtigt und kann auf die Benachrichtigung klicken, um sich erneut anzumelden (CQ-4202028).
 
-   * (Mac) Fügen Sie Unterstützung für das Verbinden mit AEM über die Verwendung der `.pac` Proxy-Konfiguration hinzu (CQ-4233430).
+   * (Mac) Fügen Sie Unterstützung für die Verbindung mit AEM über die Verwendung der `.pac` Proxy-Konfiguration hinzu (CQ-4233430).
 
    * (Windows) Behebung von Problemen mit dem Dialogfeld „Advanced“ > „Login URL“ (Erweitert > Anmelde-URL) (CQ-4236061).
 
@@ -203,7 +209,7 @@ In der Folgeversion 1.8.1 des AEM-Desktop-Programms wurden Verbesserungen hinsic
 
    * (Win) Cleaner-Deinstallation (CQ-4220906).
 
-   * [Windows (32 Bit)] Installationsprogramm schlägt beim Versuch zur Installation von Microsoft.NET Framework Version 4.5 zu fehl (CQ-4218084).
+   * [Windows 32bit] Installer versucht nicht, Microsoft .NET Framework v. zu installieren. 4.5 (CQ-4218084).
 
    * (Mac) Skript zur manuellen Ausführung für das vollständige Entfernen von Desktop-Programm-Dateien (CQ-4216489).
 
@@ -259,7 +265,7 @@ In der Folgeversion 1.8.1 des AEM-Desktop-Programms wurden Verbesserungen hinsic
 
 **Version 1.5.1.5 für macOS X:** Die 1.5.1.5-Version bietet die folgenden Vorteile:
 
-* Neue Funktionen und Verbesserungen: Hinzufügen der Funktion zum Kopieren/Einfügen zur Finder-Integration, um die direkte Übertragung vom Desktop zur AEM zu ermöglichen (CQ-4208158).
+* Neue Funktionen und Verbesserungen: Hinzufügen der Funktion zum Kopieren/Einfügen zur Finder-Integration, um eine direkte Übertragung vom Desktop an AEM zu ermöglichen (CQ-4208158).
 
 * Fehlerbehebungen:
 
@@ -279,13 +285,13 @@ Hinweis zu Link-Warnungen: Creative Cloud-Programme (z. B. InDesign) erstellen e
 
 * Wenn die Adobe Creative Cloud-App bereits ausgeführt wird, wird für das verknüpfte Asset ein gelbes Warndreieck angezeigt.
 
-Dieses Verhalten ist für Assets auf der lokalen Festplatte und Assets in einem auf dem AEM-Desktop gemounteten Verzeichnis identisch, mit den folgenden Ausnahmen:
+Dieses Verhalten ist bei Assets auf der lokalen Festplatte und Assets in einem von AEM bereitgestellten Desktop-Verzeichnis identisch, mit den folgenden Ausnahmen:
 
 * Wenn ein(e) andere(r) Benutzende(r) ein platziertes Asset bearbeitet, wird beim ersten Öffnen eines Dokuments mit dem platzierten Asset durch andere Benutzende das Warnsymbol angezeigt. Diese Warnung tritt nur auf, wenn das platzierte Asset bereits lokal zwischengespeichert wurde.
 
 * Wenn ein(e) Benutzende(r) ein platziertes Asset über das gemountete Verzeichnis des AEM-Desktops ändert und dann seinen/ihren lokalen Cache löscht, wird das platzierte Asset als veraltet gemeldet.
 
-Beide Fälle werden erwartet und sind Nebeneffekte der „verzögerten Synchronisierung“ der AEM-Desktops.
+Beide Fälle werden erwartet und sind Nebeneffekte der „verzögerten Synchronisierung“ der AEM-Desktop-Architektur.
 
 **Version 1.5.0.x für macOS X und Windows:** Diese Version des AEM-Desktop-Programms bietet die folgenden Vorteile:
 
@@ -335,7 +341,7 @@ Beide Fälle werden erwartet und sind Nebeneffekte der „verzögerten Synchroni
 * Verbesserungen hinsichtlich der Zwischenspeicherung und Leistung.
 * Bessere Unterstützung für das direkte Speichern aus Desktop-Programmen (PS, ID, AI usw.).
 * Verbesserte Integration mit macOS (Protokoll für lokales Netzlaufwerk von WebDAV in stabileres SMB1 geändert).
-* Die Desktop-App stellt eine Verbindung zum AEM-Server her, indem sie das AEM-native HTTP-RESTful-Protokoll verwendet.
+* Die Desktop-Anwendung stellt eine Verbindung zum AEM-Server her, indem sie das native HTTP-RESTful-Protokoll von AEM verwendet.
 * Die Dateien werden zunächst lokal gespeichert und nach einer festgelegten Zeit (30 Sek.) im Hintergrund wieder in AEM hochgeladen. Dieser Workflow verkürzt die Zeit zum Speichern von Dateien.
 * Besseres Handling von Desktop-Programmen, die Zwischenvorgänge zum Speichern von Dateien verwenden (partielles Speichern und temporäre Dateien). Dadurch können in der AEM Assets-Timeline korrekte Versions- und Asset-Upload-Informationen angezeigt werden.
 * Es wird ein Dialogfeld zum Nachverfolgen des Status von Upload-Hintergrundaufgaben bereitgestellt.
@@ -362,7 +368,7 @@ Da für den `/Volumes` keine Administratorrechte mehr erforderlich sind, wurde d
 
 >[!NOTE]
 >
->Auf macOS X führt die Änderung des Protokolls für das lokale Netzlaufwerk von WebDAV zu SMB1 zu einem anderen lokalen Pfad zum gleichen Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die in Adobe Creative Cloud-Anwendungen über den Befehl „Place“ platziert werden. Weitere Informationen finden [&#x200B; unter „Verwenden &#x200B;](use-app-v1.md) AEM-Desktop-Programms“.
+>Auf macOS X führt die Änderung des Protokolls für das lokale Netzlaufwerk von WebDAV zu SMB1 zu einem anderen lokalen Pfad zum gleichen Asset im Repository. Diese Änderung kann sich auf Links zu Dateien auswirken, die in Adobe Creative Cloud-Anwendungen über den Befehl „Place“ platziert werden. Weitere Informationen finden [ unter „Verwenden ](use-app-v1.md) AEM-Desktop-Programms“.
 
 ### Dateiverarbeitung (seit 1.3) {#file-handling-since}
 
@@ -374,11 +380,11 @@ Da für den `/Volumes` keine Administratorrechte mehr erforderlich sind, wurde d
 
 ## Wichtige Hinweise {#important-notices}
 
-**Ordner-Upload:** Adobe empfiehlt die Verwendung der neuen Ordner-Upload-Funktion, um größere, hierarchische Ordner in AEM hochzuladen. Dieser Ansatz wird empfohlen, anstatt eine Kopie / Drag-and-Drop in ein bereitgestelltes AEM-Repository aus der Finder / Explorer-Ebene zu verwenden. Bei Verwendung der Funktion zum Hochladen von Ordnern kommuniziert das Desktop-Programm direkt mit AEM und hat somit eine viel bessere Kontrolle über den gesamten Prozess.
+**Ordner hochladen.** Adobe empfiehlt, die neue Funktion zum Hochladen von Ordnern zu verwenden, um größere hierarchische Ordner in AEM hochzuladen. Dieser Ansatz wird empfohlen, anstatt eine Kopie / Drag-and-Drop in ein bereitgestelltes AEM-Repository aus der Finder / Explorer-Ebene zu verwenden. Bei Verwendung der Funktion zum Hochladen von Ordnern kommuniziert das Desktop-Programm direkt mit AEM und hat somit eine viel bessere Kontrolle über den gesamten Prozess.
 
-**AEM-Sitzung aktivieren:** Das AEM-Desktop-Programm hängt von einer Sitzung ab, die auf dem AEM Assets-Server geöffnet ist, um einen ordnungsgemäßen Betrieb sicherzustellen. Tägliche Benutzer sollten die Bereitstellung von AEM Assets am Ende des Tages beenden, um sich abzumelden, und morgens erneut mounten, um die Anmeldung und Netzwerkfreigabefunktion sicherzustellen.
+**AEM-Sitzung verfügbar halten.** Das AEM-Desktop-Programm hängt von einer Sitzung ab, die auf dem AEM Assets-Server geöffnet ist, um einen ordnungsgemäßen Betrieb sicherzustellen. Tägliche Benutzer sollten die Bereitstellung von AEM Assets am Ende des Tages beenden, um sich abzumelden, und morgens erneut mounten, um die Anmeldung und Netzwerkfreigabefunktion sicherzustellen.
 
-**Deaktivieren Sie „Symbolvorschau“ im Finder.** Stellen Sie sicher, dass „Symbol“ und „Symbolvorschau“ deaktiviert sind, um große Ordner mit dem Finder nach Leistung zu durchsuchen, insbesondere bei schlechter Netzwerkverbindung. Andernfalls lädt Finder jedes Asset in einem Ordner herunter, um eine kleine Vorschau zu generieren, was zu schlechter Leistung und hoher Bandbreitenauslastung führen kann (CQ-4219779)
+**Deaktivieren Sie „Symbolvorschau“ im Finder.** Stellen Sie sicher, dass sowohl „Icon“ als auch „Icon Preview“ deaktiviert sind, um große Ordner mit dem Finder nach Leistung zu durchsuchen, insbesondere bei schlechter Netzwerkverbindung. Andernfalls lädt Finder jedes Asset in einem Ordner herunter, um eine kleine Vorschau zu generieren, was zu schlechter Leistung und hoher Bandbreitenauslastung führen kann (CQ-4219779)
 
 * Navigieren Sie im Finder zum freigegebenen AEM Assets-Netzwerkordner.
 * Klicken Sie mit der rechten Maustaste auf den DAM-Bereitstellungspunkt.
@@ -388,7 +394,7 @@ Da für den `/Volumes` keine Administratorrechte mehr erforderlich sind, wurde d
 
 **Bereinigen Sie den Cache beim Herstellen einer Verbindung mit einem neuen AEM-Server.** Wenn die Desktop-Anwendung eine Verbindung zu einem anderen AEM-Server mit derselben URL herstellt, wird der Cache nicht automatisch gelöscht. Löschen Sie den Cache manuell, um einen ordnungsgemäßen Betrieb sicherzustellen. Beachten Sie, dass dieser Prozess normalerweise beim Testen auftritt, wenn AEM-Installationen bei der Ausführung über dieselbe URL ersetzt werden können (CQ-4216982)
 
-**CA-signierte SSL-Zertifikate verwenden:** Die AEM-Desktop-App unterstützt keine selbstsignierten SSL-Zertifikate, wenn über eine sichere HTTPS-Verbindung eine Verbindung zu AEM hergestellt wird. Für derartige Verbindungen ist ein CA-signiertes Zertifikat auf dem Server erforderlich (CQ-87941).
+**Verwenden von CA-signierten SSL-Zertifikaten.** Die AEM-Desktop-App unterstützt keine selbstsignierten SSL-Zertifikate, wenn über eine sichere HTTPS-Verbindung eine Verbindung zu AEM hergestellt wird. Für derartige Verbindungen ist ein CA-signiertes Zertifikat auf dem Server erforderlich (CQ-87941).
 
 ## Bekannte Probleme {#known-issues}
 
@@ -428,6 +434,6 @@ Das AEM-Desktop-Programm ist mit verschiedenen AEM-Versionen kompatibel. Informa
 | Version | Revision | Veröffentlichungsdatum | Kompatibilität |
 |--- |--- |--- |--- |
 | 1.10 | 1.10.0.3 (Mac und Win) | 31. August 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.9 | 1.9.1.1 (Mac und Win) | 21. Juni 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.9 | 1.9.1.1 (Mac und Win) | &#x200B;21. Juni 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0 (Mac und Win) | Donnerstag, 28. März 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.7 | 1.7.0.3 (Mac und Win) | Donnerstag, 10. Januar 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |

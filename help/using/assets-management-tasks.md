@@ -2,13 +2,17 @@
 title: Verwenden des  [!DNL Experience Manager] -Desktop-Programms
 description: Verwenden Sie das  [!DNL Adobe Experience Manager] -Desktop-Programm, um mit [!DNL Adobe Experience Manager] DAM-Assets direkt von Ihrem Win- oder Mac-Desktop aus zu arbeiten und sie in anderen Programmen zu verwenden.
 feature: Desktop App,Asset Management
-source-git-commit: c5aeee9ab636ba7bedff4225172140d59cfe627d
+exl-id: c8f57bdc-1465-401f-88b1-9107fcacceb5
+TQID: https://experienceleague.adobe.com/EDU6FDXK0AFeJECzOhmYJckrQDsbSNRxY02Rgg-ScrE
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: 1438
 ht-degree: 40%
 
 ---
-
 
 # Assets-Verwaltungsaufgaben in [!DNL AEM Desktop App] {#assets-management-tasks}
 
@@ -79,7 +83,7 @@ Die Funktion zur automatischen Aktualisierung aktualisiert Inhalte automatisch i
 
 ## Sammlungen {#collections-desktop-app}
 
-Mit dem AEM-Desktop[Programm können Sie Sammlungen anzeigen](#view-collections-desktop-app) [&#x200B; herunterladen &#x200B;](#download-collections-desktop-app) durchsuchen, die in [!DNL Adobe Experience Manager Assets] Programm erstellt wurden.
+Mit dem AEM-Desktop[Programm können Sie Sammlungen anzeigen](#view-collections-desktop-app) [ herunterladen ](#download-collections-desktop-app) durchsuchen, die in [!DNL Adobe Experience Manager Assets] Programm erstellt wurden.
 
 ### Anzeigen von Sammlungen {#view-collections-desktop-app}
 
@@ -87,7 +91,7 @@ Führen Sie die folgenden Schritte aus, um Sammlungen in der Desktop-Anwendung a
 
 1. Öffnen Sie das AEM-Desktop-Programm und navigieren Sie zu [Assets anzeigen](#view-assets).
 
-1. Wählen Sie **[!UICONTROL Show Collections]** aus. Die im nativen Programm verfügbaren Sammlungen werden angezeigt.
+1. Wählen Sie **[!UICONTROL Show Collections]**. Die im nativen Programm verfügbaren Sammlungen werden angezeigt.
 
    ![Sammlungen - Desktop-Programm](assets/collections-desktop-app.png)
 
@@ -160,9 +164,9 @@ Gehen Sie wie folgt vor, um diesen Workflow mit einem Bild-Asset und InDesign au
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
-* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der ](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 

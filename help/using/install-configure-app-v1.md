@@ -2,10 +2,16 @@
 title: Installieren und Konfigurieren des Desktop-Programms, v1.10
 description: Installieren und konfigurieren Sie das  [!DNL Experience Manager] -Desktop-Programm Version 1.10 für die Arbeit mit  [!DNL Assets] -Servern und ordnen Sie die Assets als Laufwerk auf Ihrem Desktop zu.
 exl-id: 7f3bdfb1-d345-4e48-b020-6e06531f46f2
-source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
+TQID: https://experienceleague.adobe.com/q8HwCAJiC2BlVsKHHC-Pg6NrvQEuI4bfhPV6q4s9xBE
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+subfeature_v2: id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 74%
+source-wordcount: 928
+ht-degree: 68%
 
 ---
 
@@ -61,9 +67,9 @@ Für die Methoden zum Kopieren und Verschieben in der Assets-API ist es erforder
 * X-Tiefe
 * X-Überschreiben
 
-[!DNL Experience Manager]-Desktop stellt Verbindungen mit [!DNL Experience Manager] über eine URL her, die einen standardmäßigen Port enthält. Daher sollte die `virtualhosts` in der Dispatcher-Konfiguration die standardmäßige Port-Nummer enthalten. Weitere Informationen zur Konfiguration von `virtualhosts` finden Sie unter [Identifizieren von virtuellen Hosts](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
+[!DNL Experience Manager]-Desktop stellt Verbindungen mit [!DNL Experience Manager] über eine URL her, die einen standardmäßigen Port enthält. Daher sollte die `virtualhosts` in der Dispatcher-Konfiguration die standardmäßige Port-Nummer enthalten. Weitere Informationen zur Konfiguration von `virtualhosts` finden Sie unter [Identifizieren von virtuellen Hosts](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#identifying-virtual-hosts-virtualhosts).
 
-Weitere Informationen zum Konfigurieren der Dispatcher für die Übergabe dieser zusätzlichen Header finden Sie unter [&#x200B; der HTTP-Header](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
+Weitere Informationen zum Konfigurieren der Dispatcher für die Übergabe dieser zusätzlichen Header finden Sie unter [ der HTTP-Header](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders).
 
 ### Proxy-Unterstützung {#proxy-support}
 
@@ -77,7 +83,7 @@ Wenn Sie Proxyserver-Einstellungen für Windows konfigurieren oder ändern (Inte
 
 Wenn für den Proxy eine Authentifizierung erforderlich ist, kann die IT-Abteilung die URL von Experience Manager Assets in den Proxyserver-Einstellungen zulassen, um den Programmdatenverkehr durchzulassen.
 
-## Anpassen des Dialogfelds „Asset-Info“  {#customize-the-asset-info-dialog}
+## Anpassen des Dialogfelds „Asset-Info“ {#customize-the-asset-info-dialog}
 
 Sie können das Dialogfeld „Asset Info“ (Asset-Informationen) anpassen, indem Sie es mit mindestens einer dieser beiden Komponenten überlagern:
 
@@ -95,7 +101,7 @@ Unter macOS X befindet sich ein ähnliches Verzeichnis unter `~/Library/Group Co
 
 ### Programminterne Option zum Verwalten des Cache {#in-app-option-to-manage-cache}
 
-Sie können festlegen, wie viel Festplattenspeicher für lokale Caching-Zwecke zur Verfügung gestellt wird. Die Artefakte vom Assets-Server werden für ein reibungsloseres Erlebnis lokal zwischengespeichert. Sie können die Standardeinstellungen Ihren Anforderungen entsprechend anpassen. Außerdem können Sie den Cache löschen, um alle Assets erneut abzurufen. Klicken Sie zum Festlegen der gewünschten Optionen auf das Symbol des Programms und klicken Sie auf **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**.
+Sie können festlegen, wie viel Festplattenspeicher für lokale Caching-Zwecke zur Verfügung gestellt wird. Die Artefakte vom Assets-Server werden für ein reibungsloseres Erlebnis lokal zwischengespeichert. Sie können die Standardeinstellungen Ihren Anforderungen entsprechend anpassen. Außerdem können Sie den Cache löschen, um alle Assets erneut abzurufen. Um die gewünschten Optionen festzulegen, klicken Sie auf das Symbol der Anwendung und anschließend auf **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -109,7 +115,7 @@ Der Standardspeicherort des Caches für das [!DNL Experience Manager]-Desktop-Pr
 
 * Unter Mac OS: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`
 
-Die `EncodedAEMEndpoint` ist die konfigurierte [!DNL Experience Manager]-Endpunkt-URL der App. Der Wert ist eine kodierte Version der Ziel-URL für den [!DNL Experience Manager]-Server. Wenn das Ziel des Programms beispielsweise `http://localhost:4502` ist, lautet der Verzeichnisname `http%3A%2F%2Flocalhost%3A4502`. Der Windows-Pfad zum Cache-Verzeichnis in diesem Beispiel lautet `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
+Die `EncodedAEMEndpoint` ist die konfigurierte [!DNL Experience Manager]-Endpunkt-URL der App. Der Wert ist eine kodierte Version der Targeting-URL für den [!DNL Experience Manager]-Server. Wenn das Ziel des Programms beispielsweise `http://localhost:4502` ist, lautet der Verzeichnisname `http%3A%2F%2Flocalhost%3A4502`. Der Windows-Pfad zum Cache-Verzeichnis in diesem Beispiel lautet `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Um das Programm auf einen anderen Ordner oder ein anderes Laufwerk zu verweisen, bearbeiten Sie die Konfigurationsdatei des Programms.
 
@@ -123,10 +129,10 @@ Um das Programm auf einen anderen Ordner oder ein anderes Laufwerk zu verweisen,
 
    >[!NOTE]
    >
-   >Das Programm erstellt automatisch ein Unterverzeichnis mit der Bezeichnung *&lt;Encoded AEM Endpoint>*. Dieses Verhalten kann nicht konfiguriert werden.
+   >Die App erstellt automatisch ein *&lt;Encoded AEM Endpoint>* Unterverzeichnis. Dieses Verhalten kann nicht konfiguriert werden.
 
 >[!MORELIKETHIS]
 >
->* Sehen Sie sich eine [Einführung in die  [!DNL Experience Manager] -](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)-App“ an (5 Minuten, 43 Sekunden).
+>* Sehen Sie sich eine [Einführung in die  [!DNL Experience Manager] -](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)-App“ an (5 Minuten, 43 Sekunden).
 >* [Verwenden des [!DNL Experience Manager] -Desktop-Programms](use-app-v1.md).
 >* [Fehlerbehebung für das [!DNL Experience Manager] -Desktop-Programm](troubleshoot-app-v1.md).

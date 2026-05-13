@@ -2,10 +2,16 @@
 title: Best Practices und Fehlerbehebung für das  [!DNL Adobe Experience Manager] -Desktop-Programm
 description: Befolgen Sie die Best Practices und führen Sie eine Fehlerbehebung durch, um gelegentliche Probleme im Zusammenhang mit Installation, Aktualisierung, Konfiguration usw. zu beheben.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: a8cb0aaab08f24c83a9b5640a96a5ae8895685d2
+TQID: https://experienceleague.adobe.com/-dzlMXZ6SeCoc-QvFbEbWr1YNbK3A4nNIYI6xBudotI
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+subfeature_v2: id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 55%
+source-wordcount: 2338
+ht-degree: 54%
 
 ---
 
@@ -21,7 +27,7 @@ Befolgen Sie die folgenden Best Practices, um einige häufige Probleme zu vermei
 
 * **So funktioniert das Desktop-Programm**: Bevor Sie mit der Verwendung des Programms beginnen, sollten Sie sich kurz mit ihrer Funktionsweise vertraut machen. Erfahren Sie mehr über die Verknüpfung zwischen der [!DNL Experience Manager]-Web-Oberfläche und dem Desktop, die Repository-Zuordnung, das Zwischenspeichern von Assets, das lokale Speichern und das Hochladen im Hintergrund. Machen Sie sich mit der [Funktionsweise](release-notes.md#how-app-works) vertraut.
 
-* **Vermeiden Sie nicht unterstützte Zeichen in Ordnernamen**: Verwenden Sie beim Erstellen oder Hochladen von Ordnern keine Leerzeichen und ungültige Zeichen. Eine Liste der Zeichen finden Sie unter [Erstellen von Ordnern in  [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Nicht unterstützte Zeichen im Ordnernamen können sich auf einige [!DNL Experience Manager] Anwendungsfälle auswirken.
+* **Vermeiden Sie nicht unterstützte Zeichen in Ordnernamen**: Verwenden Sie beim Erstellen oder Hochladen von Ordnern keine Leerzeichen und ungültige Zeichen. Eine Liste der Zeichen finden Sie unter [Erstellen von Ordnern in  [!DNL Adobe Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#creating-folders). Nicht unterstützte Zeichen im Ordnernamen können sich auf einige [!DNL Experience Manager] Anwendungsfälle auswirken.
 
 * **Best Practices zur Vermeidung von**: Um potenzielle Konflikte bei der Zusammenarbeit an mehreren Assets zu vermeiden, gehen Sie zu [Bearbeitungskonflikte vermeiden](assets-management-tasks.md#adv-workflow-collaborate-avoid-conflicts).
 
@@ -301,8 +307,8 @@ Bei beiden Methoden startet das Programm im Stammordner des DAM.
 
 Beim Durchsuchen von Assets über die [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Admins können Einstellungen konfigurieren, um das Anzeigen, Suchen und Abrufen abgelaufener Assets beim Durchsuchen über das Desktop-Programm und Asset Link zu verhindern. Dadurch wird sichergestellt, dass bei diesen Vorgängen nicht auf abgelaufene Assets zugegriffen werden kann. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
 
-* [Konfiguration in Experience Manager 6.5 zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
-* [Konfiguration in Experience Manager as a Cloud Service zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration in Experience Manager 6.5 zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#hide-expired-assets-via-acp-api).
+* [Konfiguration in Experience Manager as a Cloud Service zum Ausblenden abgelaufener Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}

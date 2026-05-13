@@ -4,9 +4,13 @@ description: Verwenden Sie das  [!DNL Adobe Experience Manager] -Desktop-Program
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 19e4b92016670de20474b251cda9f2f5274dbc26
+TQID: https://experienceleague.adobe.com/2v0mdTrS1ZgHkm0ykjYYQDQjvW0DjsVs2uLyCg8p54M
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '4093'
+source-wordcount: 4093
 ht-degree: 68%
 
 ---
@@ -158,7 +162,7 @@ Verwenden Sie **[!UICONTROL Toggle Check-out]** zum Sperren des Assets, um Konfl
 * Sie haben begonnen, ein Asset zu bearbeiten, ohne es vorher auszuchecken (indem Sie es einfach öffnen).
 * Sie möchten demnächst mit der Bearbeitung eines Assets beginnen und möchten nicht, dass andere Benutzer es bearbeiten.
 
-Nachdem Sie die Bearbeitungen vorgenommen haben, zeigt die App den Status **[!UICONTROL Edited Locally]** für geänderte Assets an. Alle in den Assets gespeicherten Änderungen sind nur lokal verfügbar, bis Sie die Änderungen in [!DNL Experience Manager] hochladen. Um einzelne Assets oder einige Assets einzeln hochzuladen, klicken Sie in den Optionen für ein Asset auf **[!UICONTROL Upload Changes]**. Dadurch wird eine Version des Assets in [!DNL Experience Manager] erstellt. Über die Web-Oberfläche von [!DNL Assets] können Sie den Asset-Verlauf in der [Zeitleisten-Ansicht“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/using/activity-stream).
+Nachdem Sie die Bearbeitungen vorgenommen haben, zeigt die App den Status **[!UICONTROL Edited Locally]** für geänderte Assets an. Alle in den Assets gespeicherten Änderungen sind nur lokal verfügbar, bis Sie die Änderungen in [!DNL Experience Manager] hochladen. Um einzelne Assets oder einige Assets einzeln hochzuladen, klicken Sie in den Optionen für ein Asset auf **[!UICONTROL Upload Changes]**. Dadurch wird eine Version des Assets in [!DNL Experience Manager] erstellt. Über die Web-Oberfläche von [!DNL Assets] können Sie den Asset-Verlauf in der [Zeitleisten-Ansicht“ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/activity-stream).
 
 ![Option zum Hochladen von Änderungen im Programm](assets/upload_changes_single1_da2.png "Option zum Hochladen von Änderungen im Programm")
 
@@ -282,7 +286,7 @@ Klicken Sie auf die Miniaturansicht einiger Assets, um die Assets auszuwählen. 
 
 ![Symbolleiste am unteren Rand zeigt Aktionen an, die für die ausgewählten Assets relevant sind](assets/actions_bottom_toolbar1_da2.png "Die Symbolleiste am unteren Rand zeigt allgemeine Aktionen für die ausgewählten Assets an")
 
-![Keine Aktionen in der Symbolleiste, wenn keine allgemeinen Aktionen für die Auswahl &#x200B;](assets/actions_bottom_toolbar2_da2.png "Die Symbolleiste zeigt keine Aktionen an, wenn keine allgemeinen Aktionen für die Auswahl verfügbar sind.")
+![Keine Aktionen in der Symbolleiste, wenn keine allgemeinen Aktionen für die Auswahl ](assets/actions_bottom_toolbar2_da2.png "Die Symbolleiste zeigt keine Aktionen an, wenn keine allgemeinen Aktionen für die Auswahl verfügbar sind.")
 
 Die in der Symbolleiste unten verfügbaren Aktionen hängen vom Status der ausgewählten Dateien ab. Wenn Sie beispielsweise nur Dateien mit dem Status **[!UICONTROL Edited Locally]** auswählen, wird das Symbol **[!UICONTROL Upload Changes]** angezeigt. Wenn Sie eine Mischung aus **[!UICONTROL Edited locally]** und **[!UICONTROL Cloud only]** auswählen, steht die Aktion **[!UICONTROL Upload Changes]** nicht zur Verfügung.
 
@@ -302,7 +306,7 @@ Wenn die erwarteten Änderungen nach dem Upload nicht im Programm übernommen we
 
 >[!NOTE]
 >
->Verwenden Sie nicht die Upload-Funktion, um Assets über zwei [!DNL Experience Manager]-Bereitstellungen zu migrieren. Siehe stattdessen auch [Migrationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
+>Verwenden Sie nicht die Upload-Funktion, um Assets über zwei [!DNL Experience Manager]-Bereitstellungen zu migrieren. Siehe stattdessen auch [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide).
 
 ### Liste der übertragenen Assets {#list-of-transferred-assets}
 
