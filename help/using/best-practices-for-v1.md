@@ -2,9 +2,24 @@
 title: Best Practices für das Desktop-Programm, v1.10.
 description: Wichtige Funktionen und empfohlene Verwendung der [!DNL Adobe Experience Manager] -Desktop-Programm Version 1.10.
 exl-id: 5de06b33-c05c-47eb-b884-408b6f9afc94
-source-git-commit: 1c7437786a50eeafa884ce92b745f3438b2d2b88
+TQID: https://experienceleague.adobe.com/5r3NDLi2KQXMNH1s4hxfLlBzqmEisKTynSUFTVANwkU
+product_v2:
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+subfeature_v2:
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: 1721
 ht-degree: 49%
 
 ---
@@ -13,11 +28,11 @@ ht-degree: 49%
 
 ## Übersicht {#overview}
 
-[!DNL Adobe Experience Manager] Desktop-Programm verknüpft Ihre DAM-Lösung (Digital Asset Management) mit Ihrem Desktop, sodass Sie Dateien, die in der AEM-Web-Benutzeroberfläche verfügbar sind, direkt auf dem Desktop öffnen können. Wenn Sie ein Asset auf dem Desktop gespeichert haben, wird es in AEM am entsprechenden Speicherort hochgeladen.
+[!DNL Adobe Experience Manager] Desktop-Programm verknüpft Ihre DAM-Lösung (Digital Asset Management) mit Ihrem Desktop, sodass Sie die Dateien, die in der AEM-Web-Benutzeroberfläche verfügbar sind, direkt auf dem Desktop öffnen können. Wenn Sie ein Asset auf dem Desktop gespeichert haben, wird es in AEM am entsprechenden Speicherort hochgeladen.
 
-Das AEM-Desktop-Programm eliminiert die Wahrscheinlichkeit, dass Sie falsche lokale Kopien oder ein falsches Asset in AEM aktualisieren. Der benutzerfreundliche Workflow der Desktop-App wird mithilfe der Netzwerkfreigabetechnologie aktiviert, die von Desktop-Betriebssystemen bereitgestellt wird.
+Mit dem AEM-Desktop-Programm ist es nicht mehr möglich, falsche lokale Kopien oder falsche Assets in AEM zu aktualisieren. Der benutzerfreundliche Workflow der Desktop-App wird mithilfe der Netzwerkfreigabetechnologie aktiviert, die von Desktop-Betriebssystemen bereitgestellt wird.
 
-Das Desktop-Programm stellt das AEM Assets-Repository als Netzwerkfreigabe auf dem Desktop bereit. Daher sieht es so aus, als handle es sich um lokale Ordner und Dateien. Es wird jedoch nicht empfohlen, Digital Asset Management-Vorgänge direkt über den Desktop in der bereitgestellten Netzwerkfreigabe in Finder oder Explorer durchzuführen. Stattdessen empfiehlt Adobe, die Web-Benutzeroberfläche von AEM Assets zu verwenden, um Vorgänge wie das Kopieren oder Verschieben einer großen Anzahl von Assets durchzuführen.
+Das Desktop-Programm stellt das AEM Assets-Repository als Netzwerkfreigabe auf dem Desktop bereit. Daher sieht es so aus, als handle es sich um lokale Ordner und Dateien. Es wird jedoch nicht empfohlen, Digital Asset Management-Vorgänge direkt über den Desktop in der bereitgestellten Netzwerkfreigabe in Finder oder Explorer durchzuführen. Stattdessen empfiehlt Adobe die Verwendung der AEM Assets-Web-Benutzeroberfläche, um Vorgänge wie das Kopieren oder Verschieben einer großen Anzahl von Assets durchzuführen.
 
 >[!NOTE]
 >
@@ -41,15 +56,15 @@ Zu den wichtigsten Funktionen der AEM-Desktop-App gehören:
 
 * **Ein- und Auschecken**. Assets kann zur Bearbeitung ausgecheckt werden. Sie sind für den Benutzer in AEM Assets als gesperrt markiert. Nach dem Bearbeiten können die Assets dann wieder eingecheckt und damit entsperrt werden.
 
-* **Speichern von Änderungen in Dateien**. Sämtliche Änderungen, die Sie in einer Datei in einer Netzwerkfreigabe speichern, werden automatisch in AEM hochgeladen. Außerdem wird eine neue Version erstellt.
+* **Änderungen an Dateien speichern**. Jede Änderung, die Sie in der -Datei in der Netzwerkfreigabe speichern, wird automatisch in AEM hochgeladen und eine neue Version wird erstellt.
 
-* **Platzieren von verknüpften Assets in anderen Dokumenten**. In Programmen wie Creative Cloud ([!DNL Adobe Photoshop], [!DNL Adobe InDesign] und [!DNL Adobe Illustrator]) können Sie eine externe Datei als Verknüpfung platzieren. Sie können beispielsweise ein Bild in einem InDesign-Dokument platzieren. In diesem Fall können Sie mit der Bereitstellung der Netzwerkfreigabe Assets aus AEM zur Platzierung durchsuchen und auswählen. Das Platzieren verknüpfter Dateien funktioniert auch in einigen Nicht-Adobe-Apps, wie MS® Office.
+* **Platzieren von verknüpften Assets in anderen Dokumenten**. In Programmen wie Creative Cloud ([!DNL Adobe Photoshop], [!DNL Adobe InDesign] und [!DNL Adobe Illustrator]) können Sie eine externe Datei als Verknüpfung platzieren. Sie können beispielsweise ein Bild in einem InDesign-Dokument platzieren. In diesem Fall können Sie mit der Bereitstellung der Netzwerkfreigabe Assets aus AEM zur Platzierung durchsuchen und auswählen. Das Platzieren verknüpfter Dateien funktioniert auch in einigen Apps, die nicht von Adobe stammen, wie MS® Office.
 
 * **Auflösen von Verweisen in AEM**. Wenn sowohl die platzierten Dateien als auch die Hauptdateien mit dem Link in AEM gespeichert werden, kann dies automatisch Server-seitige Informationen zu den Asset-Verweisen bereitstellen.
 
 * **Greifen Sie über den Desktop auf das Asset**. In der bereitgestellten Netzwerkfreigabe bietet ein Kontextmenü ein [!UICONTROL More Info] Dialogfeld (größere Vorschau, wichtige Metadaten) und die Möglichkeit, ein Asset in der AEM-Benutzeroberfläche zu öffnen.
 
-* **Große, hierarchische Ordner werden stapelweise hochgeladen**. Wenn Sie die Option **Erstellen** > **Ordner-Upload** in der AEM-Benutzeroberfläche verwenden, um Assets hochzuladen, lädt das AEM-Desktop-Programm die ausgewählte Ordnerhierarchie im Hintergrund in AEM hoch. Der Upload-Fortschritt wird mit einer dedizierten Benutzeroberfläche in der Desktop-App überwacht.
+* **Große, hierarchische Ordner werden stapelweise hochgeladen**. Wenn Sie die Option **Erstellen** > **Ordner-Upload** in der AEM-Benutzeroberfläche verwenden, um Assets hochzuladen, lädt das AEM-Desktop-Programm im Hintergrund die ausgewählte Ordnerhierarchie in AEM hoch. Der Upload-Fortschritt wird mit einer dedizierten Benutzeroberfläche in der Desktop-App überwacht.
 
 ## Unsachgemäße Verwendung des AEM-Desktop-Programms {#inappropriate-use-of-aem-desktop-app}
 
@@ -59,9 +74,9 @@ Zu den wichtigsten Funktionen der AEM-Desktop-App gehören:
 
    * [!UICONTROL Folder Upload]-Funktion des AEM-Desktop-Programms für den Uploads von großen, hierarchischen Ordnern.
 
-* Behandeln Sie das AEM-Desktop-Programm nicht als „Desktop Sync“-Client für AEM Assets. Der Hauptvorteil des AEM-Desktop-Programms besteht hier darin, dass sie einen „virtuellen“ Zugriff auf das gesamte Repository ermöglicht, während Programme zur Desktop-Synchronisierung normalerweise nur die Assets synchronisieren, die dem jeweiligen Benutzer gehören. Das AEM-Desktop-Programm bietet ein gewisses Maß an Zwischenspeicherung und Upload im Hintergrund. Es funktioniert jedoch sehr anders als typische „Sync“-Programme wie das Adobe Creative Cloud-Desktop-Programm oder Microsoft OneDrive.
+* Behandeln Sie das AEM-Desktop-Programm nicht als „Desktop Sync“-Client für AEM Assets. Der Hauptvorteil des AEM-Desktop-Programms besteht hier darin, dass sie einen „virtuellen“ Zugriff auf das gesamte Repository ermöglicht, während Programme zur Desktop-Synchronisierung normalerweise nur die Assets synchronisieren, die dem jeweiligen Benutzer gehören. Das AEM-Desktop-Programm bietet ein gewisses Maß an Zwischenspeicherung und Upload im Hintergrund. Es funktioniert jedoch sehr anders als typische „Synchronisierungs“-Programme wie das Adobe Creative Cloud-Desktop-Programm oder Microsoft OneDrive.
 
-* Setzen Sie AEM-Desktop-Programm-Netzlaufwerke nicht zum regelmäßigen Speichern von Assets ein. Alle Speichervorgänge werden an AEM Assets übertragen. Daher ist es unpraktisch, intensive Bearbeitungsvorgänge direkt in dem bereitgestellten AEM Assets-Repository durchzuführen. Wird ein Asset direkt im bereitgestellten Repository bearbeitet, wird die Zeitleiste des Assets mit irrelevanten Versionen „vollgestopft“ und der Server wird durch Mehraufwand belastet.
+* Setzen Sie AEM-Desktop-Programm-Netzlaufwerke nicht zum regelmäßigen Speichern von Assets ein. Alle Speichervorgänge werden an AEM Assets übertragen. Daher ist es unpraktisch, intensive Bearbeitungsvorgänge direkt in dem bereitgestellten AEM Assets-Repository durchzuführen. Wird ein Asset direkt im bereitgestellten Repository bearbeitet, wird die Timeline des Assets mit irrelevanten Versionen „vollgestopft“ und der Server wird durch Mehraufwand belastet.
 
 * Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop[Programm das Massenhochladen &#x200B;](use-app-v1.md#bulkupload) großen Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
 
@@ -71,7 +86,7 @@ Zu den wichtigsten Funktionen der AEM-Desktop-App gehören:
 
 Das AEM-Desktop-Programm ermöglicht einen virtuellen Zugriff auf das gesamte DAM-Repository. Dabei kann es sich für kreative Benutzer als schwierig herausstellen, die richtigen Assets zu finden und auf diese über ihren Desktop zuzugreifen. Wenden Sie diese Best Practices an, um diesen Vorgang für kreative Benutzer zu vereinfachen.
 
-* Verwenden Sie die Funktionen zur Zusammenarbeit der Web-Benutzeroberfläche von AEM Assets, um kreativen Benutzern einen direkteren Zugang zu den richtigen Assets zu ermöglichen. Hierzu gehören etwa die Freigabe von Ordnern oder Sammlungen, die Bereitstellung von Smart-Sammlungen (gespeicherten Suchen) oder der Versand von Benachrichtigungen mit Verweisen zu den richtigen Assets. Kreative Benutzer können dann Desktop-Aktionen in der Web-Benutzeroberfläche verwenden, um schnell auf diese Assets auf ihrem Desktop zuzugreifen.
+* Verwenden Sie die Funktionen zur Zusammenarbeit der Web-Benutzeroberfläche von AEM Assets, um kreativen Benutzern einen direkteren Zugang zu den richtigen Assets zu ermöglichen. Hierzu gehören etwa die Freigabe von Ordnern oder Sammlungen, die Bereitstellung von Smart-Sammlungen (gespeicherten Suchen) oder der Versand von Benachrichtigungen mit Verweisen zu den richtigen Assets. Creative-Benutzer können dann Desktop-Aktionen in der Web-Benutzeroberfläche verwenden, um schnell auf diese Assets auf ihrem Desktop zuzugreifen.
 
 * Legen Sie geeignete Berechtigungen für Assets (Zugriffssteuerung) fest, um die Anzeige des DAM-Repositorys für kreative Benutzer zu vereinfachen, indem Sie im Grunde den Zugriff dieser Benutzer auf die benötigten/interessanten Assets beschränken:
 
@@ -101,7 +116,7 @@ Gehen Sie wie folgt vor, wenn ein in AEM gespeichertes Asset aktualisiert werden
 
    * Aktualisieren Sie die Datei.
 
-   * Speichern Sie die aktualisierte Version. Das Asset wird aktualisiert und in der Zeitleiste wird die ursprüngliche Version zum Vergleich angezeigt.
+   * Speichern Sie die aktualisierte Version. Das Asset wird aktualisiert und in der Timeline wird die ursprüngliche Version zum Vergleich angezeigt.
 
 * Bei **umfassenden Aktualisierungen** wie einer Änderungsanforderung, für die ein kleiner kreativer WIP-Zyklus erforderlich ist:
 
@@ -119,7 +134,7 @@ Ein gutes Benutzererlebnis mit dem AEM-Desktop-Programm beruht auf einer stabile
 
 ### Überlegungen zum Netzwerk {#network-considerations}
 
-Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die zur Optimierung des AEM-Desktop-App-Erlebnisses für Benutzende beitragen, gehören:
+Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die das Benutzererlebnis mit dem AEM-Desktop-Programm optimieren, gehören:
 
 * **Verwenden Sie eine ordnungsgemäß konfigurierte Dispatcher**. Verwenden Sie die AEM Dispatcher für zusätzliche Sicherheit und stellen Sie sicher, dass sie für die [AEM-Desktop-App-Verbindung zu AEM hinter einer Dispatcher konfiguriert ist](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -133,6 +148,6 @@ Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden
 
 Informationen dazu, wie der AEM Assets-Server für die Leistung optimiert werden sollte, finden Sie im [Handbuch zur Leistungsoptimierung von AEM Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines). Einige wichtige Aspekte im Zusammenhang mit der Server-Leistung des AEM-Desktop-Programms beziehen sich auf das Optimieren der Workflow-Konfiguration für Asset-Uploads:
 
-* **Leistungsfähigerer Asset-Upload**. Konfigurieren Sie das Workflow-Modell [AEM-Asset-Aktualisierung als Übergang](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
+* **Leistungsfähigerer Asset-Upload**. Konfigurieren Sie das Workflow-Modell [AEM Asset-Aktualisierung als Übergang](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
 
 * **Server-CPU für Uploads**. Stellen Sie sicher, dass der Parameter Maximale Anzahl an parallelen Workflow-Aufträgen korrekt festgelegt ist, sodass beim Hochladen nicht alle CPU-Vorgänge erschöpft sind.
