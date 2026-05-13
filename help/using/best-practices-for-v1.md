@@ -78,7 +78,7 @@ Zu den wichtigsten Funktionen der AEM-Desktop-App gehören:
 
 * Setzen Sie AEM-Desktop-Programm-Netzlaufwerke nicht zum regelmäßigen Speichern von Assets ein. Alle Speichervorgänge werden an AEM Assets übertragen. Daher ist es unpraktisch, intensive Bearbeitungsvorgänge direkt in dem bereitgestellten AEM Assets-Repository durchzuführen. Wird ein Asset direkt im bereitgestellten Repository bearbeitet, wird die Timeline des Assets mit irrelevanten Versionen „vollgestopft“ und der Server wird durch Mehraufwand belastet.
 
-* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop[Programm das Massenhochladen &#x200B;](use-app-v1.md#bulkupload) großen Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
+* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop[Programm das Massenhochladen &#x200B;](use-app-v1.md#bulkupload) großen Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
 
 ## Empfehlungen für ausgewählte Anwendungsfälle {#recommendations-for-selected-use-cases}
 
@@ -134,7 +134,7 @@ Ein gutes Benutzererlebnis mit dem AEM-Desktop-Programm beruht auf einer stabile
 
 ### Überlegungen zum Netzwerk {#network-considerations}
 
-Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die das Benutzererlebnis mit dem AEM-Desktop-Programm optimieren, gehören:
+Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die das Benutzererlebnis mit dem AEM-Desktop-Programm optimieren, gehören:
 
 * **Verwenden Sie eine ordnungsgemäß konfigurierte Dispatcher**. Verwenden Sie die AEM Dispatcher für zusätzliche Sicherheit und stellen Sie sicher, dass sie für die [AEM-Desktop-App-Verbindung zu AEM hinter einer Dispatcher konfiguriert ist](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
