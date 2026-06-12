@@ -3,20 +3,11 @@ title: Best Practices für das Desktop-Programm, v1.10.
 description: Wichtige Funktionen und empfohlene Verwendung der [!DNL Adobe Experience Manager] -Desktop-Programm Version 1.10.
 exl-id: 5de06b33-c05c-47eb-b884-408b6f9afc94
 TQID: https://experienceleague.adobe.com/5r3NDLi2KQXMNH1s4hxfLlBzqmEisKTynSUFTVANwkU
-product_v2:
-  - id: d09181b5-a36a-43de-ba01-36641440bc43
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
-subfeature_v2:
-  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+subfeature_v2: id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
 source-wordcount: 1721
@@ -78,7 +69,7 @@ Zu den wichtigsten Funktionen der AEM-Desktop-App gehören:
 
 * Setzen Sie AEM-Desktop-Programm-Netzlaufwerke nicht zum regelmäßigen Speichern von Assets ein. Alle Speichervorgänge werden an AEM Assets übertragen. Daher ist es unpraktisch, intensive Bearbeitungsvorgänge direkt in dem bereitgestellten AEM Assets-Repository durchzuführen. Wird ein Asset direkt im bereitgestellten Repository bearbeitet, wird die Timeline des Assets mit irrelevanten Versionen „vollgestopft“ und der Server wird durch Mehraufwand belastet.
 
-* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop[Programm das Massenhochladen &#x200B;](use-app-v1.md#bulkupload) großen Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
+* Setzen Sie das AEM-Desktop-Programm nicht ein, um große Datenmengen von einer AEM-Instanz zu einer anderen zu migrieren. Informationen zum Planen und Ausführen von Asset-Migrationen finden Sie im [Migrationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide). Im Gegensatz dazu unterstützt das Desktop[Programm das Massenhochladen ](use-app-v1.md#bulkupload) großen Anzahl von Assets zum ersten Mal in [!DNL Adobe Experience Manager].
 
 ## Empfehlungen für ausgewählte Anwendungsfälle {#recommendations-for-selected-use-cases}
 
@@ -134,7 +125,7 @@ Ein gutes Benutzererlebnis mit dem AEM-Desktop-Programm beruht auf einer stabile
 
 ### Überlegungen zum Netzwerk {#network-considerations}
 
-Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die das Benutzererlebnis mit dem AEM-Desktop-Programm optimieren, gehören:
+Informationen zu Best Practices für die AEM Assets-Netzwerkkonfiguration finden Sie im Dokument [Massenmigrierung von Assets](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/assets-migration-guide) . Zu den wichtigen Aspekten, die das Benutzererlebnis mit dem AEM-Desktop-Programm optimieren, gehören:
 
 * **Verwenden Sie eine ordnungsgemäß konfigurierte Dispatcher**. Verwenden Sie die AEM Dispatcher für zusätzliche Sicherheit und stellen Sie sicher, dass sie für die [AEM-Desktop-App-Verbindung zu AEM hinter einer Dispatcher konfiguriert ist](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
