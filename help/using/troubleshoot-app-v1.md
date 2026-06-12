@@ -20,8 +20,8 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
 workflow-type: tm+mt
-source-wordcount: 3358
-ht-degree: 68%
+source-wordcount: 3356
+ht-degree: 67%
 
 ---
 
@@ -233,8 +233,8 @@ Die einfachste Methode zum Beheben dieser Situation besteht darin, die in Konfli
 
 Beim Löschen des Caches von AEM Desktop handelt es sich um eine vorläufige Aufgabe zur Fehlerbehebung, durch die verschiedene Probleme mit AEM Desktop gelöst werden können.
 
-Sie können den Cache löschen, indem Sie das Cache-Verzeichnis des Programms an den folgenden Speicherorten löschen.
-Unter Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+Sie können den Cache löschen, indem Sie das Cache-Verzeichnis der Anwendung an den folgenden Speicherorten löschen.
+Unter Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 Unter Mac OS: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
