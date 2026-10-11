@@ -1,24 +1,35 @@
 ---
 title: Erste Schritte [!DNL Experience Manager] Desktop-Programm
-description: Erfahren Sie, wie  [!DNL Experience Manager]  Desktop-Programm die Inhaltserstellung und -veröffentlichung mit optimierten Workflows und Produktivitätsfunktionen verbessert.
+description: Erfahren Sie, wie das [!DNL Experience Manager]-Desktop-Programm die Inhaltserstellung und -veröffentlichung mit optimierten Workflows und Produktivitätsfunktionen verbessert.
 feature: Desktop App,Asset Management
 exl-id: 6cf29b6a-74e6-4860-a25b-d3e91abbaa9d
-TQID: https://experienceleague.adobe.com/ngwHq5OPXgoOFDGUhUjg3V4494eFgJNmb1oxSDy0fzI
+TQID: 'https://experienceleague.adobe.com/ngwHq5OPXgoOFDGUhUjg3V4494eFgJNmb1oxSDy0fzI'
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
+    internal-label: Metadata
+source-git-commit: 081955637ccc08fe7cad9fda87595a006d60166c
 workflow-type: tm+mt
-source-wordcount: 1231
+source-wordcount: '1233'
 ht-degree: 42%
-
 ---
-
 # Erste Schritte mit [!DNL Adobe Experience Manager] Desktop-Programm {#getting-started-desktop-app}
 
 Verwenden Sie das [!DNL Adobe Experience Manager]-Desktop-Programm, um auf digitale Assets zuzugreifen, die in einem [!DNL Adobe Experience Manager] DAM-Repository auf Ihrem lokalen Desktop gespeichert sind. Sie können diese Assets dann in beliebigen Desktop-Programmen verwenden. Sie können die Assets lokal in Desktop-Programmen öffnen und bearbeiten. Nachdem Sie Änderungen vorgenommen haben, laden Sie sie mit der Versionskontrolle wieder in [!DNL Experience Manager] hoch, um Aktualisierungen für andere Benutzer freizugeben. Sie können auch neue Dateien und Ordnerhierarchien in [!DNL Experience Manager] hochladen, Ordner erstellen und Assets oder Dateien aus dem [!DNL Experience Manager]-DAM löschen.
@@ -27,7 +38,7 @@ Die Integration ermöglicht es verschiedenen Rollen im Unternehmen, die Assets z
 
 Wenn Sie das Programm nach dem Abmelden oder zum ersten Mal öffnen, müssen Sie die URL des [!DNL Experience Manager]-Servers im Format `https://[aem-server-url]:[port]/` angeben. Wählen Sie dann die Option [!UICONTROL Connect] aus. Geben Sie Ihre Anmeldeinformationen ein, um das Programm mit dem Server zu verbinden.
 
->[!VIDEO](https://video.tv.adobe.com/v/32777?captions=ger&quality=12&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on){transcript=true}
 
 Die wichtigsten Aufgaben, die Sie mit dem [!DNL Adobe Experience Manager]-Desktop-Programm durchführen, sind:
 
@@ -109,9 +120,9 @@ Im Gegenteil, Sie können das Asset über die Web-Oberfläche öffnen, indem Sie
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
-* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
+* Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der ](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
 
