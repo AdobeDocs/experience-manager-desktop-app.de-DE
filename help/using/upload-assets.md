@@ -1,22 +1,32 @@
 ---
-title: Hochladen von Assets mit dem  [!DNL Experience Manager] -Desktop-Programm
-description: Hochladen von Assets mit dem  [!DNL Adobe Experience Manager] -Desktop-Programm
+title: Hochladen von Assets mit [!DNL Experience Manager] Desktop-Programm
+description: Hochladen von Assets mit [!DNL Adobe Experience Manager] Desktop-Programm.
 feature: Desktop App,Asset Management
 exl-id: f082c712-dc04-4bed-bac8-fa78f93de1c7
-TQID: https://experienceleague.adobe.com/gqoBxhsZBCqUBHFVfQVzIHfoeNeoyIEQI-IjyQscpvQ
+TQID: 'https://experienceleague.adobe.com/gqoBxhsZBCqUBHFVfQVzIHfoeNeoyIEQI-IjyQscpvQ'
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 6427cf5cb782d62b7335cfb7e3fa6b4189ac72d2
+    internal-label: Admin
+source-git-commit: 081955637ccc08fe7cad9fda87595a006d60166c
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: '843'
 ht-degree: 72%
-
 ---
-
 # Hochladen von Assets {#upload-assets}
 
 Benutzende des AEM-Desktop-Programms, die berechtigt sind, Assets hinzuzufügen, können Assets (z. B. Bilder, Dokumente, Videos oder andere Medien) hinzufügen.
@@ -82,7 +92,7 @@ Wenn die erwarteten Änderungen nach dem Upload nicht im Programm übernommen we
 
 ## Nächste Schritte {#next-steps}
 
-* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
+* [Video zu den ersten Schritten mit dem Adobe Experience Manager Desktop-Programm ansehen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app)
 
 * Geben Sie Feedback zur Dokumentation über [!UICONTROL Edit this page] ![Bearbeiten der &#x200B;](assets/do-not-localize/edit-page.png)) oder [!UICONTROL Log an issue] ![Erstellen eines GitHub-](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste
 
